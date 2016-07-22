@@ -11,10 +11,6 @@
     <meta name="author" content="">
     <title>{{meta_title}}</title>
     
-    <link rel="apple-touch-icon" href="http://assets.codecloudapp.com/sites/5730acef6e6f6455e0000000/image/jpeg/1463758174000/icon57-1.jpg" />
-    <link rel="apple-touch-icon" sizes="72x72" href="http://assets.codecloudapp.com/sites/5730acef6e6f6455e0000000/image/jpeg/1463758180000/icon72-1.jpg" />
-    <link rel="apple-touch-icon" sizes="114x114" href="http://assets.codecloudapp.com/sites/5730acef6e6f6455e0000000/image/jpeg/1463758183000/icon114-1.jpg" />
-    
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
    
