@@ -41,7 +41,10 @@
     </script>
 </head>
 <body>
-    {{{yield}}}
+    <section id="content" class="yield">
+        <!--Pages that use this file as a layout will have their content replaced in the 'yield'-->
+        {{yield}}
+    </section>
 </body>
 
 </html>
