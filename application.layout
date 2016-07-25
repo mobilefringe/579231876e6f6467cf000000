@@ -43,7 +43,9 @@
                 <img alt="logo" class="site_logo" src="http://cdn.mallmaverick.com/system/sites/logo_images/000/000/052/original/logo.png?1401998716">
             </div>
             <div class="col-md-9">
-                
+                <div class="header_newsletter_subscribe">
+                    
+                </div>
             </div>
         </div>
     </section>
