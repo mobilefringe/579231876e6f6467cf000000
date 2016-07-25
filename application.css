@@ -58,7 +58,11 @@
 .main_nav{
     list-style:none;
     padding-left:0;
+    li{
+        float:left;
+    }
 }
+
 
 
 @media(max-width:768px){}
