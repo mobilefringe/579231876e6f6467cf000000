@@ -21,7 +21,7 @@ function renderBanner(banner_template,home_banner,banners){
              
          } else {
              item_list.push(val);
-         }r
+         }
        }
     });
 
