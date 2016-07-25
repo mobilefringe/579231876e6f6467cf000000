@@ -58,6 +58,8 @@
 .main_nav{
     list-style:none;
     padding-left:0;
+    margin-left:-10px;
+    margin-right:-10px;
     li{
         float:left;
     }
