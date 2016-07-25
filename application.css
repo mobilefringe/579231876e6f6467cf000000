@@ -30,7 +30,7 @@
     }
 }
 
-.social_icons::after{
+.social_icons:after{
         clear:both;
     }
 
