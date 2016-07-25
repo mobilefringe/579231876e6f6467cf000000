@@ -31,8 +31,9 @@
 }
 
 .social_icons:after{
-        clear:both;
-        content: " ";
+    clear:both;
+    display: table;
+    content: " ";
     }
 
 #social_insta{
