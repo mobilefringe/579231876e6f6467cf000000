@@ -20,7 +20,6 @@
         var banners = getBanners();
         var feature_items = getFeatureList();
         renderBanner('#banner_template','#home_banner',banners);
-        renderFeatureItems('#feature_container','#feature_template', feature_items);
         $('.flexslider').flexslider({
             animation: "fade",
         });
