@@ -10,6 +10,14 @@
         </script>
     </ul>
 </div>
+<div class="feature_items">
+    <div class="feature_item">
+        
+    </div>
+    <div class="feature_item">
+        
+    </div>
+</div>
 <script>
     $(document).ready(function(e){
         init(e);
