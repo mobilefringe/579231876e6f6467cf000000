@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main_menu">
+                <div class="main_menu pull-right">
                     <ul class="main_nav">
                         <li><a href="#">Shopping</a></li>
                         <li><a href="#">Events</a></li>
