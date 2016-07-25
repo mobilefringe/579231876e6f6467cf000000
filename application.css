@@ -16,6 +16,10 @@
     margin-bottom:20px;
 }
 
+.header_social:after{
+    clear:both;
+}
+
 
 .social_icons{
     margin:20px -5px;
@@ -27,9 +31,6 @@
         width:25px;
         height:25px;
         background-size:cover;
-    }
-    &:after{
-        clear:both;
     }
 }
 
