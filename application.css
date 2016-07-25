@@ -23,6 +23,9 @@
 
 #social_insta{
     background-image: url(http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1465242339000/icon_snapchat.png);
+    &:hover{
+        background-image: url(http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1465242360000/icon_snapchat_hover.png);
+    }
 }
 
 
