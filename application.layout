@@ -74,7 +74,7 @@
         {{yield}}
     </section>
     <section id="footer" class="site_footer">
-        <div class="footer_site_map">
+        <div class="footer_site_map main_container">
             <a href="#">About Us</a>
             <a href="#">Leasing</a>
             <a href="#">Media Centre</a>
