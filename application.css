@@ -92,6 +92,42 @@
     }
 }
 
+.flexslider{
+    border:0;
+    margin-bottom: 0
+}
+
+.flex-control-nav{
+    bottom:12px;
+    z-index:9;
+}
+
+.flex-direction-nav a{
+    height:45px;    
+}
+
+.flex-control-paging li a{
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+
+.flex-control-paging li a.flex-active{
+    background: $layout_color;
+}
+
+.banner_image_div{
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: 50%;
+}
+
+.banner_image_li{
+    height:500px;
+    display:block;
+}
+
 
 
 @media(max-width:768px){}
