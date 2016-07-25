@@ -28,7 +28,7 @@
         height:25px;
         background-size:cover;
     }
-    &:after{
+    &::after{
         clear:both;
     }
 }
