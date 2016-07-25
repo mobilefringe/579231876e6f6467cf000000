@@ -50,7 +50,9 @@
     </div>
     
     <div class="site_footer">
-        
+        <div class="footer_site_map">
+            
+        </div>
     </div>
 </div>
 <script>
