@@ -10,12 +10,15 @@
         </script>
     </ul>
 </div>
-<div class="feature_items">
-    <div class="feature_item">
-        a
-    </div>
-    <div class="feature_item">
-        s
+
+<div class="main_container">
+    <div class="feature_items">
+        <div class="feature_item">
+            a
+        </div>
+        <div class="feature_item">
+            s
+        </div>
     </div>
 </div>
 <script>
