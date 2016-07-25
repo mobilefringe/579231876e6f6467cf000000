@@ -28,6 +28,12 @@
         height:25px;
         background-size:cover;
     }
+    div{
+        float:left;
+        margin-right:5px;
+        margin-left:5px;
+        display:block;
+    }
     &:after{
         clear:both;
         display: table;
