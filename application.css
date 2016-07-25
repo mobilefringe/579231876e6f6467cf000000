@@ -13,4 +13,17 @@
 }
 
 
+.social_links{
+    a{
+        display:block;
+        width:25px;
+        height:25px;
+    }
+}
+
+#social_insta{
+    
+}
+
+
 @media(max-width:768px){}
