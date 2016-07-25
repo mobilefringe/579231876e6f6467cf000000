@@ -38,7 +38,11 @@
 </head>
 <body>
     <section id="header" class="header">
-        
+        <div class="row">
+            <div class="col-md-3">
+                <img alt="logo" class="site_logo" src="http://cdn.mallmaverick.com/system/sites/logo_images/000/000/052/original/logo.png?1401998716">
+            </div>
+        </div>
     </section>
     <section id="content" class="yield">
         {{yield}}
