@@ -28,6 +28,9 @@
         height:25px;
         background-size:cover;
     }
+    &:after{
+        clear:both;
+    }
 }
 
 #social_insta{
