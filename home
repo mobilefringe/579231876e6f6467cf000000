@@ -37,8 +37,10 @@
         </div>
     </div>
     
-    <div class="instagram_feed">
-        
+    <div class="insta_feed">
+        <div class="insta_header">
+            
+        </div>
     </div>
 </div>
 <script>
