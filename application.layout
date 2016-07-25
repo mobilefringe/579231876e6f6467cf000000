@@ -57,6 +57,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="clearfix"></div>
                 <div class="main_menu pull-right">
                     <ul class="main_nav">
                         <li><a href="#">Shopping</a></li>
