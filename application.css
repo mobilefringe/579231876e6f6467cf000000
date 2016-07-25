@@ -32,6 +32,7 @@
 
 .social_icons:after{
         clear:both;
+        content: " ";
     }
 
 #social_insta{
