@@ -16,24 +16,24 @@
         <div class="feature_item">
             <div class="feature_items">
                 <div class="feature_item">
-                    <img src="http://placehold.it/230x213" />
+                    <img class="small_feature_item" src="http://placehold.it/230x213" />
                 </div>
                 <div class="feature_item">
-                    <img src="http://placehold.it/480x213" />
+                    <img class="large_feature_item" src="http://placehold.it/480x213" />
                 </div>
             </div>
             <div class="margin_10"></div>
             <div class="feature_items">
                 <div class="feature_item">
-                    <img src="http://placehold.it/480x213" />
+                    <img class="large_feature_item" src="http://placehold.it/480x213" />
                 </div>
                 <div class="feature_item">
-                    <img src="http://placehold.it/230x213" />
+                    <img class="small_feature_item" src="http://placehold.it/230x213" />
                 </div>
             </div>
         </div>
         <div class="feature_item">
-        <img src="http://placehold.it/230x436" />
+        <img class="small_feature_item" src="http://placehold.it/230x436" />
         </div>
     </div>
     
