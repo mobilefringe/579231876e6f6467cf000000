@@ -17,6 +17,7 @@
     margin-left:-5px;
     margin-right:-5px;
     a{
+        float:left;
         margin-right:5px;
         margin-left:5px;
         display:block;
