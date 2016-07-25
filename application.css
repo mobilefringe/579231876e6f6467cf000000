@@ -41,6 +41,13 @@
     }
 }
 
+.newsletter_control{
+    height: 25px;
+    margin: 0;
+    padding: 2px;
+    margin-left: 5px;
+}
+
 #social_insta{
     background-image: url(http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1465242339000/icon_snapchat.png);
     &:hover{
