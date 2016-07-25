@@ -52,7 +52,7 @@
                         <a href="#" id="social_insta"></a>
                         <a href="#" id="social_insta"></a>
                         <div>
-                            <input class="newsletter_control" type="text" placeholder="Join our newsletter" />
+                            <input class="newsletter_control" type="text" placeholder="Join our newsletter!" />
                             <input class="newsletter_submit" type="submit" value="Subscribe" />
                         </div>
                     </div>
