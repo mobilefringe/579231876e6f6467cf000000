@@ -43,7 +43,10 @@
             <hr />
         </div>
         <div id="insta_feed">
-            a
+            <img class="" src="http://placehold.it/230x230" />
+            <img class="" src="http://placehold.it/230x230" />
+            <img class="" src="http://placehold.it/230x230" />
+            <img class="" src="http://placehold.it/230x230" />
         </div>
     </div>
 </div>
