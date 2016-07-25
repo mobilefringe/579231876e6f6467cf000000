@@ -38,7 +38,7 @@
 </head>
 <body>
     <section id="header" class="header">
-        <div class="row site_container">
+        <div class="row main_container">
             <div class="col-md-3">
                 <img alt="logo" class="site_logo" src="http://cdn.mallmaverick.com/system/sites/logo_images/000/000/052/original/logo.png?1401998716">
             </div>
