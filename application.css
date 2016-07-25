@@ -14,7 +14,11 @@
 
 
 .social_icons{
+    margin-left:-5px;
+    margin-right:-5px;
     a{
+        margin-right:5px;
+        margin-left:5px;
         display:block;
         width:25px;
         height:25px;
