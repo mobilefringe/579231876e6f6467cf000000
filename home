@@ -48,6 +48,10 @@
             <img class="feature_item" src="http://placehold.it/230x230" />
         </div>
     </div>
+    
+    <div class="footer">
+        
+    </div>
 </div>
 <script>
     $(document).ready(function(e){
