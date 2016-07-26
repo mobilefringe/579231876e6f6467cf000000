@@ -85,7 +85,7 @@
                 <a href="#">Security</a>
                 <a href="#">Contact Us</a>
             </div>
-            <div class="row">
+            <div class="row footer_privacy">
                 <div class="col-md-3">
                     <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1465241952000/logo_act.png" class="logo_act" alt="Logo ACT">
                 </div>
