@@ -49,8 +49,8 @@
                         <a href="#" id="social_twitter"></a>
                         <a href="#" id="social_insta"></a>
                         <a href="#" id="social_snap"></a>
-                        <a href="#" id="social_insta"></a>
-                        <a href="#" id="social_insta"></a>
+                        <a href="#" id="social_pin"></a>
+                        <a href="#" id="social_yt"></a>
                         <div>
                             <input class="newsletter_control" type="text" placeholder="Join our newsletter!" />
                             <input class="newsletter_submit" type="submit" value="Subscribe" />
