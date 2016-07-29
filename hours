@@ -1,0 +1,55 @@
+<h4 class="hours_heading">HOLIDAY HOURS</h4>
+    <table id="reg_hours_container" class="reg_hours_container">
+        <script id="reg_hours_template" type="x-tmpl-mustache/text">
+            <tr>
+                <td class="hours_left">
+                    <span>
+                        {{day}}
+                    </span>
+                </td>   
+                <td class="hours_right text-right">
+                    <span>
+                        {{h}}
+                    </span>
+                </td>
+            </tr>
+        </script>
+    </table>
+    <br />
+    <h4 class="hours_heading">WE WILL BE OPEN THE FOLLOWING HOLIDAYS</h4>
+    <table id="holiday_hours_container" class="holiday_hours_container">
+        <script id="holiday_hours_template" type="x-tmpl-mustache/text">
+            <tr>
+                <td class="hours_left">
+                    <span>
+                        <strong>{{holiday_name}}</strong><br>
+                        {{formatted_date}}
+                    </span>
+                </td>
+                <td class="hours_right text-right">
+                    <span>
+                        {{h}}
+                    </span>
+                </td>
+            </tr>
+        </script>
+    </table>
+    <br />
+    <h4 class="hours_heading">WE WILL BE CLOSED THE FOLLOWING STATUTORY HOLIDAYS</h4>
+    <table id="closed_hours_container" class="closed_hours_container">
+        <script id="closed_hours_template" type="x-tmpl-mustache/text">
+            <tr>
+                <td class="hours_left">
+                    <span>
+                        <strong>{{holiday_name}}</strong><br>
+                        {{formatted_date}}
+                    </span>
+                </td>
+                <td class="hours_right text-right">
+                    <span>
+                        {{h}}
+                    </span>
+                </td>
+            </tr>
+        </script>
+    </table>
