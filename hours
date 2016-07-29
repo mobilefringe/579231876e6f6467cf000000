@@ -1,4 +1,5 @@
-<h4 class="hours_heading">HOLIDAY HOURS</h4>
+<div class="main_container">
+    <h4 class="hours_heading">HOLIDAY HOURS</h4>
     <table id="reg_hours_container" class="reg_hours_container">
         <script id="reg_hours_template" type="x-tmpl-mustache/text">
             <tr>
@@ -53,7 +54,7 @@
             </tr>
         </script>
     </table>
-    
+</div> 
     
 <script>
     $(document).ready(function(e){
