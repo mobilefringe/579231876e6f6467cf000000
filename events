@@ -13,6 +13,7 @@
                 <div class="custom_right">
                     <h3>{{name}}</h3>
                     <p class="dates">{{dates}}</p>
+                    <div class="custom_desc"></div>
                 </div>
             </div>
         </script>
