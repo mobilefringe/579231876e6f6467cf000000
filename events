@@ -6,7 +6,7 @@
 <div class="main_container margin_30">
     <div id="events_container">
         <script id="events_template" type="x-tmpl-mustache/text">
-            <div class="event_container">
+            <div class="custom_container">
                 <h3>{{name}}</h3>
                 {{dates}}
             </div>
