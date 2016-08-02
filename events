@@ -1,3 +1,8 @@
+<div class="stores_banner">
+    <div class="main_container">
+        <h2>Hours</h2>
+    </div>
+</div>
 <script>
     $(document).ready(function(e){
         init(e);
