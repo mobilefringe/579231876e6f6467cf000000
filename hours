@@ -1,5 +1,7 @@
 <div class="stores_banner">
-    <h2>Hours</h2>
+    <div class="main_container">
+        <h2>Hours</h2>
+    </div>
 </div>
 <div class="main_container">
     <h4 class="hours_heading">HOLIDAY HOURS</h4>
