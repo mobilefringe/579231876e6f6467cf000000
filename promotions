@@ -7,15 +7,7 @@
     <div id="promos_container">
         <script id="promotions_template" type="x-tmpl-mustache/text">
             <div class="promo_container">
-                <div class="custom_left">
-                    <img src="{{event_image_url_abs}}" alt="Event" class="" />
-                </div>
-                <div class="custom_right">
-                    <h3>{{name}}</h3>
-                    <p class="dates">{{dates}}</p>
-                    <div class="custom_desc">{{{rich_description}}}</div>
-                    <a href="/events/{{slug}}" class="read_more"> READ MORE</a>
-                </div>
+                
             </div>
         </script>
     </div>
