@@ -66,9 +66,7 @@ function renderHours(container, template, collection, type){
             }
             if (val.open_time && val.close_time && val.is_closed == false){
                 var open_time = moment(val.open_time);
-                var close_time = moment(val.close_time);
-                val.open_time = convert_hour(open_time);
-                val.close_time = convert_hour(close_time);    
+                var close_time = moment(val.close_time);  
                 val.h = val.open_time+ " - " + val.close_time;
             } else {
                 "Closed";
