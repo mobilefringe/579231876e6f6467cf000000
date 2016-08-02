@@ -128,14 +128,6 @@ function renderEvents(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
-        if (val.eventable_type == "Store") {
-            var store_details = getStoreDetailsByID(val.eventable_id);
-            val.store_detail_btn = store_details.slug ;
-            val.store_name = store_details.name;
-        }
-        else{
-            val.store_name = "Pickering Town Centre";
-        }
         if(val.event_image_url_abs.indexOf('missing.png') >=0){
             val.logo = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
         }
