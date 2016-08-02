@@ -82,7 +82,6 @@ function renderHours(container, template, collection, type){
         $.each( collection , function( key, val ) {
             if (!val.store_id && val.is_holiday == true) {
                 holiday = moment(val.holiday_date);
-                var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                 val.formatted_date = in_my_time_zone(holiday, "MMM DD")
                 if (val.open_time && val.close_time && val.is_closed == false){
                     var open_time = in_my_time_zone(moment(val.open_time), "hh:mm a");
@@ -103,25 +102,10 @@ function renderHours(container, template, collection, type){
     if (type == "closed_hours") {
         $.each( collection , function( key, val ) {
             if (!val.store_id && val.is_holiday == true) {
-                holiday = new Date (val.holiday_date + "T05:00:00Z");
-                var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                val.formatted_date = weekdays[holiday.getDay()]+ " " + get_month(holiday.getMonth()) + " " +holiday.getDate()+ " " + holiday.getFullYear();
-                if (val.open_time && val.close_time && val.is_closed == false){
-                    var open_time = new Date (val.open_time);
-                    var close_time = new Date (val.close_time);
-                    val.open_time = convert_hour(open_time);
-                    val.close_time = convert_hour(close_time);    
-                    if (val.open_time == "0:00 AM"){
-                        val.open_time = "12:00 AM";
-                    }
-                     if (val.close_time == "0:00 AM"){
-                        val.close_time = "12:00 AM";
-                    }
-                    val.h = val.open_time+ " - " + val.close_time;
-                } else {
+                holiday = moment(val.holiday_date);
+                val.formatted_date = in_my_time_zone(holiday, "MMM DD")
+                if (val.open_time && val.close_time && val.is_closed == true){
                     val.h = "Closed";
-                }
-                if (val.h == "Closed"){
                     item_list.push(val);
                 }
             }
