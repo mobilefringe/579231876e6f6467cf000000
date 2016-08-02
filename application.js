@@ -142,8 +142,8 @@ function renderEvents(container, template, collection){
         }
         var show_date = moment(val.show_on_web_date);
         start = moment(val.start_date);
-        end = moment(val.end_date + "T05:00:00Z");
-    
+        end = moment(val.end_date);
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
