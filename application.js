@@ -83,7 +83,7 @@ function renderHours(container, template, collection, type){
             if (!val.store_id && val.is_holiday == true) {
                 holiday = moment(val.holiday_date);
                 var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                val.formatted_date = get_month(holiday.getMonth()) + " " +holiday.getDate()+ ", " + holiday.getFullYear();
+                val.formatted_date = in_my_time_zone(holiday, "MMM DD")
                 if (val.open_time && val.close_time && val.is_closed == false){
                     var open_time = new Date (val.open_time);
                     var close_time = new Date (val.close_time);
