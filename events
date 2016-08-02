@@ -17,9 +17,8 @@
             var published_events = [];
             $.each( events , function( key, val ){
                 today = moment();
-                console.log(val)
                 webDate = moment(val.show_on_web_date)
-                if (today >= webDate) {
+                if (today.tz('America/Toronto') >= webDate.tz('America/Toronto')) {
                     published_events.push(val)
                 } 
             });
