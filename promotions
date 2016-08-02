@@ -9,7 +9,7 @@
             <div class="promo_container">
                 <img class="pull-left" src="http://cdn.mallmaverick.com/system/site_images/photos/000/002/935/original/icon_in.jpg?1403210088">
                 <a href="/store/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
-                <h3 class="">{{name}}</h3>
+                <h3 class="promo_name">{{name}}</h3>
                 <p class="dates">{{dates}}</p>
                 <a href="/promotions/{{slug}}" class="read_more"> READ MORE</a>
             </div>
