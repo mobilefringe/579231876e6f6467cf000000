@@ -1,0 +1,47 @@
+<div class="events_banner">
+    <div class="main_container">
+        <h2>All Events</h2>
+    </div>
+</div>
+<div class="main_container margin_30">
+    <div id="events_container">
+        <script id="events_template" type="x-tmpl-mustache/text">
+            <div class="custom_container">
+                <div class="custom_left">
+                    <img src="{{event_image_url_abs}}" alt="Event" class="" />
+                </div>
+                <div class="custom_right">
+                    <h3>{{name}}</h3>
+                    <p class="dates">{{dates}}</p>
+                    <div class="custom_desc">{{{rich_description}}}</div>
+                    <a href="/events/{{slug}}" class="read_more"> READ MORE</a>
+                </div>
+            </div>
+        </script>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderAll); 
+    });
+    
+    function renderAll(){
+        var events = getEventsList().sortBy(function(o){ return o.start_date });
+            var published_events = [];
+            $.each( events , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz('America/Toronto') >= webDate.tz('America/Toronto')) {
+                    published_events.push(val)
+                } 
+            });
+            if(published_events.length > 0){
+                renderEvents("#events_container","#events_template", published_events);
+            }
+            else{
+                $('#events_container').text("There are currently no events available, please check back again later.")
+            }
+        show_content();
+    }
+</script>
