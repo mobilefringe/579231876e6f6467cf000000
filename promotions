@@ -31,7 +31,7 @@
                 } 
             });
             if(published_events.length > 0){
-                renderPromos("#promos_container","#promotions_template", published_events);
+                renderPromos("#promos_container","#promotions_template", published_promos);
             }
             else{
                 $('#promos_container').text("There are currently no promotions available, please check back again later.")
