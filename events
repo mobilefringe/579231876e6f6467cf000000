@@ -23,7 +23,7 @@
                 } 
             });
             if(published_events.length > 0){
-                renderEvents("#events_container","#jobs_template", published_events);
+                renderEvents("#events_container","#events_template", published_events);
             }
             else{
                 $('#no_events').show()
