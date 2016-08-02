@@ -4,9 +4,9 @@
     </div>
 </div>
 <div class="main_container margin_30">
-    <div id="promotions_container">
+    <div id="promos_container">
         <script id="promotions_template" type="x-tmpl-mustache/text">
-            <div class="custom_container">
+            <div class="promo_container">
                 <div class="custom_left">
                     <img src="{{event_image_url_abs}}" alt="Event" class="" />
                 </div>
