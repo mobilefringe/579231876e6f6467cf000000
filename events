@@ -13,7 +13,21 @@
     });
     
     function renderAll(){
-        
+        var events = getEventsList().sortBy(function(o){ return o.start_date });
+            var published_events = [];
+            $.each( events , function( key, val ){
+                today = new Date();
+                webDate = new Date(val.show_on_web_date)
+                if (today >= webDate) {
+                    published_events.push(val)
+                } 
+            });
+            if(published_events.length > 0){
+                renderEvents("#jobs_container","#jobs_template", published_events);
+            }
+            else{
+                $('#no_events').show()
+            }
         show_content();
     }
 </script>
