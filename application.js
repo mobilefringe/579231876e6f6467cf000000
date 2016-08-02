@@ -140,6 +140,12 @@ function renderEvents(container, template, collection){
         else{
             val.dates = start.format("MMM DD") + " - " + end.format("MMM DD")
         }
+        if(val.description.length > 50){
+            val.description_short = val.description.substring(0,50) + "...";
+        }
+        else{
+            val.description_short = val.description;
+        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
