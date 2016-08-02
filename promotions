@@ -23,7 +23,7 @@
     function renderAll(){
         var promos = getPromotionsList().sortBy(function(o){ return o.start_date });
             var published_events = [];
-            $.each( events , function( key, val ){
+            $.each( promos , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
                 if (today.tz('America/Toronto') >= webDate.tz('America/Toronto')) {
