@@ -143,8 +143,9 @@ function renderEvents(container, template, collection){
         var show_date = moment(val.show_on_web_date);
         start = moment(val.start_date);
         end = moment(val.end_date);
-        console.log(start.format("DMY"))
-        console.log(end.format("DMY"))
+        if (start.format("DMY") == end.format("DMY")){
+            val.dates = start.format("MMM DD")
+        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
