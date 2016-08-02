@@ -28,8 +28,7 @@
             <tr>
                 <td class="hours_left">
                     <span>
-                        <strong>{{holiday_name}}</strong><br>
-                        {{formatted_date}}
+                        {{holiday_name}}, {{formatted_date}}
                     </span>
                 </td>
                 <td class="hours_right text-right">
