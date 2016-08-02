@@ -12,6 +12,9 @@
                 <h3 class="promo_name">{{name}}</h3>
                 <p class="dates">{{dates}}</p>
                 <a href="/promotions/{{slug}}" class="read_more"> READ MORE</a>
+                <div class="pull-right">
+                    <img src="{{image_url}}" alt="Promotion" class="" />
+                </div>
             </div>
         </script>
     </div>
