@@ -16,7 +16,7 @@
         var events = getEventsList().sortBy(function(o){ return o.start_date });
             var published_events = [];
             $.each( events , function( key, val ){
-                today = new Date();
+                today = moment();
                 webDate = new Date(val.show_on_web_date)
                 if (today >= webDate) {
                     published_events.push(val)
