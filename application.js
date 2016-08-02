@@ -87,10 +87,6 @@ function renderHours(container, template, collection, type){
                     var open_time = in_my_time_zone(moment(val.open_time), "hh:mm a");
                     var close_time = in_my_time_zone(moment(val.close_time), "hh:mm a");
                     val.h = open_time + " - " + close_time;   
-                } else {
-                    val.h = "Closed";
-                }
-                if (val.h != "Closed"){
                     item_list.push(val);
                 }
             }
