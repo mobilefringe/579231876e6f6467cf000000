@@ -30,7 +30,7 @@
                     published_promos.push(val)
                 } 
             });
-            if(published_events.length > 0){
+            if(published_promos.length > 0){
                 renderPromos("#promos_container","#promotions_template", published_promos);
             }
             else{
