@@ -158,6 +158,12 @@ function renderPromos(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
+        if (val.promotionable_type == "Store") {
+            var store_details = getStoreDetailsByID(val.promotionable_id);
+            val.store_detail_btn = store_details.slug ;
+            val.store_name = store_details.name;
+        }
+        
         if(val.promo_image_url_abs.indexOf('missing.png') >=0){
             val.logo = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
         }
