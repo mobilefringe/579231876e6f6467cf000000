@@ -99,3 +99,11 @@ function get_month (id){
     }
     return month;
 }
+
+
+function in_my_time_zone(hour, format){
+    return hour.tz('America/Toronto').format(format)
+}
+
+
+
