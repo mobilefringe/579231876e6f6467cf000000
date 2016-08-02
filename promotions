@@ -4,7 +4,7 @@
     </div>
 </div>
 <div class="main_container margin_30">
-    <div id="events_container">
+    <div id="promotions_container">
         <script id="events_template" type="x-tmpl-mustache/text">
             <div class="custom_container">
                 <div class="custom_left">
