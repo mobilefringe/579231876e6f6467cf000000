@@ -8,7 +8,7 @@
         <script id="events_template" type="x-tmpl-mustache/text">
             <div class="custom_container">
                 <div class="custom_left">
-                    <img src="{{logo}}" alt="Event" class="" />
+                    <img src="{{event_image_url_abs}}" alt="Event" class="" />
                 </div>
                 <div class="custom_right">
                     <h3>{{name}}</h3>
