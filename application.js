@@ -146,6 +146,9 @@ function renderEvents(container, template, collection){
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM DD")
         }
+        else{
+            val.dates = start.format("MMM DD") + " - " + end.format("MMM DD")
+        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
