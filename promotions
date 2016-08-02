@@ -5,7 +5,7 @@
 </div>
 <div class="main_container margin_30">
     <div id="promotions_container">
-        <script id="events_template" type="x-tmpl-mustache/text">
+        <script id="promotions_template" type="x-tmpl-mustache/text">
             <div class="custom_container">
                 <div class="custom_left">
                     <img src="{{event_image_url_abs}}" alt="Event" class="" />
