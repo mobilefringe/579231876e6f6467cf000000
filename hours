@@ -3,7 +3,7 @@
         <h2>Hours</h2>
     </div>
 </div>
-<div class="main_container inner_container">
+<div class="main_container">
     <h4 class="hours_heading">HOLIDAY HOURS</h4>
     <table id="reg_hours_container" class="hours_container">
         <script id="reg_hours_template" type="x-tmpl-mustache/text">
