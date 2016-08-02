@@ -7,7 +7,10 @@
     <div id="promos_container">
         <script id="promotions_template" type="x-tmpl-mustache/text">
             <div class="promo_container">
-                
+                <h3>{{name}}</h3>
+                <p class="dates">{{dates}}</p>
+                <div class="custom_desc">{{{rich_description}}}</div>
+                <a href="/promotions/{{slug}}" class="read_more"> READ MORE</a>
             </div>
         </script>
     </div>
