@@ -141,7 +141,7 @@ function renderEvents(container, template, collection){
             val.dates = start.format("MMM DD") + " - " + end.format("MMM DD")
         }
         if(val.description.length > 100){
-            val.description_short = val.description.substring(0,50) + "...";
+            val.description_short = val.description.substring(0,100) + "...";
         }
         else{
             val.description_short = val.description;
