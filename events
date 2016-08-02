@@ -10,8 +10,10 @@
                 <div class="custom_left">
                     <img src="{{logo}}" alt="Event" class="" />
                 </div>
-                <h3>{{name}}</h3>
-                {{dates}}
+                <div class="custom_right">
+                    <h3>{{name}}</h3>
+                    {{dates}}
+                </div>
             </div>
         </script>
     </div>
