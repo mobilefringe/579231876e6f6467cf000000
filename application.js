@@ -164,7 +164,7 @@ function renderPromos(container, template, collection){
             val.store_name = store_details.name;
         }
         
-        if(val.promo_image_url_abs.indexOf('missing.png') >=0){
+        if(val.promo_image_url_abs.indexOf('missing.png') >= 0){
             val.logo = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
         }
         var show_date = moment(val.show_on_web_date);
