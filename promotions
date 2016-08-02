@@ -42,6 +42,7 @@
                 $('#promos_container').text("There are currently no promotions available, please check back again later.")
             }
         show_content();
-        
+        $(".promo_container:nth-child(4n-8)").css("background", "#e1f4fd");
+        $(".promo_container:nth-child(4n-9)").css("background", "#e1f4fd");
     }
 </script>
