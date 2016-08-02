@@ -7,6 +7,9 @@
     <div id="events_container">
         <script id="events_template" type="x-tmpl-mustache/text">
             <div class="custom_container">
+                <div class="custom_left">
+                    <img src="{{logo}}" alt="Event" class="" />
+                </div>
                 <h3>{{name}}</h3>
                 {{dates}}
             </div>
