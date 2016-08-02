@@ -5,7 +5,8 @@
 </div>
 <div class="main_container margin_30">
     <div id="events_container">
-        
+        <script id="events_template" type="x-tmpl-mustache/text">
+        </script>
     </div>
 </div>
 <script>
