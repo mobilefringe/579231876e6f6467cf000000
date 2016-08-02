@@ -13,7 +13,7 @@
                 <div class="custom_right">
                     <h3>{{name}}</h3>
                     <p class="dates">{{dates}}</p>
-                    <div class="custom_desc">{{{description_short}}}</div>
+                    <div class="custom_desc">{{{rich_description}}}</div>
                 </div>
             </div>
         </script>
