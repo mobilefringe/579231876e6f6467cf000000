@@ -144,11 +144,6 @@ function renderEvents(container, template, collection){
         start = moment(val.start_date);
         end = moment(val.end_date + "T05:00:00Z");
     
-        if (start.toDateString() == end.toDateString()) {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-        } else {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
-        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
