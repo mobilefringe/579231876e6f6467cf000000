@@ -26,7 +26,7 @@
                 renderEvents("#events_container","#events_template", published_events);
             }
             else{
-                $('#no_events').show()
+                $('#events_container').text("There are currently no events available, please check back again later.")
             }
         show_content();
     }
