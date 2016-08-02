@@ -119,3 +119,46 @@ function renderHours(container, template, collection, type){
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
+
+
+
+function renderEvents(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    $.each( collection , function( key, val ) {
+        if (val.eventable_type == "Store") {
+            var store_details = getStoreDetailsByID(val.eventable_id);
+            val.store_detail_btn = store_details.slug ;
+            val.store_name = store_details.name;
+        }
+        else{
+            val.store_name = "Pickering Town Centre";
+            val.image_url = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
+        }
+        if(val.event_image_url_abs.indexOf('missing.png') < 0){
+            val.logo = val.event_image_url_abs;
+        }
+        else{
+            if(val.image_url.indexOf('missing.png') < 0){
+                val.logo = val.image_url;
+            }
+            else{
+                val.logo = "http://assets.codecloudapp.com/sites/562a661e6e6f64426b000000/image/jpeg/1446753494000/Dixie_default.jpg";
+            }
+        }
+        var show_date = new Date (val.show_on_web_date + "T05:00:00Z");
+        start = new Date (val.start_date + "T05:00:00Z");
+        end = new Date (val.end_date + "T05:00:00Z");
+    
+        if (start.toDateString() == end.toDateString()) {
+            val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
+        } else {
+            val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+        }
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    $(container).html(item_rendered.join(''));
+}
