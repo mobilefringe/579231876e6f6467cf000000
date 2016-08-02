@@ -1,3 +1,6 @@
+<div class="stores_banner">
+    <h2>Hours</h2>
+</div>
 <div class="main_container">
     <h4 class="hours_heading">HOLIDAY HOURS</h4>
     <table id="reg_hours_container" class="reg_hours_container">
