@@ -152,6 +152,36 @@ function renderEvents(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
+function renderPromos(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    $.each( collection , function( key, val ) {
+        if(val.event_image_url_abs.indexOf('missing.png') >=0){
+            val.logo = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
+        }
+        var show_date = moment(val.show_on_web_date);
+        start = moment(val.start_date);
+        end = moment(val.end_date);
+        if (start.format("DMY") == end.format("DMY")){
+            val.dates = start.format("MMM DD")
+        }
+        else{
+            val.dates = start.format("MMM DD") + " - " + end.format("MMM DD")
+        }
+        if(val.rich_description.length > 100){
+            val.description_short = val.rich_description.substring(0,100) + "...";
+        }
+        else{
+            val.description_short = val.rich_description;
+        }
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    $(container).html(item_rendered.join(''));
+}
+
 
 
 
