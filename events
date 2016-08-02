@@ -12,7 +12,7 @@
                 </div>
                 <div class="custom_right">
                     <h3>{{name}}</h3>
-                    {{dates}}
+                    <p class="dates">{{dates}}</p>
                 </div>
             </div>
         </script>
