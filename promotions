@@ -31,10 +31,10 @@
                 } 
             });
             if(published_events.length > 0){
-                renderPromos("#events_container","#events_template", published_events);
+                renderPromos("#promos_container","#promotions_template", published_events);
             }
             else{
-                $('#events_container').text("There are currently no events available, please check back again later.")
+                $('#promos_container').text("There are currently no events available, please check back again later.")
             }
         show_content();
     }
