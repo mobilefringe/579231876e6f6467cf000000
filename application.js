@@ -136,7 +136,7 @@ function renderEvents(container, template, collection){
         else{
             val.store_name = "Pickering Town Centre";
         }
-        if(val.event_image_url_abs.indexOf('missing.png') < 0){
+        if(val.event_image_url_abs.indexOf('missing.png') == -1){
             val.logo = "http://assets.codecloudapp.com/sites/562a661e6e6f64426b000000/image/jpeg/1446753494000/Dixie_default.jpg";
         }
         var show_date = moment(val.show_on_web_date);
