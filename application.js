@@ -140,7 +140,7 @@ function renderEvents(container, template, collection){
         if(val.event_image_url_abs.indexOf('missing.png') < 0){
             val.logo = "http://assets.codecloudapp.com/sites/562a661e6e6f64426b000000/image/jpeg/1446753494000/Dixie_default.jpg";
         }
-        var show_date = new Date (val.show_on_web_date + "T05:00:00Z");
+        var show_date = moment(val.show_on_web_date);
         start = new Date (val.start_date + "T05:00:00Z");
         end = new Date (val.end_date + "T05:00:00Z");
     
