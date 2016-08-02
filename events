@@ -7,6 +7,7 @@
     <div id="events_container">
         <script id="events_template" type="x-tmpl-mustache/text">
             <h3>{{name}}</h3>
+            {{dates}}
         </script>
     </div>
 </div>
