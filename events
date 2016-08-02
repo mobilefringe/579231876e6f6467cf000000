@@ -4,7 +4,9 @@
     </div>
 </div>
 <div class="main_container margin_30">
-    
+    <div id="events_container">
+        
+    </div>
 </div>
 <script>
     $(document).ready(function(e){
