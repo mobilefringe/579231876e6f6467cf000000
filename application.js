@@ -65,7 +65,7 @@ function renderHours(container, template, collection, type){
                 
             }
             if (val.open_time && val.close_time && val.is_closed == false){
-                var open_time = in_my_time_zone(moment(val.open_time), "HH mm a");
+                var open_time = in_my_time_zone(moment(val.open_time), "HH:mm a");
                 var close_time = moment(val.close_time);
                 val.h = val.open_time+ " - " + val.close_time;
             } else {
