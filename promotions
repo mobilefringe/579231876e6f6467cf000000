@@ -34,7 +34,7 @@
                 renderPromos("#promos_container","#promotions_template", published_events);
             }
             else{
-                $('#promos_container').text("There are currently no events available, please check back again later.")
+                $('#promos_container').text("There are currently no promotions available, please check back again later.")
             }
         show_content();
     }
