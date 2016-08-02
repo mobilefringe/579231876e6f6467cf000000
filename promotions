@@ -22,16 +22,16 @@
     
     function renderAll(){
         var promos = getPromotionsList().sortBy(function(o){ return o.start_date });
-            var published_events = [];
+            var published_promos = [];
             $.each( promos , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
                 if (today.tz('America/Toronto') >= webDate.tz('America/Toronto')) {
-                    published_events.push(val)
+                    published_promos.push(val)
                 } 
             });
             if(published_events.length > 0){
-                renderEvents("#events_container","#events_template", published_events);
+                renderPromos("#events_container","#events_template", published_events);
             }
             else{
                 $('#events_container').text("There are currently no events available, please check back again later.")
