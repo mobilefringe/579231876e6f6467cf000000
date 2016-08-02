@@ -13,7 +13,7 @@
                 <p class="dates">{{dates}}</p>
                 <a href="/promotions/{{slug}}" class="read_more"> READ MORE</a>
                 <div class="pull-right">
-                    <img src="{{image_url}}" alt="Promotion" class="" />
+                    <img src="{{promo_image_url_abs}}" alt="Promotion" class="" />
                 </div>
             </div>
         </script>
