@@ -144,7 +144,7 @@ function renderEvents(container, template, collection){
         start = moment(val.start_date);
         end = moment(val.end_date);
         console.log(start.format("DM"))
-        console.log(end)
+        console.log(end.format("DM"))
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
