@@ -196,14 +196,8 @@ function renderPromoDetails(container, template, collection){
     $.each( item_list , function( key, val ) {
         if (val.promotionable_type == "Store") {
             var store_details = getStoreDetailsByID(val.promotionable_id);
-            val.store_detail_btn = store_details.slug;
+            val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
-            if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "http://assets.codecloudapp.com/sites/562a661e6e6f64426b000000/image/jpeg/1446753494000/Dixie_default.jpg";
-            }
-            else{
-                val.image_url = store_details.store_front_url_abs;
-            }
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > -1){
