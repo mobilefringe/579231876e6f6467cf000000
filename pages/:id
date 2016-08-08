@@ -25,7 +25,7 @@
             $('#mm_page_content').html(data.body);
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
-                $("#404_msg").fadeIn("fast");
+                $("#mm_page_content").html("Sorry we can't find the page you're looking for");
             }
         }); 
         show_content();
