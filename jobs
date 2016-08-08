@@ -6,6 +6,8 @@
 <div class="main_container margin_30" id="jobs_container">
      <div class="row">
          <script id="jobs_template" type="x-tmpl-mustache/text">
+            <div class="col-md-6">
+            </div>
          </script>
      </div>
 </div>
