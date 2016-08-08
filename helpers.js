@@ -129,6 +129,7 @@ function show_cat_stores(){
         $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
     });
+    
     $('.show_all_stores').click(function(e){
         console.log("here")
         $('#store_list_container, #store_list_container2').removeClass("full_width");
