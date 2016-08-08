@@ -11,10 +11,10 @@
                 <a href="/store/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
                 <div class="job_details">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <h3 class="job_name">{{name}}</h3>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <p class="dates">{{job_type}}</p>
                         </div>
                         <div class="col-md-3">
