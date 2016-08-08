@@ -3,8 +3,8 @@
         <h2>Careers</h2>
     </div>
 </div>
-<div class="main_container margin_30" id="jobs_container">
-     <div class="row">
+<div class="main_container margin_30" >
+     <div class="row" id="jobs_container">
          <script id="jobs_template" type="x-tmpl-mustache/text">
             <div class="col-md-6">
                 <img class="pull-left" src="http://cdn.mallmaverick.com/system/site_images/photos/000/002/935/original/icon_in.jpg?1403210088">
