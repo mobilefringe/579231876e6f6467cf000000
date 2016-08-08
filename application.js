@@ -291,14 +291,10 @@ function renderJobDetails(container, template, collection){
     Mustache.parse(template_html); 
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
-        if (val.eventable_type == "Store") {
-            var store_details = getStoreDetailsByID(val.eventable_id);
+        if (val.jobable_type == "Store") {
+            var store_details = getStoreDetailsByID(val.jobable_id);
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
-        }
-        
-        if(val.event_image_url_abs.indexOf('missing.png') > -1){
-            val.event_image_show="display:none";
         }
         
         var show_date = moment(val.show_on_web_date);
