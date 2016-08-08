@@ -130,6 +130,7 @@ function show_cat_stores(){
         e.preventDefault();
     });
     $('.show_all_stores').click(function(e){
+        console.log("here")
         $('#store_list_container, #store_list_container2').removeClass("full_width");
         $('.active_cat').removeClass('active_cat');
         $(this).addClass('active_cat');
