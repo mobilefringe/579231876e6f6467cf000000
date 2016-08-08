@@ -297,6 +297,13 @@ function renderJobDetails(container, template, collection){
             val.store_name = store_details.name;
         }
         
+        if(val.phone.length > 0){
+            val.phone_show = "display:none";
+        }
+        else{
+            val.phone_show = "display:block";
+        }
+        
         var show_date = moment(val.show_on_web_date);
         start = moment(val.start_date);
         end = moment(val.end_date);
