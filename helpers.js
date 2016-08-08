@@ -105,5 +105,8 @@ function in_my_time_zone(hour, format){
     return hour.tz('America/Toronto').format(format)
 }
 
+function isInt(value) {
+    return !isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10));
+}
 
 
