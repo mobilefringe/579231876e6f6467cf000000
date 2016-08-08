@@ -1,0 +1,33 @@
+<div class="pages_banner">
+    <div class="main_container">
+        <h2 id="mm_page_title"></h2>
+    </div>
+</div>
+<div class="main_container margin_30">
+    <div id="mm_page_content" class="details_desc"></div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        
+        prefix = get_prefix();
+        $('#top_banner').addClass(slug)
+        var pages_json = prefix+"/pages/" + slug + ".json"
+        $.getJSON(pages_json).done(function(data) {
+            $('#mm_page_title').html(data.title);
+            $('#mm_page_content').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#mm_page_content").html("Sorry we can't find the page you're looking for.");
+            }
+        }); 
+        show_content();
+    }
+</script>
