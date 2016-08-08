@@ -5,6 +5,7 @@
 </div>
 <div class="main_container margin_30" id="jobs_container">
      <div class="row">
-         
+         <script id="jobs_template" type="x-tmpl-mustache/text">
+         </script>
      </div>
 </div>
