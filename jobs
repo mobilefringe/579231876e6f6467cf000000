@@ -15,7 +15,7 @@
                             <h3 class="job_name">{{name}}</h3>
                         </div>
                         <div class="col-md-3">
-                            <p class="dates">{{dates}}</p>
+                            <p class="dates">{{job_type}}</p>
                         </div>
                         <div class="col-md-3">
                         </div>
