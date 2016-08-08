@@ -219,6 +219,42 @@ function renderPromoDetails(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
+function renderEventDetails(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    item_list.push(collection);
+    $.each( item_list , function( key, val ) {
+        if (val.promotionable_type == "Store") {
+            var store_details = getStoreDetailsByID(val.promotionable_id);
+            val.store_detail_btn = store_details.slug ;
+            val.store_name = store_details.name;
+        }
+        
+        if(val.promo_image_url_abs.indexOf('missing.png') > -1){
+            val.promo_image_show="display:none";
+        }
+        
+        var show_date = moment(val.show_on_web_date);
+        start = moment(val.start_date);
+        end = moment(val.end_date);
+        if (start.format("DMY") == end.format("DMY")){
+            val.dates = start.format("MMM DD")
+        }
+        else{
+            val.dates = start.format("MMM DD") + " - " + end.format("MMM DD")
+        }
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    $(container).html(item_rendered.join(''));
+}
+
+
+
+
+
 
 
 
