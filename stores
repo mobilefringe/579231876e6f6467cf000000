@@ -55,10 +55,10 @@
                     <div class="row cats_row open_{{data_initial}}" data-cat="{{cat_list}}">
                         <div class="col-md-12">
                             <p class="store_list_name">
-                            <a href="/stores/{{slug}}">{{name}}</a>
-                            <span style="{{new_store}}" class="pull-right new_store">NEW</span>
-                            <span style="{{promo_exist}}" class="promo_exist pull-right">PROMOTION</span>
-                        </p>
+                                <a href="/stores/{{slug}}">{{name}}</a>
+                                <span style="{{new_store}}" class="pull-right new_store">NEW</span>
+                                <span style="{{promo_exist}}" class="promo_exist pull-right">PROMOTION</span>
+                            </p>
                         </div>
                     </div>
                 </script>
