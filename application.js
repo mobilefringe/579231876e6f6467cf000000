@@ -295,6 +295,7 @@ function renderJobDetails(container, template, collection){
             var store_details = getStoreDetailsByID(val.jobable_id);
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
+            val.phone_number = store_details.phone_number
         }
         console.log(val)
         if(val.phone_number.length > 0){
