@@ -232,8 +232,8 @@ function renderEventDetails(container, template, collection){
             val.store_name = store_details.name;
         }
         
-        if(val.promo_image_url_abs.indexOf('missing.png') > -1){
-            val.promo_image_show="display:none";
+        if(val.event_image_url_abs.indexOf('missing.png') > -1){
+            val.event_image_show="display:none";
         }
         
         var show_date = moment(val.show_on_web_date);
