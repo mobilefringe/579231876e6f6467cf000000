@@ -12,7 +12,7 @@
             <br />
             <strong>SPECIALITY LEASING</strong>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
-            <a href="#" class="download_leasing">DOWNLOAD PDF</a>
+            <a href="#" class="download_btn">DOWNLOAD PDF</a>
         </div>
         <div class="col-md-6">
             <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1470685073000/img_leasing.jpg" class="full_width" alt="leasing banner">
