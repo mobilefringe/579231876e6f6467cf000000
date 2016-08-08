@@ -15,7 +15,7 @@
                             <h3 class="job_name">{{name}}</h3>
                         </div>
                         <div class="col-md-4">
-                            <p class="dates">{{job_type}}</p>
+                            <p class="no_margin read_more">{{job_type}}</p>
                         </div>
                         <div class="col-md-3">
                             <a href="/jobs/{{slug}}" class="no_margin read_more"> READ MORE</a>
