@@ -100,7 +100,8 @@
         var categories = getStoreCategories();
         renderGeneral('#category_container, #category_container2', '#category_template', categories);
         show_content();
-        show_cat_stores();
         $('#category_container, #category_container2').prepend('<li href="#" class="show_all_stores">All</li>');
+        show_cat_stores();
+        
     }
 </script>
