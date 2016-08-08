@@ -70,7 +70,7 @@
                     <div class="col-md-12">
                         <p class="store_list_name">
                             <a href="/stores/{{slug}}">{{name}}</a>
-                            <span style="{{new_store}}" class="pull-right">
+                            <span style="{{new_store}}" class="pull-right new_store">NEW</span>
                             <i style="{{promo_exist}}" class="fa fa-tags promo_exist pull-right" aria-hidden="true"></i>
                         </p>
                     </div>
