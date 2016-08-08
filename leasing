@@ -1,10 +1,17 @@
 <div class="pages_banner">
     <div class="main_container">
-        <h2 id="mm_page_title">Leasing</h2>
+        <h2>Leasing</h2>
     </div>
 </div>
 <div class="main_container margin_30">
-    <div id="mm_page_content" class="details_desc"></div>
+    <div class="row">
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-6">
+            
+        </div>
+    </div>
 </div>
 
 <script>
