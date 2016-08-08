@@ -1,6 +1,6 @@
 <div class="pages_banner">
     <div class="main_container">
-        <h2 id="page_tile"></h2>
+        <h2 id="page_title"></h2>
     </div>
 </div>
 <div class="main_container margin_30">
