@@ -4,7 +4,7 @@
     </div>
 </div>
 
-<div class="main_container mobile_padding">
+<div class="main_container mobile_padding margin_30">
     <div class="visible_phone position_relative">
         <a class="mobile_header" href="/map">Center Map</a>
         <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
