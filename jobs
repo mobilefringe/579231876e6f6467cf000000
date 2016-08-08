@@ -35,8 +35,7 @@
             $('#no_jobs').hide()
         }
         else{
-            $('#events_header').click();
-            $('#events_header').find('i').toggleClass('fa-chevron-down fa-chevron-up');
+            $('#jobs_container').html("No jobs listed at the moment. Please check back later.")
         }
         show_content();
     }
