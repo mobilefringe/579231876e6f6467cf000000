@@ -68,7 +68,7 @@
         <div id="store_list_container2" class="col-md-6">
             <script id="store_list_template2" type="x-tmpl-mustache/text">
                 <span style="{{show}}" class="store_initial open_stores" data-initial="{{data_initial}}">
-                    {{initial}}
+                    <span>{{initial}}</span>
                 </span>
                 <div class="row cats_row open_{{data_initial}}" data-cat="{{cat_list}}">
                     <div class="col-md-12">
