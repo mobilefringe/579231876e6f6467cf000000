@@ -179,3 +179,29 @@ function load_map(reg, store_details, h, w){
     
 }
 
+
+function drop_pin(id, map){
+    console.log(map)
+    var coords = map.get_coords(id);
+    var height = parseInt(coords["height"])
+    var width = parseInt(coords["width"])
+    var x_offset = (parseInt(width) / 2);
+    var y_offset = (parseInt(height) /2);
+    
+    map.setMarks([{ xy: [coords["x"] - 15 + x_offset, coords["y"] - 55 + y_offset],
+              attrs: {
+                        src:  'http://assets.codecloudapp.com/sites/570d369d6e6f643d60030000/image/png/1463000912000/pin2.png'     // image for marker
+                      }
+        }
+        ])
+    map.setViewBox(id);
+    map.selectRegion(id);
+    $('#btnZoomIn').click()
+    $('#btnZoomIn').click()
+    $('#btnZoomIn').click()
+    $('#btnZoomIn').click()
+    $('#btnZoomIn').click()
+    $('#btnZoomIn').click()
+    $('#btnZoomIn').click()
+}
+
