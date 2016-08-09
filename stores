@@ -35,7 +35,7 @@
     </div>
     <div class="row content_container">
         <div class="col-md-12">
-            <span class="store_initial hidden_now" id="cat_name"></span>
+            <span class="store_initial hidden_now" id="cat_name"><span></span></span>
         </div>
         <div class="col-md-6">
             <div id="numbered_store_list_container" class="numbers_exist">
@@ -50,7 +50,7 @@
             <div id="store_list_container">
                 <script id="store_list_template" type="x-tmpl-mustache/text">
                     <span style="{{show}}" class="store_initial open_stores" data-initial="{{data_initial}}">
-                        {{initial}}
+                        <span>{{initial}}</span>
                     </span>
                     <div class="row cats_row open_{{data_initial}}" data-cat="{{cat_list}}">
                         <div class="col-md-12">
