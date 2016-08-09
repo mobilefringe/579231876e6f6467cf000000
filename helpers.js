@@ -161,6 +161,8 @@ function load_map(reg, store_details, h, w){
         source: getSVGMapURL(),
         colors: {stroke: '#aaa', hover: 0},
         disableAll: true,
+        height:h,
+        width:w,
         regions: reg,
         tooltipsMode:'custom',
         loadingText: "loading...",
