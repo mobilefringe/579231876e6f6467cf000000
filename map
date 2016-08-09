@@ -3,7 +3,7 @@
         <h4 class="header_banner_heading">Center Map</h4>
     </div>
 </div>
-<div class="main_container mobile_padding">
+<div class="main_container margin_30">
     <div class="row">
         <div class="col-md-12">
             <div class="" id="mapsvg"></div>
