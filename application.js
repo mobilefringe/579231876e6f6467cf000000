@@ -416,7 +416,7 @@ function renderStoreDetails(container, template, collection){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = site_json.default_image;
+            val.alt_store_front_url = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png"
             // val.show_main_image="display:none"
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
