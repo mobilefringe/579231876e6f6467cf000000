@@ -423,7 +423,12 @@ function renderStoreDetails(container, template, collection){
         }
         
         val.categories_list = getCategoriesNamesByStoreSlug(val.slug)
-        
+        if (val.categories.length > 1){
+            val.categories_header = "Categories:"
+        }
+        if (val.categories.length == 1){
+            val.categories_header = "Category:"
+        }
         if (val.website != null && val.website.length > 0){
             val.show = "display:block";
         }
