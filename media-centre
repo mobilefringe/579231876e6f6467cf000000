@@ -6,6 +6,9 @@
 <div class="main_container margin_30">
     <div class="row">
         <div class="col-md-6">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
         </div>
         <div class="col-md-6">
             <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1470685095000/img_mediacentre.jpg" class="full_width" alt="leasing banner">
