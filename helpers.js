@@ -111,3 +111,24 @@ function drop_pin(id, map){
     $('#btnZoomIn').click()
 }
 
+function init_map(reg, h, w){
+    map = $('#mapsvg').mapSvg({
+        source: getSVGMapURL(),
+        colors: {stroke: '#aaa', hover: '#ffbe1d'},
+        disableAll: true,
+        height:h,
+        width:w,
+        regions: reg,
+        tooltipsMode:'custom',
+        loadingText: "loading...",
+        zoom: true,
+        zoomButtons: {'show': true,'location': 'right' },
+        pan:true,
+        panLimit:true,
+        cursor:'pointer',
+        responsive:true,
+        zoomLimit: [0,10],
+    });
+    
+    
+}
