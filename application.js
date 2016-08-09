@@ -422,6 +422,8 @@ function renderStoreDetails(container, template, collection){
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
         
+        val.categories_list = getCategoriesNamesByStoreSlug(val.slug)
+        
         if (val.website != null && val.website.length > 0){
             val.show = "display:block";
         }
