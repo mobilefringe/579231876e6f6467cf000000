@@ -11,8 +11,8 @@
             </p>
             <div class="row">
                 <div class="col-md-6">
-                    <a href="/media-coverage" class="media_centre_link">MEDIA COVERAGE</a>
-                    <a href="#" class="media_centre_link">PHOTO GALLERY</a>
+                    <a href="/media-centre/media-coverage" class="media_centre_link">MEDIA COVERAGE</a>
+                    <a href="/media-centre/photo-gallery" class="media_centre_link">PHOTO GALLERY</a>
                 </div>
             </div>
         </div>
