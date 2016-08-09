@@ -423,7 +423,6 @@ function renderStoreDetails(container, template, collection){
         }
         
         val.categories_list = getCategoriesNamesByStoreSlug(val.slug)
-        console.log(val.categories.length)
         if (val.categories.length > 1){
             val.categories_header = "Categories:"
         }
