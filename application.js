@@ -408,7 +408,64 @@ function renderGeneral(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-
+function renderStoreDetails(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    item_list.push(collection);
+    $.each( item_list , function( key, val ) {
+        if ((val.store_front_url).indexOf('missing.png') > -1){
+            val.alt_store_front_url = site_json.default_image;
+            // val.show_main_image="display:none"
+        } else {
+            val.alt_store_front_url = getImageURL(val.store_front_url); 
+        }
+        
+        if (val.website != null && val.website.length > 0){
+            val.show = "display:block";
+        }
+        else{
+            val.show = "display:none";
+        }
+        if (val.phone != null && val.phone.length > 0){
+            val.phone_show = "display:block";
+        }
+        else{
+            val.phone_show = "display:none";
+        }
+        
+        if (val.twitter != null && val.twitter.length > 0){
+            val.twitter_show = "display:inline-block";
+        }
+        else{
+            val.twitter_show = "display:none";
+        }
+        
+        if((val.twitter == null || val.twitter == "") && (val.facebook == "" || val.facebook == null)){
+            val.hide_social = "display:none;";
+        }
+        if (val.facebook != null && val.facebook.length > 0){
+            val.facebook_show = "display:inline-block";
+        }
+        else{
+            val.facebook_show = "display:none";
+        }
+        if (val.unit != null && val.unit.length > 0){
+            val.address_show = "display:inline-block";
+        }
+        else{
+            val.address_show = "display:none";
+        }
+        val.map_x_coordinate = val.x_coordinate - 19;
+        val.map_y_coordinate = val.y_coordinate - 58;
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+    });
+    
+    $(container).show();
+    $(container).html(item_rendered.join(''));
+}
 
 
 
