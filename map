@@ -6,6 +6,10 @@
 <div class="main_container margin_30">
     <div class="row">
         <div class="col-md-12">
+            <h3 class="download_map">
+                <i class="fa fa-print"></i>
+                <a target="_blank" href="http://cdn.mallmaverick.com/system/site_images/photos/000/016/776/original/PTC_Printable_Map_Winter.pdf?1455125094">Printable Store Map</a>
+            </h3>
             <div class="" id="mapsvg"></div>
         </div>
     </div>
