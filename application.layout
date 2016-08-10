@@ -156,7 +156,7 @@
         {{yield}}
     </section>
     <section id="footer" class="site_footer">
-        <div class="main_container">
+        <div class="main_container hidden_phone">
             <div class="footer_site_map">
                 <a href="#">About Us</a>
                 <a href="#">Leasing</a>
