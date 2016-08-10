@@ -17,7 +17,7 @@ function show_content(){
         e.preventDefault();
         console.log($(this).next())
         $(this).next().slideToggle();
-    })
+    });
 }
 
 
