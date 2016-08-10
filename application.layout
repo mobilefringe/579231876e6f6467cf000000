@@ -45,9 +45,7 @@
                 <a href="/">
                     <img alt="logo" class="site_logo" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png">
                 </a>
-                <a class="open_menu">
-                    
-                </a>
+                <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1470851965000/menu.png" class="open_menu" alt="open menu">
             </div>
             <div class="col-md-9 hidden_phone">
                 <div class="header_social pull-right">
