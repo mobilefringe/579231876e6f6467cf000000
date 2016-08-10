@@ -16,6 +16,7 @@ function show_content(){
     $('.open_submenu').click(function(e){
         e.preventDefault();
         $(this).next().slideToggle();
+        $(this).find('i').toggleClass('flip')
     });
 }
 
