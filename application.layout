@@ -167,6 +167,14 @@
                 <a href="#">Security</a>
                 <a href="#">Contact Us</a>
             </div>
+            <div class="social_icons">
+                <a href="#" id="social_fb"></a>
+                <a href="#" id="social_twitter"></a>
+                <a href="#" id="social_insta"></a>
+                <a href="#" id="social_snap"></a>
+                <a href="#" id="social_pin"></a>
+                <a href="#" id="social_yt"></a>
+            </div>
             <div class="row footer_privacy">
                 <div class="col-md-2">
                     <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469549430000/act-x2.png" class="logo_act" alt="Logo ACT">
