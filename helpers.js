@@ -12,6 +12,11 @@ function show_content(){
        function(){ $(this).addClass('open') },
        function(){ $(this).removeClass('open') }
     );
+    
+    $('.open_submenu').click(e){
+        e.preventDefault();
+        $(this).find('ul').slideToggle();
+    }
 }
 
 
