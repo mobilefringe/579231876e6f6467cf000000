@@ -46,7 +46,7 @@
                     <img alt="logo" class="site_logo" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png">
                 </a>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9 hidden_phone">
                 <div class="header_social pull-right">
                     <div class="social_icons">
                         <a href="#" id="social_fb"></a>
