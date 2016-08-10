@@ -40,7 +40,7 @@
 </head>
 <body>
     <section id="header" class="header">
-        <div class="mobile_menu hidden_now">
+        <div class="mobile_menu">
             
         </div>
         <div class="row main_container">
