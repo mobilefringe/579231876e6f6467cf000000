@@ -23,6 +23,12 @@ function show_content(){
         $('.mobile_menu').fadeIn();
         $('body').addClass('no_scroll')
     })
+    
+    $('.close_menu').click(function(e){
+        $('.mobile_menu').fadeOut();
+        $('body').removeClass('no_scroll')
+    })
+    
 }
 
 
