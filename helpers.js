@@ -13,7 +13,7 @@ function show_content(){
        function(){ $(this).removeClass('open') }
     );
     
-    $('.open_submenu').click(e){
+    $('.open_submenu').click(function(e){
         e.preventDefault();
         console.log($(this).next())
         $(this).next().slideToggle();
