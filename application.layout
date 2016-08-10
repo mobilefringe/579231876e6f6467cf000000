@@ -41,6 +41,7 @@
 <body>
     <section id="header" class="header">
         <div class="mobile_menu hidden_now">
+            <i class="fa fa-close close_menu"></i>
             <ul class="mobile_nav">
                 <li class="mobile_dropdown">
                     <a href="#" class="open_submenu">
