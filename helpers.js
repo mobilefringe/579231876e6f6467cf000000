@@ -9,8 +9,8 @@ function show_content(){
         $(this).toggleClass('full_height')
     });
     $('.dropdown').hover(
-       function(){ $(this).addClass('hover') },
-       function(){ $(this).removeClass('hover') }
+       function(){ $(this).addClass('open') },
+       function(){ $(this).removeClass('open') }
     );
 }
 
