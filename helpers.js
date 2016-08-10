@@ -21,6 +21,7 @@ function show_content(){
     
     $('.open_menu').click(function(e){
         $('.mobile_menu').fadeIn();
+        $('body').addClass('no_scroll')
     })
 }
 
