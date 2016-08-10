@@ -89,7 +89,7 @@
                                 <li><a href="/pages/ptc-infashion-video-series">inFashion Video Series</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#">Promotions</a></li>
+                        <li class="dropdown"><a href="/promotions">Promotions</a></li>
                         <li><a href="#">Guest Services</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
