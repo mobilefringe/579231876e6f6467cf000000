@@ -503,10 +503,10 @@ function renderPosts(container, template, collection){
             val.post_image = val.image_url;
         }
         if(val.body.length > 100){
-            val.description_short = val.body.substring(0,100) + "...";
+            val.description_short = val.html_body.substring(0,100) + "...";
         }
         else{
-            val.description_short = val.body;
+            val.description_short = val.html_body;
         }
         val.description_short = val.description_short.replace("&amp;", "&");
         
