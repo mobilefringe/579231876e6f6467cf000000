@@ -8,7 +8,7 @@ function show_content(){
     $('.news_box').click(function(){
         $(this).toggleClass('full_height')
     });
-    $('#elm').hover(
+    $('.dropdown').hover(
        function(){ $(this).addClass('hover') },
        function(){ $(this).removeClass('hover') }
     );
