@@ -58,6 +58,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Events
+                        <i class="fa fa-chevron-down"></i>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="/events">All Events</a></li>
@@ -71,6 +72,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Guest Services
+                        <i class="fa fa-chevron-down"></i>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="/pages/ptc-accessibility">Accessibiltys</a></li>
