@@ -90,7 +90,18 @@
                         </li>
                         <li class="dropdown"><a href="/promotions">Promotions</a></li>
                         <li><a href="#">Guest Services</a></li>
-                        <li class="dropdown"><a href="#">Blog</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Events
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/events">All Events</a></li>
+                                <li><a href="/pages/ptc-in-the-community">In the Community</a></li>
+                                <li><a href="/fashions/ptc-summer-2016-lookbook">Lookbook</a></li>
+                                <li><a href="/pages/ptc-red-carpet-look">Red Carpet Look</a></li>
+                                <li><a href="/pages/ptc-infashion-video-series">inFashion Video Series</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
