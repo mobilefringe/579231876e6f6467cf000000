@@ -41,7 +41,45 @@
 <body>
     <section id="header" class="header">
         <div class="mobile_menu">
-            
+            <ul class="mobile_nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Shopping
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/stores">Stores</a></li>
+                        <li><a href="/pages/ptc-directions-map">Directions / Map</a></li>
+                        <li><a href="/pages/ptc-summer-2016-lookbook">Lookbook</a></li>
+                        <li><a href="/hours">Hours</a></li>
+                        <li><a href="/pages/ptc-parking">Parking</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Events
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/events">All Events</a></li>
+                        <li><a href="/pages/ptc-in-the-community">In the Community</a></li>
+                        <li><a href="//ptc-summer-2016-lookbook">Lookbook</a></li>
+                        <li><a href="/pages/ptc-red-carpet-look">Red Carpet Look</a></li>
+                        <li><a href="/pages/ptc-infashion-video-series">inFashion Video Series</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="/promotions">Promotions</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Guest Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/pages/ptc-accessibility">Accessibiltys</a></li>
+                        <li><a href="/pages/ptc-mall-services">Mall Services</a></li>
+                        <li><a href="/pages/ptc-gift-cards">Gift Cards</a></li>
+                        <li><a href="/pages/ptc-wifi">WiFi</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Blog</a></li>
+            </ul>
         </div>
         <div class="row main_container">
             <div class="col-md-3 mobile_text_center position_relative">
