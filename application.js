@@ -510,8 +510,6 @@ function renderPosts(container, template, collection){
         }
         val.description_short = val.description_short.replace("&amp;", "&");
         
-        var date_blog = moment(val.publish_date);
-        val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
