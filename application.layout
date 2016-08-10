@@ -201,6 +201,9 @@
                 <div class="col-md-2 text-right  col-xs-6">
                     <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469549430000/20vic-x2.png" class="company_logo" alt="20vic logo">
                 </div>
+                <div class="col-xs-12 show_phone">
+                    
+                </div>
             </div>
         </div>
     </section>
