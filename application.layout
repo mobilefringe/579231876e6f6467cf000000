@@ -47,7 +47,7 @@
                         Shopping
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/stores">Stores</a></li>
+                        <li><a href="/stores">Stores <i class="fa fa-chevron-down"></i></a></li>
                         <li><a href="/pages/ptc-directions-map">Directions / Map</a></li>
                         <li><a href="/pages/ptc-summer-2016-lookbook">Lookbook</a></li>
                         <li><a href="/hours">Hours</a></li>
