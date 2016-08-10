@@ -18,6 +18,10 @@ function show_content(){
         $(this).next().slideToggle();
         $(this).find('i').toggleClass('flip')
     });
+    
+    $('.open_menu').click(function(e){
+        $('.mobile_menu').fadeIn();
+    })
 }
 
 
