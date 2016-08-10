@@ -7,7 +7,11 @@ function show_content(){
     $('.yield').fadeIn();
     $('.news_box').click(function(){
         $(this).toggleClass('full_height')
-    })
+    });
+    $('#elm').hover(
+       function(){ $(this).addClass('hover') },
+       function(){ $(this).removeClass('hover') }
+    );
 }
 
 
