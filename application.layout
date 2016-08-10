@@ -167,7 +167,7 @@
                 <a href="#">Security</a>
                 <a href="#">Contact Us</a>
             </div>
-            <div class="social_icons">
+            <div class="social_icons show_phone">
                 <a href="#" id="social_fb"></a>
                 <a href="#" id="social_twitter"></a>
                 <a href="#" id="social_insta"></a>
