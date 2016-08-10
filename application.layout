@@ -77,6 +77,19 @@
                                 <li><a href="#"></a></li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Events
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/events">All Events</a></li>
+                                <li><a href="/pages/ptc-in-the-community">In the Community / Map</a></li>
+                                <li><a href="/fashions/ptc-summer-2016-lookbook">Lookbook</a></li>
+                                <li><a href="/hours">Hours</a></li>
+                                <li><a href="/pages/ptc-parking">Parking</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Events</a></li>
                         <li><a href="#">Promotions</a></li>
                         <li><a href="#">Guest Services</a></li>
