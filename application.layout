@@ -43,7 +43,7 @@
         <div class="mobile_menu">
             <ul class="mobile_nav">
                 <li class="mobile_dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a href="#">
                         Shopping
                         <i class="fa fa-chevron-down"></i>
                     </a>
@@ -56,7 +56,7 @@
                     </ul>
                 </li>
                 <li class="mobile_dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a href="#">
                         Events
                         <i class="fa fa-chevron-down"></i>
                     </a>
@@ -70,7 +70,7 @@
                 </li>
                 <li class="mobile_dropdown"><a href="/promotions">Promotions</a></li>
                 <li class="mobile_dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a href="#">
                         Guest Services
                         <i class="fa fa-chevron-down"></i>
                     </a>
