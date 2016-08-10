@@ -178,17 +178,6 @@
                 <a href="#">Security</a>
                 <a href="#">Contact Us</a>
             </div>
-            <div class="layout_contact_us show_phone">
-                <h2>CONTACT US</h2>
-                <p><strong>905.683.7171</strong></p>
-                <p><strong>pickeringtowncentre@20vic.com</strong></p>
-                <p>
-                    1355 Kingston Road <br />
-                    Pickering, Ontario<br />
-                    L1V 1B8
-                </p>
-            </div>
-            <a href="/pages/ptc-directions-map" class="home_header show_phone">DIRECTIONS</a>
             <div class="row footer_privacy">
                 <div class="col-md-2">
                     <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469549430000/act-x2.png" class="logo_act" alt="Logo ACT">
