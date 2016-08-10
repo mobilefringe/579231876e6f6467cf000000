@@ -165,15 +165,17 @@
             <a href="#" id="social_yt"></a>
         </div>
         <a href="/stores" class="home_header">STORE DIRECTORY</a>
-        <div class="layout_contact_us show_phone main_container">
-            <h2>CONTACT US</h2>
-            <p><strong>905.683.7171</strong></p>
-            <p><strong>pickeringtowncentre@20vic.com</strong></p>
-            <p>
-                1355 Kingston Road <br />
-                Pickering, Ontario<br />
-                L1V 1B8
-            </p>
+        <div class="layout_contact_us show_phone ">
+            <div class="main_container">
+                <h2>CONTACT US</h2>
+                <p><strong>905.683.7171</strong></p>
+                <p><strong>pickeringtowncentre@20vic.com</strong></p>
+                <p>
+                    1355 Kingston Road <br />
+                    Pickering, Ontario<br />
+                    L1V 1B8
+                </p>
+            </div>
         </div>
         <a href="/pages/ptc-directions-map" class="home_header show_phone">DIRECTIONS</a>
     </div>
