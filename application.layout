@@ -47,7 +47,7 @@
                         Shopping
                         <i class="fa fa-chevron-down"></i>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="mobile_dropdown_menu">
                         <li><a href="/stores">Stores</a></li>
                         <li><a href="/pages/ptc-directions-map">Directions / Map</a></li>
                         <li><a href="/pages/ptc-summer-2016-lookbook">Lookbook</a></li>
@@ -60,7 +60,7 @@
                         Events
                         <i class="fa fa-chevron-down"></i>
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="mobile_dropdown_menu">
                         <li><a href="/events">All Events</a></li>
                         <li><a href="/pages/ptc-in-the-community">In the Community</a></li>
                         <li><a href="//ptc-summer-2016-lookbook">Lookbook</a></li>
