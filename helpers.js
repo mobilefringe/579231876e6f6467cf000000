@@ -15,7 +15,7 @@ function show_content(){
     
     $('.open_submenu').click(e){
         e.preventDefault();
-        $(this).find('ul').slideToggle();
+        $(this).next().slideToggle();
     }
 }
 
