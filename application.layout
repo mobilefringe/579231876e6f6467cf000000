@@ -164,6 +164,7 @@
             <a href="#" id="social_pin"></a>
             <a href="#" id="social_yt"></a>
         </div>
+        <a href="/stores" class="home_header"></a>
     </div>
     <section id="footer" class="site_footer">
         <div class="main_container ">
