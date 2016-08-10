@@ -5,6 +5,9 @@ function init(e){
 function show_content(){
     $('.custom_backdrop').remove();
     $('.yield').fadeIn();
+    $('.news_box').click(function(){
+        $(this).toggleClass('full_height')
+    })
 }
 
 
