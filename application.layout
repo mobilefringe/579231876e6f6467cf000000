@@ -40,7 +40,7 @@
 </head>
 <body>
     <section id="header" class="header">
-        <div class="mobile_menu">
+        <div class="mobile_menu hidden_now">
             <ul class="mobile_nav">
                 <li class="mobile_dropdown">
                     <a href="#" class="open_submenu">
