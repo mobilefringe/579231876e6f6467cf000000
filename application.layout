@@ -101,8 +101,8 @@
                         <a target="_blank" href="http://www.pinterest.com/PickeringTC/" id="social_pin"></a>
                         <a target="_blank" href="http://www.youtube.com/user/PickeringTownCentre" id="social_yt"></a>
                         <div>
-                            <input class="newsletter_control" type="text" placeholder="Join our newsletter!" />
-                            <input class="newsletter_submit" type="submit" value="Subscribe" />
+                            <input id="header_newsletter" class="newsletter_control" type="text" placeholder="Join our newsletter!" />
+                            <input id="header_newsletter_submit" class="newsletter_submit" type="submit" value="Subscribe" />
                         </div>
                     </div>
                 </div>
