@@ -11,7 +11,7 @@
                     <img src="{{promo_image_url_abs}}" alt="Promotion" class="promo_image" />
                 </div>
                 <img class="pull-left" src="http://cdn.mallmaverick.com/system/site_images/photos/000/002/935/original/icon_in.jpg?1403210088">
-                <a href="/store/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
+                <a href="/stores/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
                 <h3 class="promo_name">{{name}}</h3>
                 <p class="dates">{{dates}}</p>
                 <a href="/promotions/{{slug}}" class="read_more"> READ MORE</a>
