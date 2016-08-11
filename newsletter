@@ -14,17 +14,17 @@
             </div>
             <div class="col-md-4">
                 <label for="email">Email *</label> 
-                <input id="email" name="cm-yuhhly-yuhhly" type="email" required="">
+                <input id="email" name="cm-yuhhly-yuhhly" type="email" required="" class="form-control">
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <label for="fieldzdydd">Address</label>
-                <input id="fieldzdydd" name="cm-f-zdydd" type="text">
+                <input id="fieldzdydd" name="cm-f-zdydd" type="text" class="form-control">
             </div>
             <div class="col-md-4">
                 <label for="fieldzdydh">City</label>
-                <input id="fieldzdydh" name="cm-f-zdydh" type="text">
+                <input id="fieldzdydh" name="cm-f-zdydh" type="text" class="form-control">
             </div>
         </div>
         <div class="row">
