@@ -46,12 +46,12 @@
             <tr>
                 <td class="hours_left">
                     <span>
-                        {{{holiday_name}}}, {{{formatted_date}}}
+                        {{holiday_name}}, {{formatted_date}}
                     </span>
                 </td>
                 <td class="hours_right text-right">
                     <span>
-                        {{{h}}}
+                        {{h}}
                     </span>
                 </td>
             </tr>
