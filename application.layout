@@ -51,7 +51,7 @@
                     <ul class="mobile_dropdown_menu">
                         <li><a href="/stores">Stores</a></li>
                         <li><a href="/pages/ptc-directions-map">Directions / Map</a></li>
-                        <li><a href="/pages/ptc-summer-2016-lookbook">Lookbook</a></li>
+                        <li><a href="/fashions/ptc-summer-2016-lookbook">Lookbook</a></li>
                         <li><a href="/hours">Hours</a></li>
                         <li><a href="/pages/ptc-parking">Parking</a></li>
                     </ul>
@@ -116,7 +116,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="/stores">Stores</a></li>
                                 <li><a href="/pages/ptc-directions-map">Directions / Map</a></li>
-                                <li><a href="/pages/ptc-summer-2016-lookbook">Lookbook</a></li>
+                                <li><a href="/fashions/ptc-summer-2016-lookbook">Lookbook</a></li>
                                 <li><a href="/hours">Hours</a></li>
                                 <li><a href="/pages/ptc-parking">Parking</a></li>
                             </ul>
