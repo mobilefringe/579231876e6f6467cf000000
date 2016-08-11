@@ -170,15 +170,17 @@
                 <h2>HOURS</h2>
                 <table id="reg_hours_container" class="hours_container">
                     <script id="reg_hours_template" type="x-tmpl-mustache/text">
-                        <tr>
-                            <td class="hours_left">
-                                <span>{{{day}}}</span>
-                                <span class="dashes"></span>
-                            </td>   
-                            <td class="hours_right">
-                                <span>{{h}}</span>
-                            </td>
-                        </tr>
+                        {%raw%}
+                            <tr>
+                                <td class="hours_left">
+                                    <span>{{day}}</span>
+                                    <span class="dashes"></span>
+                                </td>   
+                                <td class="hours_right">
+                                    <span>{{h}}</span>
+                                </td>
+                            </tr>
+                        {%endraw%}
                     </script>
                 </table>
             </div>
