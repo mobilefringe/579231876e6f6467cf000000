@@ -34,7 +34,7 @@
         var fashion = getFashionBySlug(slug);
         if (fashion != undefined){
             var gallery_images = fashion.fashion_images
-            renderGallery("#gallery_container", "#gallery_template", gallery_images);
+            renderGallery("#fashion_images_container", "#fashion_images_template", gallery_images);
         }
         show_content();
     }
