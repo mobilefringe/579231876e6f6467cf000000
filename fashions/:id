@@ -38,7 +38,7 @@
         }
         show_content();
         $('.flexslider').flexslider({
-                animation: "slide",
-            });
+            animation: "slide",
+        });
     }
 </script>
