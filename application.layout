@@ -155,12 +155,12 @@
     </section>
     <div class="show_phone">
         <div class="social_icons">
-            <a href="http://www.facebook.com/Pickeringtowncentre" id="social_fb"></a>
-            <a href="http://www.twitter.com/#!/PickeringTC" id="social_twitter"></a>
-            <a href="http://www.instagram.com/pickeringtowncentre" id="social_insta"></a>
-            <a href="#" id="social_snap"></a>
-            <a href="http://www.pinterest.com/PickeringTC/" id="social_pin"></a>
-            <a href="http://www.youtube.com/user/PickeringTownCentre" id="social_yt"></a>
+            <a target="_blank" href="http://www.facebook.com/Pickeringtowncentre" id="social_fb"></a>
+            <a target="_blank" href="http://www.twitter.com/#!/PickeringTC" id="social_twitter"></a>
+            <a target="_blank" href="http://www.instagram.com/pickeringtowncentre" id="social_insta"></a>
+            <a target="_blank" href="#" id="social_snap"></a>
+            <a target="_blank" href="http://www.pinterest.com/PickeringTC/" id="social_pin"></a>
+            <a target="_blank" href="http://www.youtube.com/user/PickeringTownCentre" id="social_yt"></a>
         </div>
         <a href="/stores" class="home_header">STORE DIRECTORY</a>
         <div class="home_hours layout_contact_us site_footer show_phone">
