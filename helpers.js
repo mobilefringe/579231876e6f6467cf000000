@@ -16,18 +16,20 @@ function show_content(){
     $('.open_submenu').click(function(e){
         e.preventDefault();
         $(this).next().slideToggle();
-        $(this).find('i').toggleClass('flip')
+        $(this).find('i').toggleClass('flip');
     });
     
     $('.open_menu').click(function(e){
         $('.mobile_menu').fadeIn();
-        $('body').addClass('no_scroll')
-    })
+        $('body').addClass('no_scroll');
+    });
     
     $('.close_menu').click(function(e){
         $('.mobile_menu').fadeOut();
-        $('body').removeClass('no_scroll')
-    })
+        $('body').removeClass('no_scroll');
+    });
+    var hours = getPropertyHours();
+    renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
     
 }
 
