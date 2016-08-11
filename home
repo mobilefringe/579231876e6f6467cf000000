@@ -13,10 +13,10 @@
 <div class="main_container">
     <div class="mobile_feature_items show_phone">
         <div class="mobile_large_feature_item">
-            <img class="large_feature_item" src="http://placehold.it/470x213" />
+            <img class="full_width" src="http://placehold.it/470x213" />
         </div>
         <div class="mobile_large_feature_item">
-            <img class="large_feature_item" src="http://placehold.it/470x213" />
+            <img class="full_width" src="http://placehold.it/470x213" />
         </div>
     </div>
     <div class="feature_items hidden_phone">
