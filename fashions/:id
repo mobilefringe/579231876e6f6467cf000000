@@ -29,6 +29,7 @@
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         var fashion = getFashionBySlug(slug);
+        $('#fashion_name').text(fashion.name)
         if (fashion != undefined){
             var gallery_images = fashion.fashion_images
             renderGallery("#fashion_images_container", "#fashion_images_template", gallery_images);
