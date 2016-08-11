@@ -22,6 +22,7 @@
             <img class="full_width" src="http://placehold.it/230x213" />
             <img class="full_width" src="http://placehold.it/230x213" />
         </div>
+        <div class="clearfix"></div>
     </div>
     <div class="feature_items hidden_phone">
         <div class="feature_item">
