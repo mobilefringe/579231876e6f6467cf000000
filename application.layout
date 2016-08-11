@@ -165,7 +165,7 @@
             <a href="#" id="social_yt"></a>
         </div>
         <a href="/stores" class="home_header">STORE DIRECTORY</a>
-        <div class="home_hours layout_contact_us site_footer">
+        <div class="home_hours layout_contact_us site_footer show_phone">
             <h2>HOURS</h2>
         </div>
         <div class="layout_contact_us show_phone site_footer">
