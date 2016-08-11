@@ -7,7 +7,7 @@
     <img src="http://cdn.mallmaverick.com/system/site_images/photos/000/006/533/original/36266_PTC_eNewsletter_Sign-Up_Graphic_Update.png?1421077825" class="full_width margin_30">
     <p><strong>Want to stay up to date on the latest events, promotions and fashionable content from Pickering Town Centre? Simply fill out the form below and you're IN!</strong></p>
     <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/yuhhly/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
-        <div class="row">
+        <div class="row margin_30">
             <div class="col-md-4">
                 <label for="fieldName">Name *</label>  
                 <input id="fieldName" name="cm-name" type="text" required="" class="form-control">
