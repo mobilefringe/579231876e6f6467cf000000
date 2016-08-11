@@ -17,7 +17,7 @@
                 <input id="email" name="cm-yuhhly-yuhhly" type="email" required="" class="form-control">
             </div>
         </div>
-        <div class="row">
+        <div class="row margin_30">
             <div class="col-md-4">
                 <label for="fieldzdydd">Address</label>
                 <input id="fieldzdydd" name="cm-f-zdydd" type="text" class="form-control">
@@ -27,7 +27,7 @@
                 <input id="fieldzdydh" name="cm-f-zdydh" type="text" class="form-control">
             </div>
         </div>
-        <div class="row">
+        <div class="row margin_30">
             <div class="col-md-4">
                 <label for="fieldzdydu">Postal Code *</label> 
                 <input id="fieldzdydu" name="cm-f-zdydu" type="text" required="" class="form-control"> 
