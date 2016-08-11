@@ -6,26 +6,7 @@
 </div>
 <div class="main_container margin_30">
     <div class="row">
-        <div class="col-md-12 margin_30">
-            <a href="/media-centre/media-coverage" class="media_centre_link">MEDIA COVERAGE</a>
-            <br/>
-            <a href="/media-centre/photo-gallery" class="media_centre_link"><strong>PHOTO GALLERY</strong></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p class="margin_30">Click to download one of our royalty-free high-resolution or low-resolution property photos.</p>
-            </div>
-            <div id="gallery_container">
-                <script id="gallery_template" type="x-tmpl-mustache/text">
-                    <div class="col-md-3">
-                        <a href="{{image_url}}" target="_blank">
-                            <img src="{{image_url}}" alt="gallery {{i}}" class="full_width" />
-                        </a>
-                    </div>
-                </script>
-            </div>
-        </div>
+        
     </div>
 </div>
 
