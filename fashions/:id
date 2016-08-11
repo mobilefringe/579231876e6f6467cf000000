@@ -29,9 +29,11 @@
     })
     
     function renderPage(){
-        var gallery = getFashionBySlug('ptc_both--2');
-        if (gallery != undefined){
-            var gallery_images = gallery.fashion_images
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var fashion = getFashionBySlug(slug);
+        if (fashion != undefined){
+            var gallery_images = fashion.fashion_images
             renderGallery("#gallery_container", "#gallery_template", gallery_images);
         }
         show_content();
