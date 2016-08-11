@@ -30,7 +30,7 @@ function show_content(){
     });
     
     $('#header_newsletter_submit').click(function(){
-        window.location('/newsletter?email=' + $('#header_newsletter').val())
+        window.location = ('/newsletter?email=' + $('#header_newsletter').val())
     })
     var hours = getPropertyHours();
     renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
