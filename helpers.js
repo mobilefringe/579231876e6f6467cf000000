@@ -28,6 +28,10 @@ function show_content(){
         $('.mobile_menu').fadeOut();
         $('body').removeClass('no_scroll');
     });
+    
+    $('#header_newsletter_submit').click(function(){
+        window.location('/newsletter?email=' + $('#header_newsletter'))
+    })
     var hours = getPropertyHours();
     renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
     
