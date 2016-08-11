@@ -159,6 +159,16 @@ function init_map(reg, h, w){
         responsive:true,
         zoomLimit: [0,10],
     });
-    
-    
+}
+
+
+function validateNewsletterForm(){
+    if ($("#agree_newsletter").prop("checked") != true){
+        alert("Please agree to the receiving newsletter.");
+        $("#agree_newsletter").focus();
+        return false;
+    }
+    else{
+        return true;
+    }
 }
