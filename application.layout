@@ -168,7 +168,7 @@
         <div class="home_hours layout_contact_us site_footer show_phone">
             <div class="main_container">
                 <h2>HOURS</h2>
-                <table id="reg_hours_container" class="hours_container">
+                <table id="reg_hours_container" class="hours_container no_margin">
                     <script id="reg_hours_template" type="x-tmpl-mustache/text">
                         {%raw%}
                             <tr>
