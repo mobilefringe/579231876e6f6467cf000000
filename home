@@ -18,6 +18,9 @@
         <div class="mobile_large_feature_item">
             <img class="full_width" src="http://placehold.it/470x213" />
         </div>
+        <div class="mobile_small_feature_item">
+            
+        </div>
     </div>
     <div class="feature_items hidden_phone">
         <div class="feature_item">
