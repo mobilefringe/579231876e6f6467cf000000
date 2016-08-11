@@ -1,7 +1,7 @@
 
 <div class="pages_banner about_banner">
     <div class="main_container">
-        <h2>{{name}}</h2>
+        <h2 id="fashion_name"></h2>
     </div>
 </div>
 <div class="main_container">
