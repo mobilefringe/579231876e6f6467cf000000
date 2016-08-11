@@ -37,5 +37,8 @@
             renderGallery("#fashion_images_container", "#fashion_images_template", gallery_images);
         }
         show_content();
+        $('.flexslider').flexslider({
+                animation: "slide",
+            });
     }
 </script>
