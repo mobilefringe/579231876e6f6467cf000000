@@ -8,15 +8,15 @@
     <p><strong>Want to stay up to date on the latest events, promotions and fashionable content from Pickering Town Centre? Simply fill out the form below and you're IN!</strong></p>
     <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/yuhhly/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
         <div class="floater-left">
-            <label for="">Name *</label>  
+            <label for="fieldName">Name *</label>  
             <input id="fieldName" name="cm-name" type="text" required="">
         </div>
         <div class="floater-left">
-            <label for="">Email *</label> 
+            <label for="email">Email *</label> 
             <input id="email" name="cm-yuhhly-yuhhly" type="email" required="">
         </div>
         <div class="floater-left">
-            <label for="">Address</label>
+            <label for="fieldzdydd">Address</label>
             <input id="fieldzdydd" name="cm-f-zdydd" type="text">
         </div>
         <div class="floater-left">
@@ -24,7 +24,7 @@
             <input id="fieldzdydh" name="cm-f-zdydh" type="text">
         </div>
         <div class="floater-left">
-            <label for="">Postal Code *</label> 
+            <label for="fieldzdydu">Postal Code *</label> 
             <input id="fieldzdydu" name="cm-f-zdydu" type="text" required=""> 
         </div>
         <div style="clear:both;"></div>
