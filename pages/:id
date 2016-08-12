@@ -36,6 +36,9 @@
             $('.pages_banner').addClass('events_banner')
             $('.pages_banner').removeClass('pages_banner')
         }
+        if(slug == "ptc-leasing-information"){
+            $('.pages_banner').addClass('about_banner')
+        }
         show_content();
     }
 </script>
