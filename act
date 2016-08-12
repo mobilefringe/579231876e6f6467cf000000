@@ -9,12 +9,6 @@
             <p class="margin_30">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="/media-centre/media-coverage" class="media_centre_link">MEDIA COVERAGE</a>
-                    <a href="/media-centre/photo-gallery" class="media_centre_link">PHOTO GALLERY</a>
-                </div>
-            </div>
         </div>
         <div class="col-md-6">
             <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1470685101000/img_act.jpg" class="full_width" alt="act banner">
