@@ -204,7 +204,7 @@
     <section id="footer" class="site_footer">
         <div class="main_container ">
             <div class="footer_site_map hidden_phone">
-                <a href="about-us">About Us</a>
+                <a href="/about-us">About Us</a>
                 <a href="/pages/ptc-leasing-information">Leasing</a>
                 <a href="/media-centre">Media Centre</a>
                 <a href="#">Advertising & Sponsorship</a>
