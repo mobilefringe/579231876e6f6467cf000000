@@ -32,6 +32,10 @@
             $('.pages_banner').addClass('stores_banner')
             $('.pages_banner').removeClass('pages_banner')
         }
+        if(slug == "ptc-directions-map"){
+            $('.pages_banner').addClass('events_banner')
+            $('.pages_banner').removeClass('pages_banner')
+        }
         show_content();
     }
 </script>
