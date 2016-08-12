@@ -8,7 +8,7 @@
          <script id="jobs_template" type="x-tmpl-mustache/text">
             <div class="promo_container job_container">
                 <img class="pull-left" src="http://cdn.mallmaverick.com/system/site_images/photos/000/002/935/original/icon_in.jpg?1403210088">
-                <a href="/store/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
+                <a href="/stores/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
                 <div class="job_details">
                     <div class="row">
                         <div class="col-md-5">
