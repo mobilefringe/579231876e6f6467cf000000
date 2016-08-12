@@ -28,6 +28,9 @@
                 $("#mm_page_content").html("Sorry we can't find the page you're looking for.");
             }
         }); 
+        if(slug == "ptc-directions-map"){
+            $('.pages_banner').addClass('stores_banner')
+        }
         show_content();
     }
 </script>
