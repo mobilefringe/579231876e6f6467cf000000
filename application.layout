@@ -182,7 +182,7 @@
                     </script>
                 </table>
             </div>
-            divider
+            <div class="divider"></div>
         </div>
         <div class="layout_contact_us show_phone site_footer">
             <div class="main_container">
