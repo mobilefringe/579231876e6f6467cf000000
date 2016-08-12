@@ -31,19 +31,19 @@
         <div class="feature_item">
             <div class="feature_items">
                 <div class="feature_item">
-                    <img class="small_feature_item" src="http://placehold.it/230x213" />
+                    <img class="small_feature_item" src="http://placehold.it/230x230" />
                 </div>
                 <div class="feature_item">
-                    <img class="large_feature_item" src="http://placehold.it/470x213" />
+                    <img class="large_feature_item" src="http://placehold.it/470x230" />
                 </div>
             </div>
             <div class="margin_10"></div>
             <div class="feature_items">
                 <div class="feature_item">
-                    <img class="large_feature_item" src="http://placehold.it/470x213" />
+                    <img class="large_feature_item" src="http://placehold.it/470x230" />
                 </div>
                 <div class="feature_item">
-                    <img class="small_feature_item" src="http://placehold.it/230x213" />
+                    <img class="small_feature_item" src="http://placehold.it/230x230" />
                 </div>
             </div>
         </div>
