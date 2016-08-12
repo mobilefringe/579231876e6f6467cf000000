@@ -13,17 +13,17 @@
 <div class="main_container">
     <div class="mobile_feature_items show_phone">
         <div class="mobile_large_feature_item">
-            <img class="full_width" src="http://placehold.it/470x213" />
+            <img class="full_width" src="http://placehold.it/470x230" />
         </div>
         <div class="mobile_large_feature_item">
-            <img class="full_width" src="http://placehold.it/470x213" />
+            <img class="full_width" src="http://placehold.it/470x230" />
         </div>
         <div class="mobile_small_feature_item">
-            <img class="full_width" src="http://placehold.it/230x213" />
-            <img class="full_width" src="http://placehold.it/230x213" />
+            <img class="full_width" src="http://placehold.it/230x230" />
+            <img class="full_width" src="http://placehold.it/230x230" />
         </div>
         <div class="mobile_small_feature_item">
-            <img class="full_width" src="http://placehold.it/213x470" />
+            <img class="full_width" src="http://placehold.it/230x470" />
         </div>
         <div class="clearfix"></div>
     </div>
