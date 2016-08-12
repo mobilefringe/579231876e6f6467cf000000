@@ -28,7 +28,7 @@
                 $("#mm_page_content").html("Sorry we can't find the page you're looking for.");
             }
         }); 
-        if(slug == "ptc-directions-map"){
+        if(slug == "ptc-directions-map" || slug=="ptc-parking"){
             $('.pages_banner').addClass('stores_banner')
             $('.pages_banner').removeClass('pages_banner')
         }
