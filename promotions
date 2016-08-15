@@ -31,7 +31,7 @@
             $.each( promos , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
-                if (today.tz('America/Virginia') >= webDate.tz('America/Virginia')) {
+                if (today.tz('US/Eastern') >= webDate.tz('US/Eastern')) {
                     published_promos.push(val)
                 } 
             });
