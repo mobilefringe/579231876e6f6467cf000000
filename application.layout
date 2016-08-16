@@ -119,7 +119,6 @@
                         <a target="_blank" href="http://www.twitter.com/#!/PickeringTC" id="social_twitter"></a>
                         <a target="_blank" href="http://www.instagram.com/pickeringtowncentre" id="social_insta"></a>
                         <a href="#" id="social_snap"></a>
-                        <a target="_blank" href="http://www.pinterest.com/PickeringTC/" id="social_pin"></a>
                         <a target="_blank" href="http://www.youtube.com/user/PickeringTownCentre" id="social_yt"></a>
                         <div>
                             <input id="header_newsletter" class="newsletter_control" type="text" placeholder="Join our newsletter!" />
@@ -177,7 +176,6 @@
             <a target="_blank" href="http://www.twitter.com/#!/PickeringTC" id="social_twitter"></a>
             <a target="_blank" href="http://www.instagram.com/pickeringtowncentre" id="social_insta"></a>
             <a href="#" id="social_snap"></a>
-            <a target="_blank" href="http://www.pinterest.com/PickeringTC/" id="social_pin"></a>
             <a target="_blank" href="http://www.youtube.com/user/PickeringTownCentre" id="social_yt"></a>
         </div>
         <a href="/stores" class="home_header">STORE DIRECTORY</a>
