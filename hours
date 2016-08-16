@@ -4,7 +4,7 @@
     </div>
 </div>
 <div class="main_container margin_30">
-    <h4 class="hours_heading">HOLIDAY HOURS</h4>
+    <h4 class="hours_heading">HOURS</h4>
     <table id="reg_hours_container" class="hours_container">
         <script id="reg_hours_template" type="x-tmpl-mustache/text">
             <tr>
