@@ -47,7 +47,7 @@
                     </div>
                 </script>
             </div>
-            <div id="store_list_container">
+            <div id="store_list_container" class="col-md-6">
                 <script id="store_list_template" type="x-tmpl-mustache/text">
                     <span style="{{show}}" class="store_initial open_stores" data-initial="{{data_initial}}">
                         <span>{{initial}}</span>
