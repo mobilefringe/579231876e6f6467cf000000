@@ -132,8 +132,8 @@ function renderEvents(container, template, collection){
             val.logo = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
         }
         var show_date = moment(val.show_on_web_date);
-        start = moment(val.start_date);
-        end = moment(val.end_date);
+        var start = moment(val.start_date).tz('America/Toronto');
+        var end = moment(val.end_date);
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM DD")
         }
