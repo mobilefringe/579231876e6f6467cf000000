@@ -133,7 +133,7 @@ function renderEvents(container, template, collection){
         }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz('America/Toronto');
-        var end = moment(val.end_date);
+        var end = moment(val.end_date).tz('America/Toronto');
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM DD")
         }
@@ -205,8 +205,8 @@ function renderPromoDetails(container, template, collection){
         }
         
         var show_date = moment(val.show_on_web_date);
-        start = moment(val.start_date);
-        end = moment(val.end_date);
+        var start = moment(val.start_date).tz('America/Toronto');
+        var end = moment(val.end_date).tz('America/Toronto');
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM DD")
         }
@@ -237,8 +237,8 @@ function renderEventDetails(container, template, collection){
         }
         
         var show_date = moment(val.show_on_web_date);
-        start = moment(val.start_date);
-        end = moment(val.end_date);
+        var start = moment(val.start_date).tz('America/Toronto');
+        var end = moment(val.end_date).tz('America/Toronto');
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM DD")
         }
@@ -264,8 +264,8 @@ function renderJobs(container, template, collection){
             val.store_name = store_details.name;
         }
         var show_date = moment(val.show_on_web_date);
-        start = moment(val.start_date);
-        end = moment(val.end_date);
+        var start = moment(val.start_date).tz('America/Toronto');
+        var end = moment(val.end_date).tz('America/Toronto');
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM DD")
         }
@@ -304,8 +304,8 @@ function renderJobDetails(container, template, collection){
         }
         
         var show_date = moment(val.show_on_web_date);
-        start = moment(val.start_date);
-        end = moment(val.end_date);
+        var start = moment(val.start_date).tz('America/Toronto');
+        var end = moment(val.end_date).tz('America/Toronto');
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM DD")
         }
