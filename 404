@@ -1,0 +1,12 @@
+<h1>Sorry we can't find the page you're looking for</h1>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        
+        show_content();
+    }
+</script>
