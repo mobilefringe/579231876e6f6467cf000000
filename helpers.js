@@ -58,7 +58,7 @@ function show_cat_stores(){
         $('.store_initial').hide();
         $('#cat_name span').text($(this).text());
         $('#cat_name').css('display', 'block');
-        $('#store_list_container, #store_list_container2').addClass("full_width");
+        $('#main_store_list, #store_list_container2').addClass("full_width");
         $.each(rows, function(i, val){
             var cat_array = val.getAttribute('data-cat').split(',');
             if ($.inArray(cat_id, cat_array) >= 0){
