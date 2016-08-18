@@ -37,7 +37,7 @@
         <div class="col-md-12">
             <span class="store_initial hidden_now" id="cat_name"><span></span></span>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="main_store_list">
             <div id="numbered_store_list_container" class="numbers_exist">
                 <script id="numbered_store_list_template" type="x-tmpl-mustache/text">
                     <div class="row cats_row open_number" data-cat="{{cat_list}}">
