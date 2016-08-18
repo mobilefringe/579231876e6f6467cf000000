@@ -72,7 +72,7 @@ function show_cat_stores(){
     $('.show_all_stores').click(function(e){
         $('#show_all_stores').addClass('active_store_nav');
         $('#cat_dd').removeClass('active_store_nav');
-        $('#store_list_container, #store_list_container2').removeClass("full_width");
+        $('#main_store_list, #store_list_container2').removeClass("full_width");
         $('.active_cat').removeClass('active_cat');
         $(this).addClass('active_cat');
         var rows = $('.cats_row');
