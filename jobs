@@ -38,7 +38,7 @@
         var published_jobs = [];
         $.each( jobs , function( key, val ){
             today = moment();
-            webDate = moment(val.show_on_web_date)
+            webDate = moment(val.show_on_web_date);
             if (today.tz('America/Toronto') >= webDate.tz('America/Toronto')) {
                 published_jobs.push(val)
             } 
