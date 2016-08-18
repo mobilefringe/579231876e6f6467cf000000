@@ -49,6 +49,8 @@ function isInt(value) {
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
         var cat_id = $(this).attr('data-id');
+        $('#show_all_stores').removeClass('active_store_nav');
+        $('#cat_dd').addClass('active_store_nav');
         $('.active_cat').removeClass('active_cat');
         $(this).addClass('active_cat');
         var rows = $('.cats_row');
