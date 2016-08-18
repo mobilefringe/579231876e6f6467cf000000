@@ -234,7 +234,7 @@
                     <a href="/act"><img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469549430000/act-x2.png" class="logo_act" alt="Logo ACT"></a>
                 </div>
                 <div class="col-md-8 text-center hidden_phone">
-                    <p class="footer_desc">© 2016 Pickering Town Centre | Powered by <a href="http://mallmaverick.com" target="_blank">Mall Maverick</a> | <a href="#">Privacy Policy</a></p>
+                    <p class="footer_desc">© 2016 Pickering Town Centre | Powered by <a href="http://mallmaverick.com" target="_blank">Mall Maverick</a> | <a href="/pages/ptc-privacy-policy">Privacy Policy</a></p>
                 </div>
                 <div class="col-md-2 text-right  col-xs-6">
                     <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469549430000/20vic-x2.png" class="company_logo" alt="20vic logo">
