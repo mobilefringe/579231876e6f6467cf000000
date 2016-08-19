@@ -50,7 +50,7 @@
                     </a>
                     <ul class="mobile_dropdown_menu">
                         <li><a href="/stores">Stores</a></li>
-                        <li><a href="/pages/ptc-directions-map">Directions / Map</a></li>
+                        <li><a href="/pages/ptc-directions-map">Directions</a></li>
                         <li><a href="/hours">Hours</a></li>
                         <li><a href="/pages/ptc-parking">Parking</a></li>
                     </ul>
@@ -135,7 +135,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/stores">Stores</a></li>
-                                <li><a href="/pages/ptc-directions-map">Directions / Map</a></li>
+                                <li><a href="/pages/ptc-directions-map">Directions</a></li>
                                 <li><a href="/hours">Hours</a></li>
                                 <li><a href="/pages/ptc-parking">Parking</a></li>
                             </ul>
