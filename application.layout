@@ -95,7 +95,7 @@
                     <a href="/jobs">Careers</a>
                 </li>
                 <li class="mobile_dropdown">
-                    <a href="//ptc.mallmaverick.com/login">Tenant Zone</a>
+                    <a href="//ptc.mallmaverick.com/login" target="_blank">Tenant Zone</a>
                 </li>
                 <li class="mobile_dropdown">
                     <a href="/pages/ptc-security">Security</a>
@@ -225,7 +225,7 @@
                 <a href="/media-centre">Media Centre</a>
                 <a href="/pages/ptc-advertising-sponsorship">Advertising & Sponsorship</a>
                 <a href="/jobs">Careers</a>
-                <a href="//ptc.mallmaverick.com/login">Tenant Zone</a>
+                <a href="//ptc.mallmaverick.com/login"  target="_blank">Tenant Zone</a>
                 <a href="/pages/ptc-security">Security</a>
                 <a href="/pages/ptc-contact-us">Contact Us</a>
             </div>
