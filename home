@@ -14,18 +14,18 @@
 <div class="main_container">
     <div class="mobile_feature_items show_phone">
         <div class="mobile_large_feature_item">
-            <img class="full_width" src="http://placehold.it/470x230" />
+            <img class="full_width" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/October Contest.jpg" />
         </div>
         <div class="mobile_large_feature_item">
-            <img class="full_width" src="http://placehold.it/470x230" />
+            <img class="full_width" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Fall Look Book.jpg" />
         </div>
         <div class="mobile_small_feature_item">
-            <img class="full_width max_height_short" src="http://placehold.it/230x230" />
+            <img class="full_width max_height_short" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Store Promotions.jpg" />
             <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1471883474000/space.jpg" class="full_width" alt="white space">
-            <img class="full_width no_margin max_height_short" src="http://placehold.it/230x230" />
+            <img class="full_width no_margin max_height_short" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Stay in Touch.jpg" />
         </div>
         <div class="mobile_small_feature_item ">
-            <img class="full_width no_margin max_height_long" src="http://placehold.it/230x470" />
+            <img class="full_width no_margin max_height_long" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Gift Card.jpg" />
         </div>
         <div class="clearfix"></div>
     </div>
