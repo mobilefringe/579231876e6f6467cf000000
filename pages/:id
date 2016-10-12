@@ -32,6 +32,10 @@
             $('.pages_banner').addClass('stores_banner')
             $('.pages_banner').removeClass('pages_banner')
         }
+         if(slug == "ptc-coming-soon){
+            $('.pages_banner').addClass('blog_banner')
+            $('.pages_banner').removeClass('pages_banner')
+        }
         if(slug == "ptc-in-the-community"){
             $('.pages_banner').addClass('events_banner')
             $('.pages_banner').removeClass('pages_banner')
