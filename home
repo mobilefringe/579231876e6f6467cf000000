@@ -17,15 +17,15 @@
             <img class="full_width" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/October Contest.jpg" />
         </div>
         <div class="mobile_large_feature_item">
-            <img class="full_width" a href="/fashions/ptc-fall-2016-lookbook" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Fall Look Book.jpg" />
+            <a href="/fashions/ptc-fall-2016-lookbook"><img class="full_width"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Fall Look Book.jpg" /></a>
         </div>
         <div class="mobile_small_feature_item">
-            <img class="full_width max_height_short" a href="promotions" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Store Promotions.jpg" />
+           <a href="promotions"> <img class="full_width max_height_short"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Store Promotions.jpg" /></a>
             <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1471883474000/space.jpg" class="full_width" alt="white space">
-            <img class="full_width no_margin max_height_short" a href="/newsletter" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Stay in Touch.jpg" />
+            <a href="/newsletter"><img class="full_width no_margin max_height_short"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Stay in Touch.jpg" /></a>
         </div>
         <div class="mobile_small_feature_item ">
-            <img class="full_width no_margin max_height_long" a href="/pages/ptc-gift-cards" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Gift Card.jpg" />
+            <a href="/pages/ptc-gift-cards"><img class="full_width no_margin max_height_long" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Gift Card.jpg" /></a>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -33,7 +33,7 @@
         <div class="feature_item">
             <div class="feature_items">
                 <div class="feature_item">
-                    <img class="small_feature_item" a href="promotions" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Store Promotions.jpg" />
+                  <a href="promotions">  <img class="small_feature_item" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Store Promotions.jpg" /></a>
                 </div>
                 <div class="feature_item">
                     <img class="large_feature_item" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/October Contest.jpg" />
@@ -42,15 +42,15 @@
             <div class="margin_10"></div>
             <div class="feature_items">
                 <div class="feature_item">
-                    <img class="large_feature_item" a href="/fashions/ptc-fall-2016-lookbook" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Fall Look Book.jpg" />
+                    <a href="/fashions/ptc-fall-2016-lookbook"><img class="large_feature_item" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Fall Look Book.jpg" /></a>
                 </div>
                 <div class="feature_item">
-                    <img class="small_feature_item" a href="/newsletter" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Stay in Touch.jpg" />
+                    <a href="/newsletter"><img class="small_feature_item"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Stay in Touch.jpg" /></a>
                 </div>
             </div>
         </div>
         <div class="feature_item">
-        <img class="small_feature_item" a href="/pages/ptc-gift-cards" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Gift Card.jpg" />
+        <a href="/pages/ptc-gift-cards"><img class="small_feature_item"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Gift Card.jpg" /></a>
         </div>
     </div>
     <div class="insta_feed">
