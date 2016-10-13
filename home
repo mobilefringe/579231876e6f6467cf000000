@@ -10,6 +10,12 @@
                     <input id="fieldName" name="cm-name" type="text" required="" class="form-control">
                 </div>
             </div>
+            <div class="row margin_30">    
+                <div class="col-md-4">
+                    <label for="email">Email *</label> 
+                    <input id="email" name="cm-yuhhly-yuhhly" type="email" required="" class="form-control">
+                </div>
+            </div>
         </form>
     </div>
     
