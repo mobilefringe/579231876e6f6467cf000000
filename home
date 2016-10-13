@@ -19,7 +19,7 @@
             <div class="row margin_30">    
                 <div class="col-md-10">
                     <label for="postal">Email *</label> 
-                    <input id="email" name="cm-yuhhly-yuhhly" type="email" required="" class="form-control">
+                    <input id="postal" name="cm-yuhhly-yuhhly" type="email" required="" class="form-control">
                 </div>
             </div>
         </form>
