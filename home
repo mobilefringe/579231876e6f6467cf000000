@@ -29,7 +29,7 @@
             </label>
             <a href="/pages/ptc-privacy-policy" style="text-decoration:underline; color:#000" target="_blank">Privacy Policy.</a>
             <br />
-            <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" >      
+            <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" style=" background: #000; border: 0; border-radius: 0; margin-top: 20px; padding: 10px 30px; ">      
         </form>
     </div>
     
