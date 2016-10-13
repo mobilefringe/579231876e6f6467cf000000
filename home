@@ -3,6 +3,18 @@
     <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1476300057000/popup_bg.jpg" class="popup_img" alt="newsletter pop up">
     <div class="popup_container">
         <h5>Want to stay up to date on the latest events, promotions and fashinable content from Pickering Town Centre? Simply fill out the form below and you're IN!</h5>
+        <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/yuhhly/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
+            <div class="row margin_30">
+                <div class="col-md-4">
+                    <label for="fieldName">Name *</label>  
+                    <input id="fieldName" name="cm-name" type="text" required="" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="email">Email *</label> 
+                    <input id="email" name="cm-yuhhly-yuhhly" type="email" required="" class="form-control">
+                </div>
+            </div>
+        </form>
     </div>
     
 </div>
