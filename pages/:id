@@ -38,7 +38,7 @@
             $('.pages_banner').removeClass('pages_banner')
         }
          if(slug == "ptc-coming-soon"){
-            $('.pages_banner').addClass('generic_banner')
+            $('.pages_banner').addClass('blog_banner')
             $('.pages_banner').removeClass('pages_banner')
         }
         if(slug == "ptc-leasing-information" ||  slug == "ptc-contact-us" || slug == "ptc-security" || slug == "ptc-advertising-sponsorship"){
