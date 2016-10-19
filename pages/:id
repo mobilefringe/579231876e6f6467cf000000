@@ -33,11 +33,15 @@
             $('.pages_banner').removeClass('pages_banner')
         }
         
-        if(slug == "ptc-in-the-community" || slug=="ptc-coming-soon"){
+        if(slug == "ptc-in-the-community"){
             $('.pages_banner').addClass('events_banner')
             $('.pages_banner').removeClass('pages_banner')
         }
-        if(slug == "ptc-leasing-information" || slug == "ptc-contact-us" || slug == "ptc-security" || slug == "ptc-advertising-sponsorship"){
+         if(slug == "ptc-coming-soon"){
+            $('.pages_banner').addClass('generic_banner')
+            $('.pages_banner').removeClass('pages_banner')
+        }
+        if(slug == "ptc-leasing-information" ||  slug == "ptc-contact-us" || slug == "ptc-security" || slug == "ptc-advertising-sponsorship"){
             $('.pages_banner').addClass('generic_banner')
         }
         show_content();
