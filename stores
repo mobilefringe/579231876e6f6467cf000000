@@ -15,7 +15,7 @@
     <div class="store_nav hidden_phone">
         <div class="row">
             <div class="col-md-3">
-                <a class="active_store_nav" href="/stores">STORES</a>
+                <a class="active_store_nav" href="/stores">DIRECTORY</a>
             </div>
             <div class="col-md-3">
                 <a href="/map">CENTER MAP</a>
