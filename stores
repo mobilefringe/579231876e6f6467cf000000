@@ -35,7 +35,10 @@
     </div>
     <div class="row content_container">
         <div class="col-md-12">
-            <a target="_blank" href="http://cdn.mallmaverick.com/system/site_images/photos/000/016/776/original/PTC_Printable_Map_Winter.pdf?1455125094">Printable Store Map</a>
+            <h3 class="download_map">
+                <i class="fa fa-print"></i>
+                <a target="_blank" href="http://cdn.mallmaverick.com/system/site_images/photos/000/016/776/original/PTC_Printable_Map_Winter.pdf?1455125094">Printable Store Map</a>
+            </h3>
         </div>
         <div class="col-md-12">
             <span class="store_initial hidden_now" id="cat_name"><span></span></span>
