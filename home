@@ -1,7 +1,7 @@
 <div class="popup_home hidden_now ">
 
-    <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1476300145000/popup_close.png" class="close_popup" alt="close">
-    <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1476300057000/popup_bg.jpg" class="popup_img" alt="newsletter pop up">
+    <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1476300145000/popup_close.png" class="close_popup" alt="close">
+    <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1476300057000/popup_bg.jpg" class="popup_img" alt="newsletter pop up">
     <div class="popup_container">
         <h5>Want to stay up to date on the latest events, promotions and fashinable content from Pickering Town Centre? Simply fill out the form below and you're IN!</h5>
         <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/yuhhly/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
@@ -52,14 +52,14 @@
 <div class="main_container">
     <div class="mobile_feature_items show_phone">
         <div class="mobile_large_feature_item">
-            <img class="full_width" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/October Contest.jpg" />
+            <img class="full_width" src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/October Contest.jpg" />
         </div>
         <div class="mobile_large_feature_item">
             <a href="/fashions/ptc-fall-2016-lookbook"><img class="full_width"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Fall Look Book.jpg" /></a>
         </div>
         <div class="mobile_small_feature_item">
            <a href="promotions"> <img class="full_width max_height_short"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Store Promotions.jpg" /></a>
-            <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1471883474000/space.jpg" class="full_width" alt="white space">
+            <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1471883474000/space.jpg" class="full_width" alt="white space">
             <a href="/newsletter"><img class="full_width no_margin max_height_short"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Stay in Touch.jpg" /></a>
         </div>
         <div class="mobile_small_feature_item ">
@@ -71,37 +71,32 @@
         <div class="feature_item">
             <div class="feature_items">
                 <div class="feature_item">
-                  <a href="promotions">  <img class="small_feature_item" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Store Promotions.jpg" /></a>
+                  <a href="promotions">  <img class="small_feature_item" src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Store Promotions.jpg" /></a>
                 </div>
                 <div class="feature_item">
-                    <img class="large_feature_item" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/October Contest.jpg" />
+                    <img class="large_feature_item" src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/October Contest.jpg" />
                 </div>
             </div>
             <div class="margin_10"></div>
             <div class="feature_items">
                 <div class="feature_item">
-                    <a href="/fashions/ptc-fall-2016-lookbook"><img class="large_feature_item" src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Fall Look Book.jpg" /></a>
+                    <a href="/fashions/ptc-fall-2016-lookbook"><img class="large_feature_item" src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Fall Look Book.jpg" /></a>
                 </div>
                 <div class="feature_item">
-                    <a href="/newsletter"><img class="small_feature_item"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Stay in Touch.jpg" /></a>
+                    <a href="/newsletter"><img class="small_feature_item"  src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Stay in Touch.jpg" /></a>
                 </div>
             </div>
         </div>
         <div class="feature_item">
-        <a href="/pages/ptc-gift-cards"><img class="small_feature_item"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Gift Card.jpg" /></a>
+        <a href="/pages/ptc-gift-cards"><img class="small_feature_item"  src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1475873608000/Gift Card.jpg" /></a>
         </div>
     </div>
     <div class="insta_feed">
         <div class="insta_header">
-            <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1476891390000/icon_insta_home.png" class="" alt="">
+            <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1476891390000/icon_insta_home.png" class="" alt="">
             <hr />
         </div>
-        <div id="instafeed" class="feature_items">
-            <img class="feature_item" src="http://placehold.it/230x230" />
-            <img class="feature_item" src="http://placehold.it/230x230" />
-            <img class="feature_item" src="http://placehold.it/230x230" />
-            <img class="feature_item" src="http://placehold.it/230x230" />
-        </div>
+        <div id="instafeed" class="feature_items"></div>
     </div>
     
     
