@@ -187,3 +187,7 @@ function getUrlVars(){
     }
     return vars;
 }
+
+function render_instagram(data){
+    $('#instafeed').html(data)
+}
