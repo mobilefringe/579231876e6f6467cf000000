@@ -96,7 +96,7 @@
             <img src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1476891390000/icon_insta_home.png" class="" alt="">
             <hr />
         </div>
-        <div id="insta_feed" class="feature_items">
+        <div id="instafeed" class="feature_items">
             <img class="feature_item" src="http://placehold.it/230x230" />
             <img class="feature_item" src="http://placehold.it/230x230" />
             <img class="feature_item" src="http://placehold.it/230x230" />
