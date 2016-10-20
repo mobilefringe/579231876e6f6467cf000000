@@ -27,7 +27,7 @@
             <div class="col-md-2">
                 <a href="#" id="cat_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     CATEGORIES
-                    <img src="http://assets.codecloudapp.com/sites/5730acef6e6f6455e0000000/image/png/1463153622000/chevron_down.png" class="category_icon" alt="">
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5730acef6e6f6455e0000000/image/png/1463153622000/chevron_down.png" class="category_icon" alt="">
                 </a>
                 <ul id="category_container" class="dropdown-menu" aria-labelledby="cat_dd"></ul>
             </div>
@@ -36,7 +36,7 @@
     <div class="row content_container">
         <div class="col-md-12">
             <h3 class="download_map">
-                <a target="_blank" href="http://cdn.mallmaverick.com/system/site_images/photos/000/016/776/original/PTC_Printable_Map_Winter.pdf?1455125094">
+                <a target="_blank" href="//codecloud.cdn.speedyrails.net/system/site_images/photos/000/016/776/original/PTC_Printable_Map_Winter.pdf?1455125094">
                     <i class="fa fa-print"></i>Printable Store Map
                 </a>
             </h3>
