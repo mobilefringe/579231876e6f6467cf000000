@@ -119,6 +119,7 @@
         $('.flexslider').flexslider({
             animation: "fade",
         });
+        get_instagram("//dixieoutlet.mallmaverick.com/api/v2/dixieoutlet/social.json", 9, 'thumbnail', render_instagram)
         show_content();
         if($.cookie("popup_viewed") != "true"){
             $.cookie("popup_viewed", "true", { expires: 1 });
