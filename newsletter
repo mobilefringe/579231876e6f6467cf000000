@@ -4,7 +4,7 @@
     </div>
 </div>
 <div class="main_container margin_30">
-    <!--<img src="//codecloud.cdn.speedyrails.net/system/site_images/photos/000/006/533/original/36266_PTC_eNewsletter_Sign-Up_Graphic_Update.png?1421077825" class="full_width margin_30">-->
+    <img src="//codecloud.cdn.speedyrails.net/system/site_images/photos/000/006/533/original/36266_PTC_eNewsletter_Sign-Up_Graphic_Update.png?1421077825" class="full_width margin_30">
     <p><strong>Want to stay up to date on the latest events, promotions and fashionable content from Pickering Town Centre? Simply fill out the form below and you're IN!</strong></p>
     <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/yuhhly/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
         <div class="row margin_30">
