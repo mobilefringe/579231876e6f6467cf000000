@@ -36,7 +36,7 @@
                     obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name + "</p><p class='tooltip_phone text-center'><i class='fa fa-phone' aria-hidden='true'></i> " + val.phone +"</p> </div>"
                 }
                 else{
-                    obj["tooltip"] = "<div class='tooltip_div'><a href='//www.pickeringtowncentre.com/stores/" + val.slug "><img src='" + val.store_front_url_abs + "'></a><p class='tooltip_name text-center'>" + val.name + "</p><p class='tooltip_phone text-center'><i class='fa fa-phone' aria-hidden='true'></i>" + val.phone +"</p> </div>"
+                    obj["tooltip"] = "<div class='tooltip_div'><a href='//www.pickeringtowncentre.com/stores/'" + val.slug "><img src='" + val.store_front_url_abs + "'></a><p class='tooltip_name text-center'>" + val.name + "</p><p class='tooltip_phone text-center'><i class='fa fa-phone' aria-hidden='true'></i>" + val.phone +"</p> </div>"
                 }
                 obj["attr"] = {}
                 regions[val.svgmap_region] = obj
