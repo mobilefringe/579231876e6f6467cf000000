@@ -47,7 +47,7 @@
     $(document).ready(function(e){
         init(e);
         
-        function email() {
+        function emailReplace() {
            $("#email").val(getUrlVars()["email"].replace("%40", "@")); 
         };
         show_content();
