@@ -36,7 +36,7 @@
     
     <!-- Site data -->
     <script>
-        setEndPoint('http://ptc.mallmaverick.com/api/v3/PTC/all.json');
+        setEndPoint('http://twinpines.mallmaverick.com/api/v3/twinpines/all.json');
     </script>
 </head>
 <body>
