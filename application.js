@@ -129,7 +129,7 @@ function renderEvents(container, template, collection){
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
         if(val.event_image_url_abs.indexOf('missing.png') >=0){
-            val.logo = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
+            val.logo = "//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
         }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz('America/Toronto');
@@ -164,7 +164,7 @@ function renderPromos(container, template, collection){
             val.store_name = store_details.name;
         }
         if(val.promo_image_url_abs.indexOf('missing.png') >= 0){
-            val.promo_image_url_abs = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
+            val.promo_image_url_abs = "//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
         }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz('America/Toronto');
@@ -416,7 +416,7 @@ function renderStoreDetails(container, template, collection){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png"
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png"
             // val.show_main_image="display:none"
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
@@ -498,7 +498,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png";
         } else {
             val.post_image = val.image_url;
         }
