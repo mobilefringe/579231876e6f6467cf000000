@@ -25,7 +25,6 @@
 <div class="main_container margin_30">
     <div id="mm_page_content" class="details_desc"></div>
 </div>
-<div class="push"></div>
 
 <script>
     $(document).ready(function(e){
