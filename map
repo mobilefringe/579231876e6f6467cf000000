@@ -33,10 +33,10 @@
             if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                 obj = {};
                 if(val.store_front_url_abs.indexOf('missing.png') > -1){
-                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name + "</p><p class='tooltip_phone text-center'><i class='fa fa-phone' aria-hidden='true'></i> " + val.phone +"</p> </div>"
+                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name + "</p><p class='tooltip_phone text-center'><i class='fa fa-phone' aria-hidden='true'></i> " + val.phone +"</p><p class='text-center'>Click for store details</p></div>"
                 }
                 else{
-                    obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>" + val.name + "</p><p class='tooltip_phone text-center'><i class='fa fa-phone' aria-hidden='true'></i>" + val.phone +"</p><p class='text-center'>Click for more details</p> </div>"
+                    obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>" + val.name + "</p><p class='tooltip_phone text-center'><i class='fa fa-phone' aria-hidden='true'></i>" + val.phone +"</p><p class='text-center'>Click for store details</p></div>"
                 }
                 obj["attr"] = {}
                 obj["attr"]["href"] = "/stores/" + val.slug
