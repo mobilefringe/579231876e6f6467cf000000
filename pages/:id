@@ -1,3 +1,9 @@
+<style>
+    .site_footer {
+        margin-top: 0;
+    }
+</style>
+
 <div class="pages_banner">
     <div class="main_container">
         <h2 id="mm_page_title"></h2>
