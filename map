@@ -8,16 +8,16 @@
         <div class="col-md-12">
             <h3 class="download_map">
                 <i class="fa fa-print"></i>
-                <a target="_blank" href="http://cdn.mallmaverick.com/system/site_images/photos/000/016/776/original/PTC_Printable_Map_Winter.pdf?1455125094">Printable Store Map</a>
+                <a target="_blank" href="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/016/776/original/PTC_Printable_Map_Winter.pdf?1455125094">Printable Store Map</a>
             </h3>
             <div class="" id="mapsvg"></div>
         </div>
     </div>
 </div>
 
-<script type="text/javascript" src="http://cdn.mallmaverick.com/javascripts/mapsvg/raphael.js"></script>
-<script type="text/javascript" src="http://cdn.mallmaverick.com/javascripts/mapsvg/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="http://cdn.mallmaverick.com/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
 <script>
     $(document).ready(function(e){
         init(e);
