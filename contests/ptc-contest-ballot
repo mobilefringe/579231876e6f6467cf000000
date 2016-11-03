@@ -5,11 +5,7 @@
 </div>
 <div class="main_container margin_30">
     <img src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/006/533/original/36266_PTC_eNewsletter_Sign-Up_Graphic_Update.png?1421077825" class="full_width margin_30">
-    <div class="contest_page">    
-    <div class="row-fluid">
-        <img src="{{ contest.photo_url }}" style="width:100%;"/>        
-        <p id="contest_description">{{ contest.description | strip_html}}</p>
-    </div>
+
     <hr>
     <div class="row-fluid">        
         <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tudie/" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form_20vic" method="post">
