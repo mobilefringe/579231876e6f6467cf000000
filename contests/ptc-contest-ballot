@@ -3,6 +3,9 @@
         <h2>Contest Ballot</h2>
     </div>
 </div>
+<div class="main_container margin_30">
+    <img src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/006/533/original/40128_PTC_November-2016-Contest_Web-Page-Header.png?1477943953" class="full_width margin_30">
+</div>
 <script>
     $(document).ready(function(e){
         init(e);
