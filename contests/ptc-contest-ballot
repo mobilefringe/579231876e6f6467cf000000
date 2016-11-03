@@ -85,7 +85,6 @@
     $(document).ready(function(e){
         init(e);
         
-      
         show_content();
         
         function validateForm() {
@@ -93,6 +92,7 @@
             var str2 = $("#last_name").val();
             var fullname = str1+" "+str2;
             $("#cm-name").attr('value', fullname);
+            $("#fieldjlvji").attr('value', "Contest Jan 2015");
     
             if ($("#first_name").val() == ""){
                 alert("Please Enter First Name");
