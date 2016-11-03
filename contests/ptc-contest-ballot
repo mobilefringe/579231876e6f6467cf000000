@@ -5,6 +5,79 @@
 </div>
 <div class="main_container margin_30">
     <img src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/006/533/original/36266_PTC_eNewsletter_Sign-Up_Graphic_Update.png?1421077825" class="full_width margin_30">
+    <div class="contest_page">    
+    <div class="row-fluid">
+        <img src="{{ contest.photo_url }}" style="width:100%;"/>        
+        <p id="contest_description">{{ contest.description | strip_html}}</p>
+    </div>
+    <hr>
+    <div class="row-fluid">        
+        <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tudie/" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form_20vic" method="post">
+            <!-- hidden fields to get property an contest id -->
+            <input id="propert_id" name="contest[property_id]" style="display:none" value="{{site.property.id}}" />
+            <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{contest.id}}" />
+            <input id="cm-name" name="cm-name" style="display:none" value="" />
+            <!-- hidden fields END -->
+            
+            <div class="row-fluid">
+                <div class="span3">
+                    <label>*First Name</label>
+                    <input required type="text" class="contest_info" id="first_name" name="contest[first_name]" value="" />
+                </div>
+                <div class="span3">
+                    <label>*Last Name</label>
+                    <input required type="text" class="contest_info" id="last_name" name="contest[last_name]" value=""/>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span6">
+                    <label for="fielddhyhid">Address</label>
+                    <input id="fielddhyhid" name="cm-f-dhyhid" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span3">
+                    <label for="fielddhyhih">City</label>
+                    <input  id="fielddhyhih" name="cm-f-dhyhih" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span3">
+                    <label for="fieldjyydiu">Province</label>
+                    <input id="fieldjyydiu" name="cm-f-jyydiu" type="text" class="contest_info" value="Ontario"/>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">
+                    <label for="fieldjyydik">*Postal Code</label>
+                    <input required id="fieldjyydik" name="cm-f-jyydik" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span3">
+                    <label for="fielddhyhik">*Telephone</label>
+                    <input required id="fielddhyhik" name="cm-f-dhyhik" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span6">
+                    <label for="fieldEmail">*Email</label>
+                    <input required id="fieldEmail" name="cm-tudie-tudie" type="email" class="contest_info" value=""/>
+                </div>
+            </div>
+            
+            <div class="row-fluid"  style="font-size:11pt">
+              <div class="span6 contest_checkbox" style="display:table">
+                  <input style="display:table-cell;margin-top: -2px;width: 24px;" class="info_check" id="listyuhhly" name="cm-ol-yuhhly" type="checkbox"/><span  style="display:table-cell"> I consent to receiving by e-mail, or other form of electronic contact, commercial electronic messages ("CEMs") from the Contest Sponsors (as defined in the Contest Rules). I understand that I can withdraw my consent to receiving CEMs from the Contest Sponsors at any time by e-mail at <br><a href="mailto:casladministrator-ptc@20vic.com" target="_top" style="color:blue;">casladministrator-ptc@20vic.com</a> <a href="/pages/ptc-privacy-policy" style="text-decoration:underline;"  target="_blank">Privacy Policy.</a></span>
+                  <br>
+              </div>
+              <div class="span6 contest_checkbox" style="display:table">
+                  <input style="display:table-cell;margin-top: -2px;width: 24px;" type="checkbox" class="info_check" id="agree_terms" />
+                  <span style="display:table-cell">I have read and am in full compliance with the official contest <a href="/pages/ptc-contest-rules-and-regulations" style="text-decoration:underline;"  target="_blank">rules and regulations.</a></span>
+              </div>
+            </div>
+            <div class="row-fluid" style="display:none;">
+                <input id="fieldjlvji" name="cm-f-jlvji" type="text" />
+            </div>
+            <br/>
+            <input class="btn btn-primary" name="commit" type="submit" value="Submit" style="width: 130px;float:right;height: 35px;">
+            <br/>
+        </form>
+    </div>
+</div>
 </div>
 <script>
     $(document).ready(function(e){
