@@ -16,6 +16,17 @@
 <!--        $("#email").val(getUrlVars()["email"].replace("%40", "@"));-->
 <!--    });-->
 <!--</script>-->
+
+
+<div class="blog_banner">
+    <div class="main_container">
+        <h2>Stay IN Touch</h2>
+    </div>
+</div>
+
+
+
+
 <div class="newsletter_page">
 <div class="row-fluid">
         <img src="/system/site_images/photos/000/006/533/original/36266_PTC_eNewsletter_Sign-Up_Graphic_Update.png?1421077825" style="width:100%;"/>        
