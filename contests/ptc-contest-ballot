@@ -1,0 +1,815 @@
+<!--{% if newsletter == "true" %}-->
+<!--<script>-->
+<!--    $("#header_title").text("Stay IN Touch");-->
+<!--    $("#mobile_header_title").text("Newsletter");-->
+<!--    function getUrlVars(){-->
+<!--        var vars = [], hash;-->
+<!--        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');-->
+<!--        for(var i = 0; i < hashes.length; i++){-->
+<!--            hash = hashes[i].split('=');-->
+<!--            vars.push(hash[0]);-->
+<!--            vars[hash[0]] = hash[1];-->
+<!--        }-->
+<!--        return vars;-->
+<!--    }-->
+<!--    $( document ).ready(function() {-->
+<!--        $("#email").val(getUrlVars()["email"].replace("%40", "@"));-->
+<!--    });-->
+<!--</script>-->
+<div class="newsletter_page">
+<div class="row-fluid">
+        <img src="/system/site_images/photos/000/006/533/original/36266_PTC_eNewsletter_Sign-Up_Graphic_Update.png?1421077825" style="width:100%;"/>        
+        <p id="contest_description">Want to stay up to date on the latest events, promotions and fashionable content from Pickering Town Centre? Simply fill out the form below and you're IN!</p>
+    </div>
+    <br />
+    <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/yuhhly/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
+        <div class="floater-left">
+            <label>Name *</label>  
+            <input id="fieldName" name="cm-name" type="text" required />
+        </div>
+        <div class="floater-left">
+            <label>Email *</label> 
+            <input id="email" name="cm-yuhhly-yuhhly" type="email" required />
+        </div>
+        <div class="floater-left">
+            <label>Address</label>
+            <input id="fieldzdydd" name="cm-f-zdydd" type="text" />
+        </div>
+        <div class="floater-left">
+            <label for="fieldzdydh">City</label>
+            <input id="fieldzdydh" name="cm-f-zdydh" type="text" />
+        </div>
+        <div class="floater-left">
+            <label>Postal Code *</label> 
+            <input id="fieldzdydu" name="cm-f-zdydu" type="text" required/> 
+        </div>
+        <div style="clear:both;"></div>
+        <br />
+        <input class="margin-5-top" id ="agree_newsletter" type="checkbox"/><span> I consent to receiving by e-mail, or other form of electronic contact, commercial electronic messages ("CEMs") from the Contest Sponsors (as defined in the Contest Rules). I understand that I can withdraw my consent to receiving CEMs from the Contest Sponsors at any time by e-mail at <a href="mailto:casladministrator-ptc@20vic.com" target="_top" style="color:blue;">casladministrator-ptc@20vic.com.</a><br><br> <a href="/pages/ptc-privacy-policy" style="text-decoration:underline;"  target="_blank">Privacy Policy.</a>
+        <br />  <br />       
+        <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" style="width:325px; height: 45px;" />            
+    </form>
+</div>    
+    <script type="text/javascript">
+        function validateNewsletterForm(){
+            if ($("#agree_newsletter").prop("checked") != true){
+                alert("Please agree to the receiving newsletter.");
+                $("#agree_newsletter").focus();
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+        
+        $(function() {
+            var location = window.location.toString();
+            if (location.indexOf("s=1") != -1) {
+                alert("You least form request has been submitted.")
+            } else if (location.indexOf("s=0") != -1) {
+                alert("Please try to submit the form later.")
+            }
+        });
+    </script>
+{% elsif contest.slug contains "ptc-contest-ballot-2"%}
+<script>
+    $("#header_title").text("Contest Ballot");
+    $("#mobile_header_title").text("Contest Ballot");
+</script>
+<div class="contest_page">    
+    <div class="row-fluid">
+        <img src="{{ contest.photo_url }}" style="width:100%;"/>        
+        <p id="contest_description">{{ contest.description | strip_html}}</p>
+    </div>
+    <hr>
+    <div class="row-fluid">        
+        <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tudie/" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form_20vic" method="post">
+            <!-- hidden fields to get property an contest id -->
+            <input id="propert_id" name="contest[property_id]" style="display:none" value="{{site.property.id}}" />
+            <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{contest.id}}" />
+            <input id="cm-name" name="cm-name" style="display:none" value="" />
+            <!-- hidden fields END -->
+            
+            <div class="row-fluid">
+                <div class="span3">
+                    <label>*First Name</label>
+                    <input required type="text" class="contest_info" id="first_name" name="contest[first_name]" value="" />
+                </div>
+                <div class="span3">
+                    <label>*Last Name</label>
+                    <input required type="text" class="contest_info" id="last_name" name="contest[last_name]" value=""/>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span6">
+                    <label for="fielddhyhid">Address</label>
+                    <input id="fielddhyhid" name="cm-f-dhyhid" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span3">
+                    <label for="fielddhyhih">City</label>
+                    <input  id="fielddhyhih" name="cm-f-dhyhih" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span3">
+                    <label for="fieldjyydiu">Province</label>
+                    <input id="fieldjyydiu" name="cm-f-jyydiu" type="text" class="contest_info" value="Ontario"/>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">
+                    <label for="fieldjyydik">*Postal Code</label>
+                    <input required id="fieldjyydik" name="cm-f-jyydik" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span3">
+                    <label for="fielddhyhik">*Telephone</label>
+                    <input required id="fielddhyhik" name="cm-f-dhyhik" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span6">
+                    <label for="fieldEmail">*Email</label>
+                    <input required id="fieldEmail" name="cm-tudie-tudie" type="email" class="contest_info" value=""/>
+                </div>
+            </div>
+            
+            <div class="row-fluid"  style="font-size:11pt">
+              <div class="span6 contest_checkbox" style="display:table">
+                  <input style="display:table-cell;margin-top: -2px;width: 24px;" class="info_check" id="listyuhhly" name="cm-ol-yuhhly" type="checkbox"/><span  style="display:table-cell"> I consent to receiving by e-mail, or other form of electronic contact, commercial electronic messages ("CEMs") from the Contest Sponsors (as defined in the Contest Rules). I understand that I can withdraw my consent to receiving CEMs from the Contest Sponsors at any time by e-mail at <br><a href="mailto:casladministrator-ptc@20vic.com" target="_top" style="color:blue;">casladministrator-ptc@20vic.com</a> <a href="/pages/ptc-privacy-policy" style="text-decoration:underline;"  target="_blank">Privacy Policy.</a></span>
+                  <br>
+              </div>
+              <div class="span6 contest_checkbox" style="display:table">
+                  <input style="display:table-cell;margin-top: -2px;width: 24px;" type="checkbox" class="info_check" id="agree_terms" />
+                  <span style="display:table-cell">I have read and am in full compliance with the official contest <a href="/pages/ptc-contest-rules-and-regulations" style="text-decoration:underline;"  target="_blank">rules and regulations.</a></span>
+              </div>
+            </div>
+            <div class="row-fluid" style="display:none;">
+                <input id="fieldjlvji" name="cm-f-jlvji" type="text" />
+            </div>
+            <br/>
+            <input class="btn btn-primary" name="commit" type="submit" value="Submit" style="width: 130px;float:right;height: 35px;">
+            <br/>
+        </form>
+    </div>
+</div>
+
+<script>
+    
+    function validateForm() {
+        var str1 = $("#first_name").val();
+        var str2 = $("#last_name").val();
+        var fullname = str1+" "+str2;
+        $("#cm-name").attr('value', fullname);
+
+
+        if ($("#first_name").val() == ""){
+            alert("Please Enter First Name");
+            $("#first_name").focus();
+            return false;
+        } else if ($("#last_name").val() == ""){
+            alert("Please Enter Last Name");
+            $("#last_name").focus();
+            return false;
+        } else if ($("#fieldzdytd").val() == ""){
+            alert("Please Enter Phone Number");
+            $("#fieldzdytd").focus();
+            return false;
+        } else if ($("#fieldzdyti").val() == ""){
+            alert("Please Enter Postal Code");
+            $("#fieldzdyti").focus();
+            return false;
+        } else if ($("#fieldEmail").val() == ""){
+            alert("Please Enter Email");
+            $("#fieldEmail").focus();
+            return false;
+        }else if ($("#agree_terms").prop("checked") != true){
+            alert("Please agree to the term and conditions before submitting the contest.");
+            $("#agree_terms").focus();
+            return false;
+        } else{
+        }
+    }
+</script>
+{% elsif contest.slug contains "ptc-contest-ballot-22"%}
+<style>
+    .contest-content{
+        width: 60%;    
+        margin: auto;
+    }
+    .contest-content label{
+        font-weight: bold;        
+    }
+    .contest-content .btn-row{
+        float:left;
+    }
+    @media (max-width: 767px) {   
+        .contest-content{
+            width: 100%;    
+            margin: auto;
+        }
+        .contest-content .btn-row{
+            text-align: center;
+        }
+    }
+</style>
+<script>
+    $("#header_title").text("Contest Ballot");
+    $("#mobile_header_title").text("Contest Ballot");
+</script>
+<div class="contest_page">    
+    <div class="row-fluid">
+        <img src="{{ contest.photo_url }}" style="width:100%;"/>        
+        <p id="contest_description">{{ contest.description | strip_html}}</p>
+    </div>
+    <hr>
+    <div class="contest-content">
+        <div class="row-fluid">        
+        <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tudie/" onsubmit="return validateForm()" enctype="multipart/form-data" method="post">
+            <!-- hidden fields -->
+            <input id="fieldjlvji" name="cm-f-jlvji" style="display:none" value="Contest Feb 2015" />
+            <input id="cm-name" name="cm-name" style="display:none" value="" />
+            <input id="contest_id" name="contest_id" style="display:none" value="{{contest.id}}" />
+            <!-- hidden fields END -->
+            
+            <div class="row-fluid">
+                <div class="span6">
+                    <label for="first_name">*First Name</label>
+                    <input required type="text" class="contest_info" id="first_name" name="" value="" />
+                </div>
+                <div class="span6">
+                    <label for="last_name">*Last Name</label>
+                    <input required type="text" class="contest_info" id="last_name" name="" value="" />
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <label for="email">*Email</label>
+                    <input required id="email" name="cm-tudie-tudie" type="email" class="contest_info" value=""/>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span4">
+                    <label for="fieldzdyti">*Postal Code</label>
+                    <input required id="fieldzdyti" name="cm-f-jyydik" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span4">
+                    <label for="province">*Province</label>
+                    <input required id="province" name="cm-f-jyydiu" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span4">
+                    <label for="year_birth">*Year of Birth</label>
+                    <input required type="text" class="contest_info" id="year_birth" name="cm-f-jyydih" value=""/>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12 contest_checkbox">
+                  <input style="margin:0;" class="info_check" id="newsletter_check" name="cm-ol-yuhhly" type="checkbox"/><span style="font-size:14px;" > I consent to receiving by e-mail, or other form of electronic contact, commercial electronic messages ("CEMs") from the Contest Sponsors (as defined in the Contest Rules). I understand that I can withdraw my consent to receiving CEMs from the Contest Sponsors at any time by e-mail at <a href="mailto:casladministrator-ptc@20vic.com" target="_top" style="color:blue;">casladministrator-ptc@20vic.com</a> <a href="/pages/ptc-privacy-policy" style="text-decoration:underline;"  target="_blank">Privacy Policy.</a></span>
+                  <br>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    <label for="reason">*In 500 words or less, please tell your friend’s full name and why your friend deserves to win this shopping spree.
+</label>
+                    <textarea required id="reason" name="cm-f-jyyddr" style="width:100%; height:100px; resize:none"></textarea>
+                </div>
+            </div>
+            <div class="row-fluid">
+
+              <div class="span12 contest_checkbox "style="font-size:14px;" >
+                  <input style="margin:0;" type="checkbox" class="info_check" id="agree_terms" /> I have read and am in full compliance with the official contest <a href="/system/site_images/photos/000/007/172/original/CONTEST_RULES_AND_REGULATIONS_-_Prom_inFashion_Video_Casting_Call_Contest.pdf?1424709702" style="text-decoration:underline;"  target="_blank">rules and regulations.</a>
+              </div>
+            </div>
+
+            <br/>
+            <div class="row-fluid btn-row">
+                <input class="btn btn-primary" name="commit" type="submit" value="Submit" style="width: 130px;height: 35px;">
+            </div>
+            <br/>
+        </form>          
+    </div>
+    </div>
+</div>
+<script>
+
+    
+   function contestIntoMM(){
+        var contest = {};
+        contest["property_id"] = 52;
+        contest["first_name"] =  $('#first_name').val();
+        contest["last_name"] =  $('#last_name').val();
+        contest["postal_code"] =  $('#fieldzdyti').val();
+        contest["birthday"] = $('#year_birth').val();
+        contest["contest_id"] = $('#contest_id').val();
+        contest["email"] = $('#email').val();
+        contest["notes"] = $('#reason').val();
+        contest["province"] = $('#province').val();
+        contest["newsletter"] = 0;
+       
+        var dataContest ={};
+        dataContest['contest'] = contest;
+        $.ajax({
+            url: "/newsletter_no_captcha",
+            type: "POST",
+             async: false,         
+            data: dataContest,
+            success: function(response){                        
+                
+            },
+            error: function(xhr, ajaxOptions, thrownError){
+            }
+        });
+    }
+    
+    function validateForm() {
+        var str1 = $("#first_name").val();
+        var str2 = $("#last_name").val();
+        var fullname = str1+" "+str2;
+        $("#cm-name").attr('value', fullname);
+        if(limitWord() != true){
+            alert("Please enter below 500 words!");
+            $("#reason").focus();  
+            return false;
+        }else if ($("#agree_terms").prop("checked") != true){
+            alert("Please agree to the term and conditions before submitting the contest.");
+            $("#agree_terms").focus();
+            return false;
+        }
+        contestIntoMM();
+
+    }
+    
+    function limitWord(){
+        var count = 0;
+        var len = 0;
+        var text = $('#reason').val();
+        var words = text.split(" ");
+        for(i = 0; i < words.length; i++){
+            if(words[i] != ''){
+                count ++;
+            }
+        }
+        if (count < 500){
+            return true;
+        }else{
+            return false;
+        }
+    }
+</script>  
+{% elsif contest.slug contains "ptc-live-to-see-20" or contest.slug contains "ptc-live-2-see-20" %}
+<style type="text/css">
+    .contest_page{
+        background: url(/system/site_images/photos/000/007/428/original/livetosee_bg.png?1426087736);
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .contest_page #contest-banner{
+        position: relative;
+        height: 310px;
+    }
+    .contest_page #bg-img1{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .contest_page #bg-img2{
+        position: absolute;
+        top: 0;
+        left: 217px;
+    }
+    .contest_page #bg-img3{
+        width: 70%;
+        padding-bottom: 15%;
+    }
+    .contest_page #bg-youtube{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        border: 2px solid black;
+    }
+    .contest_page #contest_form_20vic{
+        background-color: white;
+        border-radius: 35px;
+        padding: 35px 35px 15% 35px;
+        margin: 0 10%;
+    }
+    .contest_page #contest_form_20vic #contest-form-title{
+        font-size: 23pt;
+        color: #000000;
+        font-weight: bold;
+        border-bottom: 1px solid #C6C6C6;
+        padding: 0px 0px 20px 0px;
+        margin: 0px 0px 35px 0px;
+        line-height: 1em;
+    }
+    .contest_page .contest_checkbox{
+        font-size: 11px;
+        color: #707070;
+    }
+    .contest_page .contest_checkbox .info_check{
+        margin-top: 0px;
+    }
+    .contest_page .contest-btn-submit{
+        width: 227px;
+        height: 55px;
+        float:left;
+        background:url(/system/site_images/photos/000/007/432/original/livetosee_btn_pledge.png?1426096384) no-repeat;
+        cursor:pointer;
+        border: none;
+    }
+    .popup_bg{
+        display: none;
+        background-color: rgba(0,0,0,0.4);
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+    }
+    .popup_box{
+        position: relative;
+        margin: 20% auto;
+        max-width: 400px;
+        padding: 0 10px;
+    }
+    .popup_box .popup_fb{
+        position: absolute;
+        width: 15%;
+        height: 25%;
+        top: 70%;
+        left: 20%;
+    }
+    .popup_box .popup_twit{
+        position: absolute;
+        width: 20%;
+        height: 25%;
+        top: 70%;
+        left: 35%;
+    }
+    .popup_box .popup_email{
+        position: absolute;
+        width: 20%;
+        height: 25%;
+        top: 70%;
+        left: 59%;
+    }
+    .popup_box .popup_close{
+        position: absolute;
+        top: 17px;
+        right: 20px;
+        color: #ffffff;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .contest_page .contest_form_link{
+        margin: 10px 13%;
+        color: #ffffff;
+        font-size: 11pt;
+        word-wrap: break-word;
+    }
+    @media only screen 
+    and (max-width : 767px) {
+        .contest_page{
+            background: url(/system/site_images/photos/000/007/435/original/bg.jpg?1426096441);
+            background-repeat: repeat;
+        }
+        .contest_page #bg-youtube{
+            display: none;
+        }
+        .contest_page #bg-img3{
+            margin: 10% 15%;
+            max-height: none;
+        }
+        .page_content{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    @media only screen 
+    and (max-width : 499px){
+        .contest_page #bg-img1{
+            width: 204px;
+        }
+        .contest_page #bg-img2{
+            width: 140px;
+            left: 120px;
+        }
+        .contest_page #contest-banner{
+            height: 175px;
+        }
+        .contest_page #contest_form_20vic{
+            margin: 0px 3%;
+        }
+    }
+</style>
+<script>
+    $("#header_title").text("#live2see20");
+    $("#mobile_header_title").text("#live2see20");
+</script>
+<div class="contest_page">
+    <div class="popup_bg" onclick="close_popup()">
+        <div class="popup_box">
+            <img src="/system/site_images/photos/000/007/433/original/Shadow-Box.png?1426096384">
+            <a class="popup_fb" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.pickeringtowncentre.com/contests/ptc-live-2-see-20"></a>
+            <a class="popup_twit" target="_blank" href="https://twitter.com/share?text=Take%20the%20pledge%20with%20%40PickeringTownCentre%20to%20NOT%20text%20and%20drive%20%23live2see20 &url=http://www.pickeringtowncentre.com/contests/ptc-live-2-see-20"></a>
+            <a class="popup_email" href="mailto:?subject=Say NO to Texting and Driving with Pickering Town Centre&body=I’ve just taken the pledge to NOT text and drive with Pickering Town Centre. Take the pledge yourself by following this link: http://www.pickeringtowncentre.com/live2see20 %0D%0A%0D%0A#live2see20 
+            %0D%0A%0D%0AFollow us on our social media channels below. From March 13-22 our followers have the chance to WIN a $100 Pickering Town Centre Gift Card each day.%0D%0A%0D%0A
+            %0D%0AFacebook: PickeringTownCentre
+            %0D%0ATwitter: @PickeringTC
+            %0D%0AInstagram: @PickeringTownCentre
+             "></a>
+             <span class="popup_close" onclick="close_popup()">X</span>
+        </div>
+    </div>   
+    <div id="contest-banner" class="row-fluid">
+        <img id="bg-img1" src="/system/site_images/photos/000/007/426/original/livetosee_img1.png?1426087734">
+        <img id="bg-img2" src="/system/site_images/photos/000/007/425/original/livetosee_img2.png?1426087734">
+        <iframe id="bg-youtube" width="375" height="210" src="https://www.youtube.com/embed/0z3sk_Axhww" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="row-fluid">      
+        <div class="span8">
+            <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/ilkttr/" enctype="multipart/form-data" id="contest_form_20vic" method="post">
+                <!-- hidden fields to get property an contest id -->
+                <input id="propert_id" name="contest[property_id]" style="display:none" value="{{site.property.id}}" />
+                <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{contest.id}}" />
+                <input id="cm-name" name="cm-name" style="display:none" value="" />
+                <!-- hidden fields END -->
+                <div id="contest-form-title" class="row-fluid">
+                    <span>PLEDGE FORM</span>
+                </div>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <label>*First Name</label>
+                        <input required type="text" class="contest_info" id="first_name" name="contest[first_name]" value="" />
+                    </div>
+                    <div class="span6">
+                        <label>*Last Name</label>
+                        <input required type="text" class="contest_info" id="last_name" name="contest[last_name]" value=""/>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <label for="fieldzdyty">Address</label>
+                    <input id="fieldzdyty" name="cm-f-jjcky" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <label for="fieldzdyti">*Postal Code</label>
+                        <input required id="fieldzdyti" name="cm-f-jjcki" type="text" class="contest_info" value=""/>
+                    </div>
+                    <div class="span6">
+                        <label for="fieldzdytd">*Telephone</label>
+                        <input required id="fieldzdytd" name="cm-f-jjckd" type="text" class="contest_info" value=""/>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <label for="fieldzdytj">City</label>
+                        <input  id="fieldzdytj" name="cm-f-jjckj" type="text" class="contest_info" value=""/>
+                    </div>
+                    <div class="span6">
+                        <label for="fieldzdytt">Province</label>
+                        <input id="fieldzdytt" name="cm-f-jjckt" type="text" class="contest_info" value="Ontario"/>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <label for="fieldEmail">*Email</label>
+                    <input required id="fieldEmail" name="cm-ilkttr-ilkttr" type="email" class="contest_info" value=""/>
+                </div>
+                
+                <div class="row-fluid">
+                  <div class="span12 contest_checkbox">
+                      <input class="info_check" id="agree_terms" name="" type="checkbox"/><span> I consent to receiving by e-mail, or other form of electronic contact, commercial electronic messages ("CEMs") from the Contest Sponsors (as defined in the Contest Rules). I understand that I can withdraw my consent to receiving CEMs from the Contest Sponsors at any time by e-mail at <a href="mailto:casladministrator-ptc@20vic.com" target="_top" style="color:blue;">casladministrator-ptc@20vic.com</a> <a href="/pages/ptc-privacy-policy" style="text-decoration:underline;"  target="_blank">Privacy Policy</a> & <a href="/system/site_images/photos/000/007/526/original/CONTEST_RULES_AND_REGULATIONS_-_Young_Drivers_Contest.pdf?1426717216" style="text-decoration:underline;" target="_blank">Rules and Regulations.</a></span>
+                      <br>
+                  </div>
+                </div>
+                <div class="row-fluid" style="display:none;">
+                    <input id="fieldjlvji" name="cm-f-jlvji" type="text" />
+                </div>
+                <br/>
+                <input class="btn contest-btn-submit" name="commit" type="submit" value="">
+                <br/>
+            </form>   
+            <div class="contest_form_link">
+                <a href="http://www.textinganddrivingsafety.com/texting-and-driving-stats/">
+                    <span>*http://www.textinganddrivingsafety.com/texting-and-driving-stats/</span>
+                </a>
+            </div>
+        </div>
+        <div class="span4">
+            <img id="bg-img3" src="/system/site_images/photos/000/007/427/original/livetosee_stats.png?1426087734">
+        </div>         
+    </div>
+</div>
+
+<script>
+     $(document).ready(function() {
+        var tags = 
+        "<meta property=\"og:image\" content=\"http://www.pickeringtowncentre.com/system/site_images/photos/000/007/425/original/livetosee_img2.png\"/>"
+        +"<meta property=\"og:title\" content=\"Pickering Town Centre #live2see20\"/>"
+
+         $("head").append(tags);
+    });
+    //Campaign Monitor Sign Up
+    $('#contest_form_20vic').submit(function (e) {
+        var str1 = $("#first_name").val();
+        var str2 = $("#last_name").val();
+        var fullname = str1+" "+str2;
+        $("#cm-name").attr('value', fullname);
+
+        if ($("#first_name").val() == ""){
+            alert("Please Enter First Name");
+            $("#first_name").focus();
+            return false;
+        } else if ($("#last_name").val() == ""){
+            alert("Please Enter Last Name");
+            $("#last_name").focus();
+            return false;
+        } else if ($("#fieldzdytd").val() == ""){
+            alert("Please Enter Phone Number");
+            $("#fieldzdytd").focus();
+            return false;
+        } else if ($("#fieldzdyti").val() == ""){
+            alert("Please Enter Postal Code");
+            $("#fieldzdyti").focus();
+            return false;
+        } else if ($("#fieldEmail").val() == ""){
+            alert("Please Enter Email");
+            $("#fieldEmail").focus();
+            return false;
+        }else if ($("#agree_terms").prop("checked") != true){
+            alert("Please agree to the term and conditions before submitting the contest.");
+            $("#agree_terms").focus();
+            return false;
+        } else{
+        }
+
+        e.preventDefault();
+        $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    alert("Please try again later.");
+                } else { // 200
+                    $("#contest_form_20vic").trigger("reset");
+                    open_popup();                
+            }
+        });
+    });
+    function close_popup(){
+        $(".popup_bg").fadeOut();
+    }
+    function open_popup(){
+        $(".popup_bg").fadeIn();
+    }
+</script>
+{% else %}
+<script>
+    $("#header_title").text("Contest Ballot");
+    $("#mobile_header_title").text("Contest Ballot");
+</script>
+<div class="contest_page">    
+    <div class="row-fluid">
+        <img src="{{ contest.photo_url }}" style="width:100%;"/>        
+        <p id="contest_description">{{ contest.description | strip_html}}</p>
+    </div>
+    <hr>
+    <div class="row-fluid">        
+        <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/jihrdd/" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form_20vic" method="post">
+            <!-- hidden fields to get property an contest id -->
+            <input id="propert_id" name="contest[property_id]" style="display:none" value="{{site.property.id}}" />
+            <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{contest.id}}" />
+            <input id="cm-name" name="cm-name" style="display:none" value="" />
+            <!-- hidden fields END -->
+            
+            <div class="row-fluid">
+                <div class="span3">
+                    <label>*First Name</label>
+                    <input required type="text" class="contest_info" id="first_name" name="contest[first_name]" value="" />
+                </div>
+                <div class="span3">
+                    <label>*Last Name</label>
+                    <input required type="text" class="contest_info" id="last_name" name="contest[last_name]" value=""/>
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span6">
+                    <label for="fieldzdyty">Address</label>
+                    <input id="fieldzdyty" name="cm-f-zdyty" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span3">
+                    <label for="fieldzdytj">City</label>
+                    <input  id="fieldzdytj" name="cm-f-zdytj" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span3">
+                    <label for="fieldzdytt">Province</label>
+                    <input id="fieldzdytt" name="cm-f-zdytt" type="text" class="contest_info" value="Ontario"/>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span3">
+                    <label for="fieldzdyti">*Postal Code</label>
+                    <input required id="fieldzdyti" name="cm-f-zdyti" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span3">
+                    <label for="fieldzdytd">*Telephone</label>
+                    <input required id="fieldzdytd" name="cm-f-zdytd" type="text" class="contest_info" value=""/>
+                </div>
+                <div class="span6">
+                    <label for="fieldEmail">*Email</label>
+                    <input required id="fieldEmail" name="cm-jihrdd-jihrdd" type="email" class="contest_info" value=""/>
+                </div>
+            </div>
+            
+            <div class="row-fluid"  style="font-size:11pt">
+              <div class="span6 contest_checkbox" style="display:table">
+                  <input style="display:table-cell;margin-top: -2px;width: 24px;" class="info_check" id="listyuhhly" name="cm-ol-yuhhly" type="checkbox"/><span  style="display:table-cell"> I consent to receiving by e-mail, or other form of electronic contact, commercial electronic messages ("CEMs") from the Contest Sponsors (as defined in the Contest Rules). I understand that I can withdraw my consent to receiving CEMs from the Contest Sponsors at any time by e-mail at <br><a href="mailto:casladministrator-ptc@20vic.com" target="_top" style="color:blue;">casladministrator-ptc@20vic.com</a> <a href="/pages/ptc-privacy-policy" style="text-decoration:underline;"  target="_blank">Privacy Policy.</a></span>
+                  <br>
+              </div>
+              <div class="span6 contest_checkbox" style="display:table">
+                  <input style="display:table-cell;margin-top: -2px;width: 24px;" type="checkbox" class="info_check" id="agree_terms" />
+                  {%if contest.slug == "ptc-fall-shopping-spree-contest"%}
+                    <span style="display:table-cell">I have read and am in full compliance with the official contest <a href="/pages/ptc-rules-regulations" style="text-decoration:underline;"  target="_blank">rules and regulations.</a></span>
+                  {%else%}
+                    <span style="display:table-cell">I have read and am in full compliance with the official contest <a href="/pages/ptc-contest-rules-and-regulations" style="text-decoration:underline;"  target="_blank">rules and regulations.</a></span>
+                  {%endif%}
+              </div>
+            </div>
+            <div class="row-fluid" style="font-size:11pt">
+              <div class="span6 contest_checkbox" style="display:table">
+                  <input style="display:table-cell;margin-top: -2px;width: 24px;" class="info_check" id="fieldikiiuy" value="true" name="cm-f-ikiiuy" type="checkbox"/>
+                  <span  style="display:table-cell">Yes, I consent to receiving emails, or other forms of electronic contact, commercial messages ("CEMs") from this retail sponsor.</span>
+                  <br>
+              </div>
+            </div>
+            <div class="row-fluid" style="display:none;">
+                <input id="fieldjlvji" name="cm-f-jlvji" type="text" />
+            </div>
+            <br/>
+            <input class="btn btn-primary" name="commit" type="submit" value="Submit" style="width: 130px;float:right;height: 35px;">
+            <br/>
+        </form>
+    </div>
+</div>
+
+<script>
+    
+    function validateForm() {
+        var str1 = $("#first_name").val();
+        var str2 = $("#last_name").val();
+        var fullname = str1+" "+str2;
+        $("#cm-name").attr('value', fullname);
+        $("#fieldjlvji").attr('value', "Contest Jan 2015");
+
+
+        if ($("#first_name").val() == ""){
+            alert("Please Enter First Name");
+            $("#first_name").focus();
+            return false;
+        } else if ($("#last_name").val() == ""){
+            alert("Please Enter Last Name");
+            $("#last_name").focus();
+            return false;
+        } else if ($("#fieldzdytd").val() == ""){
+            alert("Please Enter Phone Number");
+            $("#fieldzdytd").focus();
+            return false;
+        } else if ($("#fieldzdyti").val() == ""){
+            alert("Please Enter Postal Code");
+            $("#fieldzdyti").focus();
+            return false;
+        } else if ($("#fieldEmail").val() == ""){
+            alert("Please Enter Email");
+            $("#fieldEmail").focus();
+            return false;
+        }else if ($("#agree_terms").prop("checked") != true){
+            alert("Please agree to the term and conditions before submitting the contest.");
+            $("#agree_terms").focus();
+            return false;
+        } else{
+        }
+    }
+</script>
+
+{% endif %}
+
+
+<style type="text/css">
+  .contest_info{
+    width: 100%;
+  }
+  .contest_page label{
+    margin-top: 0px;
+  }
+  .contest_page input{
+    box-sizing: border-box;
+  }
+  #contest_description{
+    font-weight: bold;
+    color: black;
+    padding: 15px 0px 15px 0px;
+    font-size: 16px;
+  }
+  .contest_checkbox{
+    margin-bottom: 10px;
+  }
+</style>
