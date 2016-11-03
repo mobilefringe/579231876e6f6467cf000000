@@ -5,9 +5,8 @@
 </div>
 <div class="main_container margin_30">
     <img src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/006/533/original/36266_PTC_eNewsletter_Sign-Up_Graphic_Update.png?1421077825" class="full_width margin_30">
-
     <hr>
-    <div class="row-fluid">        
+    <div class="row">        
         <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tudie/" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form_20vic" method="post">
             <!-- hidden fields to get property an contest id -->
             <input id="propert_id" name="contest[property_id]" style="display:none" value="{{site.property.id}}" />
@@ -16,18 +15,18 @@
             <!-- hidden fields END -->
             
             <div class="row-fluid">
-                <div class="span3">
+                <div class="col-md-3">
                     <label>*First Name</label>
                     <input required type="text" class="contest_info" id="first_name" name="contest[first_name]" value="" />
                 </div>
-                <div class="span3">
+                <div class="col-md-3">
                     <label>*Last Name</label>
                     <input required type="text" class="contest_info" id="last_name" name="contest[last_name]" value=""/>
                 </div>
             </div>
 
             <div class="row-fluid">
-                <div class="span6">
+                <div class="col-md-6">
                     <label for="fielddhyhid">Address</label>
                     <input id="fielddhyhid" name="cm-f-dhyhid" type="text" class="contest_info" value=""/>
                 </div>
