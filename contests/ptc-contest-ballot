@@ -30,11 +30,11 @@
                     <label for="fielddhyhid">Address</label>
                     <input id="fielddhyhid" name="cm-f-dhyhid" type="text" class="contest_info" value=""/>
                 </div>
-                <div class="span3">
+                <div class="col-md-3">
                     <label for="fielddhyhih">City</label>
                     <input  id="fielddhyhih" name="cm-f-dhyhih" type="text" class="contest_info" value=""/>
                 </div>
-                <div class="span3">
+                <div class="col-md-3">
                     <label for="fieldjyydiu">Province</label>
                     <input id="fieldjyydiu" name="cm-f-jyydiu" type="text" class="contest_info" value="Ontario"/>
                 </div>
