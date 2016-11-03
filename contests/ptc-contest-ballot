@@ -85,8 +85,6 @@
     $(document).ready(function(e){
         init(e);
         
-        show_content();
-        
         function validateForm() {
             var str1 = $("#first_name").val();
             var str2 = $("#last_name").val();
@@ -121,5 +119,6 @@
             } else{
             }
         }
+        show_content();
     });
 </script>
