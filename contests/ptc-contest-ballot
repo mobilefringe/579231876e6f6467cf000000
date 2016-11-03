@@ -39,16 +39,16 @@
                     <input id="fieldjyydiu" name="cm-f-jyydiu" type="text" class="contest_info" value="Ontario"/>
                 </div>
             </div>
-            <div class="row-fluid">
-                <div class="span3">
+            <div class="row">
+                <div class="col-md-3">
                     <label for="fieldjyydik">*Postal Code</label>
                     <input required id="fieldjyydik" name="cm-f-jyydik" type="text" class="contest_info" value=""/>
                 </div>
-                <div class="span3">
+                <div class="col-md-3">
                     <label for="fielddhyhik">*Telephone</label>
                     <input required id="fielddhyhik" name="cm-f-dhyhik" type="text" class="contest_info" value=""/>
                 </div>
-                <div class="span6">
+                <div class="col-md-6">
                     <label for="fieldEmail">*Email</label>
                     <input required id="fieldEmail" name="cm-tudie-tudie" type="email" class="contest_info" value=""/>
                 </div>
