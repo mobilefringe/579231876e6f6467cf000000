@@ -1,3 +1,10 @@
+<div class="blog_banner">
+    <div class="main_container">
+        <h2>Stay IN Touch</h2>
+    </div>
+</div>
+
+
 <!--{% if newsletter == "true" %}-->
 <!--<script>-->
 <!--    $("#header_title").text("Stay IN Touch");-->
@@ -18,11 +25,7 @@
 <!--</script>-->
 
 
-<div class="blog_banner">
-    <div class="main_container">
-        <h2>Stay IN Touch</h2>
-    </div>
-</div>
+
 
 
 
