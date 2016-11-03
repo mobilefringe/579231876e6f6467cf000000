@@ -3,3 +3,9 @@
         <h2>Contest Ballot</h2>
     </div>
 </div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+</script>
