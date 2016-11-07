@@ -1,22 +1,4 @@
-<style>
-    .yield {
-    min-height: 100%;
-    }
-    
-    .yield:after {
-        content: "";
-        display: block;
-    }
-    
-    .site_footer, .yield:after {
-      height: 160px; 
-    }
-    
-    .site_footer{
-        margin-top: 110px;
-        background: #e6e6e6;
-    }
-</style>
+
 <div class="pages_banner">
     <div class="main_container">
         <h2 id="mm_page_title"></h2>
