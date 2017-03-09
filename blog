@@ -1,0 +1,189 @@
+<!-- begin #page - the container for everything but header -->
+<div id="page">	
+	<!--begin slider -->
+	<div class="lemmon-wrap clearfix">
+		<div class="lemmon-slider">
+			<ul id="blog_banner">
+			     <center><img alt="loading" style="width:100px; height:100px;" src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/gif/1488389451000/loading.gif"></center>
+		    </ul>
+		</div>
+		<div class="controls"> <a href="#" class="prev-slide">Prev Page</a> <a href="#" class="next-slide">Next Page</a> </div>
+		<!-- / .controls --> 
+	</div>
+	<!-- / end slider --> 
+    <script id="blog_banner_template" type="x-tmpl-mustache">
+		<li> 
+			<a href="/posts/{{slug}}"> 
+				<img src="{{ image_url }}" alt="" />
+			</a> 
+			{{#great_news}}
+            	<a href="/categories/great%20news" class="sparkNowTileTag">GREAT NEWS</a>
+            {{/great_news}}
+			<div class="summary"> 
+				<a href="/posts/{{slug}}"> 
+					<p>{{ tag_first }}</p>
+             		<h3>{{ title }}</h3>
+				</a> 
+			</div>
+		</li>
+    </script>
+            
+	<!--notice how sliders are outside the this main content div-->
+	<div class="sparkNow">
+		<div class="container clearfix">	
+			<!-- begin equalHeights columns 3 -->
+			<h3 class="short_headline sparkNowTitle"><span>The Latest</span></h3>
+                <div class="row-fluid equalHero equalHeights" id="main-content">
+				    <center><img alt="loading" style="width:100px; height:100px;" src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/gif/1488389451000/loading.gif"></center>
+				</div>
+                    <script id="blog_tile_template" type="x-tmpl-mustache">
+            			<div class="span6 sparkNowTile">
+            				<div class="sparkNowTileTop" style="background: url({{image_url}}) no-repeat center center">
+            				    {{#tag_first}}
+            				        <a href="/categories/{{.}}" class="sparkNowTileTag">{{.}}</a>
+                                {{/tag_first}}
+            					<a href="/posts/{{slug}}" class="sparkNowTileImg">
+            					</a>
+            				</div>
+            				<div class="sparkNowTileTitle">
+            				    <a href="/posts/{{slug}}"><h3>{{ title }}</h3></a>
+            				    {{#video_link}}
+            				        <img src="http://kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/29a93cc9dd3b7f858a31366f54bbc07b/video_icon.png" class="" alt="">
+            				    {{/video_link}}
+            				</div>
+            				<a class="sparkNowTileRead" href="/posts/{{slug}}">READ <i class="fa fa-caret-right fa-lg"></i></a>
+            			</div>
+				    </script>
+	   		<div class="sparkNowMore">
+				<a href="javascript:void(0);" onclick="renderPostTileTemplate('#blog_tile_template', '#main-content',getBlogDataBySlug('ptc-blog').posts);">SEE MORE</a>
+				<i class="fa fa-caret-down fa-lg"></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- SPARKVIDEO -->
+	<!--<div class="sparkVideo">-->
+	<!--	<div class="container clearfix row-fluid"> -->
+	<!--		<h3 class="short_headline sparkVideoTitle"><span><b>SPARK</b>VIDEO</span></h3>-->
+	<!--		{% for post in published_video_posts limit:1 %}-->
+	<!--			<div class="video-container">-->
+	<!--				<iframe width="560" height="315" src="//www.youtube.com/embed/{{post.video_link}}" frameborder="0" allowfullscreen></iframe>-->
+	<!--			</div>-->
+	<!--			<a href="/posts/{{post.slug}}" class="sparkVideoPostTitle"><h1>{{ post.title }}</h1></a>-->
+	<!--			{{ post.body }}-->
+	<!--			<a class="sparkVideoRead" href="/posts/{{post.slug}}">READ</a>-->
+	<!--		{% endfor %}	-->
+	<!--		<div class="sparkVideoMore">-->
+	<!--			<a href="/posts?tag=video">SEE MORE</a>-->
+	<!--		</div>	-->
+	<!--	</div>-->
+	<!--</div> -->
+</div>
+
+
+
+<script>
+$(document).ready(function() {
+    function renderPageData(){
+        renderPostSliderTemplate('#blog_banner_template', '#blog_banner',getBlogDataBySlug('ptc-blog').posts);
+        renderPostTileTemplate('#blog_tile_template', '#main-content',getBlogDataBySlug('ptc-blog').posts);
+        imagesLoadedEvent("img",loadSlider);
+    }
+    loadMallData(renderPageData);
+});
+
+
+function loadSlider(){
+    $( '.lemmon-slider' ).lemmonSlider({
+		infinite: true
+	});
+}
+
+var interval = 4;
+var totalPosts;
+var showingPosts;
+
+function checkSeeMoreButton(){
+    if(totalPosts > showingPosts){
+        $('.sparkNowMore').fadeIn();
+    }else{
+        $('.sparkNowMore').fadeOut();
+    }
+}
+function renderPostSliderTemplate(blog_template, blog_block, post){
+
+    var item_list = [];
+    var item_rendered = [];
+    var blog_template_html = $(blog_template).html();
+    Mustache.parse(blog_template_html);   // optional, speeds up future uses
+
+    $.each( post , function( index, val ) {
+        if(val.tag.length != 0){
+            val.tag_first = val.tag[0];
+        }
+        if($.inArray('great news', val.tag) > -1){
+            val.great_news = 1;
+        }
+        item_list.push(val);
+    });
+
+    item_list.sort(function(a, b){
+        if(a.publish_date > b.publish_date) return -1;
+        if(a.publish_date < b.publish_date) return 1;
+        return 0;
+    });
+
+    $.each( item_list , function( index, val ) {
+        var blog_rendered = Mustache.render(blog_template_html,val);
+        item_rendered.push(blog_rendered);
+        
+        // $('.lemmon-slider').lemmonSlider('addItem', {item: blog_rendered});
+    });
+    $(blog_block).html(item_rendered.join(''));
+}
+
+function renderPostTileTemplate(blog_template, blog_block, post){
+
+    var item_list = [];
+    var item_rendered = [];
+    var blog_template_html = $(blog_template).html();
+    Mustache.parse(blog_template_html);   // optional, speeds up future uses
+    
+    totalPosts = post.length;
+    showingPosts = $('.sparkNowTile').length + interval;
+
+    $.each( post , function( key, val ) {
+        item_list.push(val);
+    });
+
+    $.each( item_list , function(key,val){
+        if(val.tag.length != 0){
+            val.tag_first = val.tag[0];
+        }
+        // if(val.impression_count < 20){
+        //     val.impression_tile_class = "sparkNowTileReadCount1";
+        // }else if (val.impression_count < 50){
+        //     val.impression_tile_class = "sparkNowTileReadCount2";
+        // }else if (val.impression_count < 100){
+        //     val.impression_tile_class = "sparkNowTileReadCount3";
+        // }else{
+        //     val.impression_tile_class = "sparkNowTileReadCount4";
+        // }
+    });
+    item_list.sort(function(a, b){
+        if(a.publish_date > b.publish_date) return -1;
+        if(a.publish_date < b.publish_date) return 1;
+        return 0;
+    });
+
+    $.each( item_list , function( index, val ) {
+        if (index >= showingPosts) {return false;};
+        
+        var blog_rendered = Mustache.render(blog_template_html,val);
+        item_rendered.push(blog_rendered);
+    });
+    $(blog_block).html(item_rendered.join(''));
+    checkSeeMoreButton();
+}
+
+</script>
