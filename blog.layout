@@ -274,7 +274,7 @@
         	<!--/.footer--> 
         	
         	<!-- JS JQuery ================ --> 
-    		<script src="http://kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/bootstrap.min.js"></script>
+    		<script src="//codecloud.cdn.speedyrails.net/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/bootstrap.min.js"></script>
     		<script src="/blog.js"></script>
 	</body>
 </html>
