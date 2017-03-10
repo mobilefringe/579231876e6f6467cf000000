@@ -146,7 +146,7 @@
 			<!-- mobile navigation trigger-->
 			<h5 class="mobile_nav">
 			    <a href="javascript:void(0)" class="mobile_nav_bar">&nbsp;<span><i class="fa fa-bars fa-2x"></i></span></a>
-			    <a href="/posts"><img class="mobile_nav_logo" src="http://assets.codecloudapp.com/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png"></a>
+			    <a href="/blog"><img class="mobile_nav_logo" src="http://assets.codecloudapp.com/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png"></a>
 			</h5>
 			<!--end mobile navigation trigger-->
 
@@ -181,7 +181,7 @@
 				<div class="container"> 
 					<!-- begin #main_menu -->
 					<div id="headerImg">
-						<a href="/posts"><img src="http://assets.codecloudapp.com/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png"></a>
+						<a href="/blog"><img src="http://assets.codecloudapp.com/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png"></a>
 					</div>
 					<div id="headerRight">
 						<div id="headerTop">
