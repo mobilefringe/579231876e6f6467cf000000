@@ -119,7 +119,7 @@
             } else{
             }
         }
-        function renderPageData(){
+        function renderPage(){
             show_content();
         }
     });
