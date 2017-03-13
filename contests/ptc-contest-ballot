@@ -84,7 +84,7 @@
 <script>
     $(document).ready(function(e){
         init(e);
-        
+        loadMallDataCached(renderPage);
         function validateForm() {
             var str1 = $("#first_name").val();
             var str2 = $("#last_name").val();
