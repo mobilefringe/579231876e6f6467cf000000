@@ -90,4 +90,38 @@
             show_content();
         }
     });
+    function validateForm() {
+            var str1 = $("#first_name").val();
+            var str2 = $("#last_name").val();
+            var fullname = str1+" "+str2;
+            $("#cm-name").attr('value', fullname);
+            $("#fieldjlvji").attr('value', "Contest Jan 2015");
+    
+            if ($("#first_name").val() == ""){
+                alert("Please Enter First Name");
+                $("#first_name").focus();
+                return false;
+            } else if ($("#last_name").val() == ""){
+                alert("Please Enter Last Name");
+                $("#last_name").focus();
+                return false;
+            } else if ($("#fieldzdytd").val() == ""){
+                alert("Please Enter Phone Number");
+                $("#fieldzdytd").focus();
+                return false;
+            } else if ($("#fieldzdyti").val() == ""){
+                alert("Please Enter Postal Code");
+                $("#fieldzdyti").focus();
+                return false;
+            } else if ($("#fieldEmail").val() == ""){
+                alert("Please Enter Email");
+                $("#fieldEmail").focus();
+                return false;
+            }else if ($("#agree_terms").prop("checked") != true){
+                alert("Please agree to the term and conditions before submitting the contest.");
+                $("#agree_terms").focus();
+                return false;
+            } else{
+            }
+        }
 </script>
