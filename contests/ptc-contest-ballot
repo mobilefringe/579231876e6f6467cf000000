@@ -119,6 +119,8 @@
             } else{
             }
         }
-        show_content();
+        function renderPageData(){
+            show_content();
+        }
     });
 </script>
