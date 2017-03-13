@@ -11,7 +11,7 @@
             <!-- hidden fields to get property an contest id -->
             <input id="propert_id" name="contest[property_id]" style="display:none" value="{{site.property.id}}" />
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{contest.id}}" />
-            <input id="cm-name" name="cm-name" style="display:none" value="" />
+            <input id="cm-name" name="cm-name" type="hidden" value="" />
             <!-- hidden fields END -->
             
             <div class="row">
