@@ -84,13 +84,11 @@
                 </div>
                 <div class="feature_item">
                     <div id="feature_3" class="small_feature_item"></div>
-                  <!--<a href="/events/ptc-march-break"> <img class="full_width max_height_short"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489505901000/38943_PTC-Website-Design_Phase-2_Home-v10_feature-box_MARCH BREAK - 03.14.17.jpg" /></a>-->
                 </div>
             </div>
         </div>
         <div class="feature_item">
             <div id="feature_4" class="small_feature_item"></div>
-            <!--<a href="/pages/ptc-coming-soon"><img class="small_feature_item"  src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1489424123000/img_blog.jpg" /></a>-->
         </div>
     </div>
     <div class="insta_feed">
@@ -100,8 +98,6 @@
         </div>
         <div id="instafeed" class="feature_items"></div>
     </div>
-    
-    
 </div>
 <script>
     $(document).ready(function(e){
