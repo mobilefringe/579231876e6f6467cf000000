@@ -146,6 +146,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var blog_detail = getPublishedPostDetailsBySlug(slug);
+            console.log(blog_detail)
             // checkErrorPage(blog_detail);
            
             // var publish_date = new Date(blog_detail.publish_date);
