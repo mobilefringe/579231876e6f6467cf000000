@@ -10,7 +10,6 @@
             <div>{{{rich_description}}}</div>
         </script>
     </div>
-    
     <hr>
     <div class="row">        
         <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/tudie/" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form_20vic" method="post">
@@ -106,21 +105,6 @@
             show_content();
         }
     });
-    
-    // function renderContest(container, template, collection){
-    //     var item_list = [];
-    //     var item_rendered = [];
-    //     var template_html = $(template).html();
-    //     Mustache.parse(template_html);   // optional, speeds up future uses
-    
-    //     collection.alt_photo_url = getImageURL(collection.photo_url);
-    //     collection.property_name = getPropertyDetails().name;
-    //     var rendered = Mustache.render(template_html,collection);
-    //     item_rendered.push(rendered);
-        
-    //     $(container).show();
-    //     $(container).html(item_rendered.join(''));
-    // }
 
     function validateForm() {
         var str1 = $("#first_name").val();
