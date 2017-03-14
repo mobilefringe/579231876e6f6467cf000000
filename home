@@ -53,22 +53,17 @@
     <div class="mobile_feature_items show_phone">
         <div class="mobile_large_feature_item">
             <div id="mobile_feature_1"></div>
-            <!--<a href="/stores/ptc-pickering-town-centre-saks-fifth-avenue-off-5th"><img class="full_width" src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424202000/img_nowopen.jpg" /></a>-->
         </div>
         <div class="mobile_large_feature_item">
             <div id="mobile_feature_2"></div>
-            <!--<a href="/contests/ptc-contest-ballot"><img class="full_width"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424247000/img_contest.jpg" /></a>-->
         </div>
         <div class="mobile_small_feature_item">
             <div id="mobile_feature_3"></div>
-            <!--<a href="/events/ptc-march-break"> <img class="full_width no_margin max_height_long"  src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489505091000/38943_PTC-Website-Design_Phase-2_Home-v10_feature-box_MARCH BREAK - 03.14.17.jpg" /></a>-->
             <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1471883474000/space.jpg" class="full_width" alt="white space">
             <div id="mobile_feature_0"></div>
-            <!--<a href="/pages/ptc-gift-cards"><img class="full_width no_margin max_height_short"  src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424254000/img_canada.jpg" /></a>-->
         </div>
         <div class="mobile_small_feature_item ">
             <div id="mobile_feature_4"></div>
-            <!--<a href="/pages/ptc-coming-soon"><img class="full_width no_margin max_height_long" src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424123000/img_blog.jpg" /></a>-->
         </div>
         <div class="clearfix"></div>
     </div>
