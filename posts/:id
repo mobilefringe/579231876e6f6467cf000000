@@ -145,7 +145,7 @@
         function renderPageData(){
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
-            var blog_detail = getPostDetailsBySlug(slug);
+            var blog_detail = getPublishedPostDetailsBySlug(slug);
             console.log(blog_detail)
             // checkErrorPage(blog_detail);
            
