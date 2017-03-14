@@ -100,7 +100,6 @@
                 } 
             });
             renderGeneral("#contest_details_container", '#contest_details_template', current_contest);
-            console.log(current_contest);
         
             show_content();
         }
