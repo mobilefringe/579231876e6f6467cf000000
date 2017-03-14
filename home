@@ -63,9 +63,7 @@
             <a href="/pages/ptc-gift-cards"><img class="full_width no_margin max_height_short"  src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424254000/img_canada.jpg" /></a>
         </div>
         <div class="mobile_small_feature_item ">
-            <span id="feature_4">
-                <!--<a href="/pages/ptc-coming-soon"><img class="full_width no_margin max_height_long" src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424123000/img_blog.jpg" /></a>-->
-            </span>
+            <a href="/pages/ptc-coming-soon"><img class="full_width no_margin max_height_long" src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424123000/img_blog.jpg" /></a>
         </div>
         <div class="clearfix"></div>
     </div>
