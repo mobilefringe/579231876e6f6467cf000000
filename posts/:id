@@ -252,8 +252,8 @@
             if (val.author == ""){
                 val.author= " - ";
             }
-            var next_p = getNextPostBySlug(val.slug).sortBy(function(o){ return new Date(o.publish_date) }).reverse();
-            var prev_p = getPrevPostBySlug(val.slug).sortBy(function(o){ return new Date(o.publish_date) }).reverse();
+            var next_p = getNextPostBySlug(val.slug);
+            var prev_p = getPrevPostBySlug(val.slug);
             if (next_p == undefined){
                 val.next_post_show = "display:none";
             }
