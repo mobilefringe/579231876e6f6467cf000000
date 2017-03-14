@@ -112,6 +112,7 @@
     function renderPage(){
         var banners = getBanners();
         var feature_items = getFeatureList();
+        console.log(feature_items);
         renderBanner('#banner_template','#home_banner',banners);
         $('.flexslider').flexslider({
             animation: "fade",
