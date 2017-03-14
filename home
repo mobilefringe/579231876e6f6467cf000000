@@ -128,13 +128,4 @@
 	        $('body').removeClass('no_scroll');
         })
     }
-    
-    function renderFeatureItems(){
-        var items = getFeatureList();
-        console.log(items);
-        $.each(items, function(i, val){
-            $('#feature_' + i).html('<a href="'+ val.url +'"><img src="'+ val.image_url+'" alt="' +val.name+ '"></a>');
-            $('#mobile_feature_' + i).html('<a href="'+ val.url +'"><img src="'+ val.image_url+'" alt="' +val.name+ '"></a>');
-        });
-    }
 </script>
