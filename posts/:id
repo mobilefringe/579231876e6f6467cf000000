@@ -158,7 +158,10 @@
             
             // renderPostDetailTemplate('#blog_detail_template_1', '#blog_detail_container_1',blog_detail);
             renderPostDetails('#blog_detail_container_2', '#blog_detail_template_2', blog_detail);
-            renderPostListTemplate('#blog_detail_template_3', '#blog_detail_container_3', getBlogDataBySlug('ptc-blog').posts);
+            var posts = getBlogDataBySlug('ptc-blog').posts;
+            console.log(posts);
+            var sorted_list =posts.sortBy(function(o){ return o.start_date});
+            renderPostListTemplate('#blog_detail_template_3', '#blog_detail_container_3', );
 
         }
         
