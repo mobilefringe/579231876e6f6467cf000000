@@ -161,7 +161,7 @@
             var posts = getBlogDataBySlug('ptc-blog').posts;
             console.log(posts);
             var sorted_list =posts.sortBy(function(o){ return o.start_date});
-            renderPostListTemplate('#blog_detail_template_3', '#blog_detail_container_3', );
+            // renderPostListTemplate('#blog_detail_template_3', '#blog_detail_container_3', );
 
         }
         
