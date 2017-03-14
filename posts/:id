@@ -146,7 +146,6 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var blog_detail = getPublishedPostDetailsBySlug(slug);
-            console.log(blog_detail)
             // checkErrorPage(blog_detail);
            
             // var publish_date = new Date(blog_detail.publish_date);
@@ -160,9 +159,7 @@
             renderPostDetails('#blog_detail_container_2', '#blog_detail_template_2', blog_detail);
             var posts = getBlogDataBySlug('ptc-blog').posts;
             var sorted_posts = posts.sortBy(function(o){ return o.publish_date});
-            console.log(sorted_posts)
             renderPostListTemplate('#blog_detail_template_3', '#blog_detail_container_3', sorted_posts);
-
         }
         
         loadMallData(renderPageData);
@@ -255,6 +252,7 @@
             if (val.author == ""){
                 val.author= " - ";
             }
+            
             var next_p = getNextPublishedPostBySlug(val.slug);
             var prev_p = getPrevPublishedPostBySlug(val.slug);
             if (next_p == undefined){
