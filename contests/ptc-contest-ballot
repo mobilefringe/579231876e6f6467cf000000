@@ -94,12 +94,28 @@
                     current_contest.push(val);
                 } 
             });
-            
+            renderContest("#contest_details_container", '#contest_details_template', contest_details)
             console.log(current_contest);
         
             show_content();
         }
     });
+    
+    function renderContest(container, template, collection){
+        var item_list = [];
+        var item_rendered = [];
+        var template_html = $(template).html();
+        Mustache.parse(template_html);   // optional, speeds up future uses
+    
+        collection.alt_photo_url = getImageURL(collection.photo_url);
+        collection.property_name = getPropertyDetails().name;
+        var rendered = Mustache.render(template_html,collection);
+        item_rendered.push(rendered);
+        
+        $(container).show();
+        $(container).html(item_rendered.join(''));
+    }
+
     function validateForm() {
         var str1 = $("#first_name").val();
         var str2 = $("#last_name").val();
