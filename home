@@ -72,25 +72,24 @@
             <div class="feature_items">
                 <div class="feature_item">
                     <div id="feature_0" class="small_feature_item"></div>
-                    <!--<a href="/pages/ptc-gift-cards"><img class="small_feature_item"  src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1489424254000/img_canada.jpg" /></a>-->
                 </div>
                 <div class="feature_item">
                     <div id="feature_1" class="large_feature_item"></div>
-                    <!--<a href="/stores/ptc-pickering-town-centre-saks-fifth-avenue-off-5th"><img  src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1489424202000/img_nowopen.jpg" /></a>-->
                 </div>
             </div>
             <div class="margin_10"></div>
             <div class="feature_items">
                 <div class="feature_item">
                     <div  id="feature_2" class="large_feature_item"></div>
-                    <!--<a href="/contests/ptc-contest-ballot"><img  src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1489424247000/img_contest.jpg" /></a>-->
                 </div>
-                <div class="feature_item" id="feature_3">
+                <div class="feature_item">
+                    <div id="feature_3" class="small_feature_item"></div>
                   <!--<a href="/events/ptc-march-break"> <img class="full_width max_height_short"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489505901000/38943_PTC-Website-Design_Phase-2_Home-v10_feature-box_MARCH BREAK - 03.14.17.jpg" /></a>-->
                 </div>
             </div>
         </div>
-        <div class="feature_item" id="feature_4">
+        <div class="feature_item">
+            <div id="feature_4" class="small_feature_item"></div>
             <!--<a href="/pages/ptc-coming-soon"><img class="small_feature_item"  src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1489424123000/img_blog.jpg" /></a>-->
         </div>
     </div>
