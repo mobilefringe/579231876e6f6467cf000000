@@ -50,24 +50,32 @@
 </div>
 
 <div class="main_container">
-    <div class="mobile_feature_items show_phone" id="feature_item_container">
-        <script id="feature_item_template" type="x-tmpl-mustache/text">
-            <div class="mobile_large_feature_item">
+    <div class="mobile_feature_items show_phone">
+        <div class="mobile_large_feature_item">
+            <span id="feature_0">
                 <a href="/stores/ptc-pickering-town-centre-saks-fifth-avenue-off-5th"><img class="full_width" src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424202000/img_nowopen.jpg" /></a>
-            </div>
-            <div class="mobile_large_feature_item">
+            </span>
+        </div>
+        <div class="mobile_large_feature_item">
+            <span id="feature_1">
                 <a href="/contests/ptc-contest-ballot"><img class="full_width"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424247000/img_contest.jpg" /></a>
-            </div>
-            <div class="mobile_small_feature_item">
-               <a href="/events/ptc-march-break"> <img class="full_width no_margin max_height_long"  src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489505091000/38943_PTC-Website-Design_Phase-2_Home-v10_feature-box_MARCH BREAK - 03.14.17.jpg" /></a>
-                <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1471883474000/space.jpg" class="full_width" alt="white space">
+            </span>
+        </div>
+        <div class="mobile_small_feature_item">
+            <span id="feature_2">
+                <a href="/events/ptc-march-break"> <img class="full_width no_margin max_height_long"  src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489505091000/38943_PTC-Website-Design_Phase-2_Home-v10_feature-box_MARCH BREAK - 03.14.17.jpg" /></a>
+            </span>
+            <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1471883474000/space.jpg" class="full_width" alt="white space">
+            <span id="feature_3">
                 <a href="/pages/ptc-gift-cards"><img class="full_width no_margin max_height_short"  src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424254000/img_canada.jpg" /></a>
-            </div>
-            <div class="mobile_small_feature_item ">
+            </span>
+        </div>
+        <div class="mobile_small_feature_item ">
+            <span id="feature_4">
                 <a href="/pages/ptc-coming-soon"><img class="full_width no_margin max_height_long" src="//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489424123000/img_blog.jpg" /></a>
-            </div>
-            <div class="clearfix"></div>
-        </script>
+            </span>
+        </div>
+        <div class="clearfix"></div>
     </div>
     <div class="feature_items hidden_phone">
         <div class="feature_item">
@@ -129,6 +137,13 @@
             $(".modal-backdrop").remove();
 	        $(".popup_home").remove();
 	        $('body').removeClass('no_scroll');
+        })
+    }
+    
+    function renderFeatureItems(){
+        var items = getFeatureList();
+        $.each(items, function(i, val){
+            $('#feature_' + i).html('<a href="'+ val.url +'"><img src="'+ val.image_url + '" alt="' + val.name + '"></a>')
         })
     }
 </script>
