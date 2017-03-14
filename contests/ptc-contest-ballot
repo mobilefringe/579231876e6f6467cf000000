@@ -87,10 +87,15 @@
         loadMallDataCached(renderPage);
         
         function renderPage(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            contest_details = getContestBySlug(slug);
-            console.log(contest_details);
+            var contests = getContestList();
+            var current_contest = [];
+            $.each(contests, function(key, val){
+                if(val.show_on_slug === "ptc-contest") {
+                    current_contest.push(val);
+                } 
+            });
+            
+            console.log(current_contest);
         
             show_content();
         }
