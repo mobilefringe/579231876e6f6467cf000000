@@ -121,7 +121,7 @@
     function renderPage(){
         var banners = getBanners();
         var feature_items = getFeatureList();
-        console.log(feature_items);
+        
         renderFeatureItems();
         
         renderBanner('#banner_template','#home_banner',banners);
@@ -145,9 +145,9 @@
     
     function renderFeatureItems(){
         var items = getFeatureList();
-        console.log(items)
+        console.log(feature_items);
         $.each(items, function(i, val){
-            $('#feature_' + i).html('<a href="'+ val.url +'"><img class="small_feature_item" src="'+ val.image_url + '" alt="' + val.name + '"></a>')
+            $('#feature_' + i).html('<a href="'+ val.url +'"><img src="'+ val.image_url+'" class="hoverer" alt="' +val.name+ '"></a>');
         });
     }
 </script>
