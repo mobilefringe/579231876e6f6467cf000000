@@ -120,7 +120,6 @@
     
     function renderPage(){
         var banners = getBanners();
-        var feature_items = getFeatureList();
         
         renderFeatureItems();
         
