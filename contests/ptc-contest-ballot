@@ -99,7 +99,7 @@
                     current_contest.push(val);
                 } 
             });
-            renderContest("#contest_details_container", '#contest_details_template', contest_details)
+            renderContest("#contest_details_container", '#contest_details_template', current_contest);
             console.log(current_contest);
         
             show_content();
