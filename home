@@ -120,9 +120,10 @@
     
     function renderPage(){
         var banners = getBanners();
-        var feature_items = getFeatureList();
-        console.log(feature_items);
+        // var feature_items = getFeatureList();
+        // console.log(feature_items);
         renderFeatureItems();
+        
         renderBanner('#banner_template','#home_banner',banners);
         $('.flexslider').flexslider({
             animation: "fade",
@@ -146,6 +147,6 @@
         var items = getFeatureList();
         $.each(items, function(i, val){
             $('#feature_' + i).html('<a href="'+ val.url +'"><img src="'+ val.image_url + '" alt="' + val.name + '"></a>')
-        })
+        });
     }
 </script>
