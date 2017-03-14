@@ -146,7 +146,7 @@
     function renderFeatureItems(){
         var items = getFeatureList();
         $.each(items, function(i, val){
-            $('#feature_' + i).html('<a href="'+ val.url +'"><img src="'+ val.image_url + '" alt="' + val.name + '"></a>')
+            $('#feature_' + i).html('<a href="'+ val.url +'"><img class="small_feature_item" src="'+ val.image_url + '" alt="' + val.name + '"></a>')
         });
     }
 </script>
