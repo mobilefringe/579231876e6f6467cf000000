@@ -81,8 +81,9 @@
             </div>
             <div class="margin_10"></div>
             <div class="feature_items">
-                <div class="feature_item" id="feature_2">
-                    <!--<a href="/contests/ptc-contest-ballot"><img class="large_feature_item" src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1489424247000/img_contest.jpg" /></a>-->
+                <div class="feature_item">
+                    <div  id="feature_2" class="large_feature_item"></div>
+                    <!--<a href="/contests/ptc-contest-ballot"><img  src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1489424247000/img_contest.jpg" /></a>-->
                 </div>
                 <div class="feature_item" id="feature_3">
                   <!--<a href="/events/ptc-march-break"> <img class="full_width max_height_short"  src="http://assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/jpeg/1489505901000/38943_PTC-Website-Design_Phase-2_Home-v10_feature-box_MARCH BREAK - 03.14.17.jpg" /></a>-->
