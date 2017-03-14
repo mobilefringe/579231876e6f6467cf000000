@@ -87,6 +87,11 @@
         loadMallDataCached(renderPage);
         
         function renderPage(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            contest_details = getContestBySlug(slug);
+            console.log(contest_details);
+        
             show_content();
         }
     });
