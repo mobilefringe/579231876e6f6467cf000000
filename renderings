@@ -182,8 +182,8 @@ function renderRepoTemplate(blog_template, blog_block, asset_slug){
     var blog_rendered = Mustache.render(blog_template_html,asset);
     $(blog_block).html(blog_rendered);
 }
-function renderRepoListTemplate(blog_template, blog_block, repo){
 
+function renderRepoListTemplate(blog_template, blog_block, repo){
     var item_list = [];
     var item_rendered = [];
     var blog_template_html = $(blog_template).html();
@@ -207,6 +207,4 @@ function renderRepoListTemplate(blog_template, blog_block, repo){
     
     tilePressed(repo[0].slug);
 }
-
-
 </script>
