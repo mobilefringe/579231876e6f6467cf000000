@@ -164,12 +164,12 @@ body{
     height: 30px;
     background-size: contain;
     &:hover{
-        background-image: url(//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1475866372000/act_on.png);    
+        background-image: url(//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1475866372000/act_on.png);    
     }
 }
 
 #vic_logo{
-    background-image:url(//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1475866383000/20vic_off.png);
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1475866383000/20vic_off.png);
     background-repeat:no-repeat;
     display: block;
     height: 40px;
@@ -177,7 +177,7 @@ body{
     background-size: contain;
     margin-left:auto;
     &:hover{
-        background-image: url(//assets.codecloudapp.com/sites/579231876e6f6467cf000000/image/png/1475866356000/20vic_on.png);    
+        background-image: url(//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1475866356000/20vic_on.png);    
     }
 }
 
