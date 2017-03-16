@@ -73,7 +73,7 @@
                             // Text below the icon  
                             text: 'Google Chrome',  
                             // URL For icon/text link  
-                            url: 'http://www.google.com/chrome/',  
+                            url: '//www.google.com/chrome/',  
                             // (Optional) Use "allow" to customized when to show this option  
                             // Example: to show chrome only for IE users  
                             // allow: { all: false, msie: true }  
@@ -84,22 +84,22 @@
                         },  
                         safari: {  
                             text: 'Safari',  
-                            url: 'http://www.apple.com/safari/download/'  
+                            url: '//www.apple.com/safari/download/'  
                         },  
                         opera: {  
                             text: 'Opera',  
-                            url: 'http://www.opera.com/download/'  
+                            url: '//www.opera.com/download/'  
                         },  
                         msie: {  
                             text: 'Internet Explorer',  
-                            url: 'http://www.microsoft.com/windows/Internet-explorer/'  
+                            url: '//www.microsoft.com/windows/Internet-explorer/'  
                         }  
                     },// Message below close window link  
                     imagePath: '//cdn.jsdelivr.net/jquery.jreject/1.0.2/images/'
                 });      
             });
 
-            setEndPoint('//ptc.mallmaverick.com/api/v2/PTC/all.json');
+            setEndPoint('//ptc.mallmaverick.com/api/v4/PTC/all.json');
             sessionStorage.setItem('primary_locale', 'en-CA');
             sessionStorage.setItem('secondary_locale', 'fr-CA');
         </script>
@@ -146,7 +146,7 @@
 			<!-- mobile navigation trigger-->
 			<h5 class="mobile_nav">
 			    <a href="javascript:void(0)" class="mobile_nav_bar">&nbsp;<span><i class="fa fa-bars fa-2x"></i></span></a>
-			    <a href="/blog"><img class="mobile_nav_logo" src="http://assets.codecloudapp.com/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png"></a>
+			    <a href="/blog"><img class="mobile_nav_logo" src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png"></a>
 			</h5>
 			<!--end mobile navigation trigger-->
 
@@ -161,8 +161,8 @@
 							</form>
 				        </li>
 						<li>
-						    <a href="http://pickeringtowncentre.com/newsletter" target="_blank">
-						    <img src="http://assets.codecloudapp.com/sites/5757295d6e6f647a06080000/image/jpeg/1488402466000/getonthelist (1).jpg" class="" alt=""></a>
+						    <a href="//pickeringtowncentre.com/newsletter" target="_blank">
+						    <img src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/jpeg/1488402466000/getonthelist (1).jpg" class="" alt=""></a>
 						</li>
 						<li><a href="#">BLOG POSTS <i class="fa fa-chevron-down"></i></a></li>
                         <li class="mobile_submenu"><a href="/posts">Fashion & Beauty</a></li>
@@ -181,7 +181,7 @@
 				<div class="container"> 
 					<!-- begin #main_menu -->
 					<div id="headerImg">
-						<a href="/blog"><img src="http://assets.codecloudapp.com/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png"></a>
+						<a href="/blog"><img src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png"></a>
 					</div>
 					<div id="headerRight">
 						<div id="headerTop">
@@ -192,8 +192,8 @@
 								</form>
 							</div>	
 							<div id="headerSignUp">
-							    <a href="http://pickeringtowncentre.com/newsletter" target="_blank">
-							        <img src="http://assets.codecloudapp.com/sites/5757295d6e6f647a06080000/image/jpeg/1488402466000/getonthelist (1).jpg" class="" alt="">
+							    <a href="//pickeringtowncentre.com/newsletter" target="_blank">
+							        <img src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/jpeg/1488402466000/getonthelist (1).jpg" class="" alt="">
 							    </a>
 							</div>
 						</div>
@@ -219,13 +219,13 @@
 							<div id="headerSocialBox">
 								<!--<div id="headerSocial">-->
 								<!--	<ul>-->
-								<!--		<li><a href="https://twitter.com/StVitalCentre" target="_blank"><img src="http://kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/twitter.png"></a></li>-->
-								<!--		<li><a href="http://www.pinterest.com/stvitalcentre" target="_blank"><img src="http://kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/pinter.png"></a></li>-->
-								<!--		<li><a href="https://www.facebook.com/StVitalCentre" target="_blank"><img src="http://kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/facebook.png"></a></li>-->
+								<!--		<li><a href="//twitter.com/StVitalCentre" target="_blank"><img src="//kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/twitter.png"></a></li>-->
+								<!--		<li><a href="//www.pinterest.com/stvitalcentre" target="_blank"><img src="//kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/pinter.png"></a></li>-->
+								<!--		<li><a href="//www.facebook.com/StVitalCentre" target="_blank"><img src="//kodekloud.s3.amazonaws.com/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/facebook.png"></a></li>-->
 								<!--	</ul>-->
 								<!--</div>-->
 								<div id="headerLogo">
-									<a href="http://www.pickeringtowncentre.com/"><img src="https://www.mallmaverick.com/system/site_images/photos/000/026/648/original/ptc_logo.png?1488303956"></a>
+									<a href="//www.pickeringtowncentre.com/"><img src="//www.mallmaverick.com/system/site_images/photos/000/026/648/original/ptc_logo.png?1488303956"></a>
 								</div>
 							</div>
 						</div>
@@ -251,15 +251,15 @@
         				<div id="footerAbout">
         					<div id="footerTop">
         					    <div class="social_icons">
-	                                <a href="http://www.facebook.com/Pickeringtowncentre" target="_blank"><div id="social_fb"></div></a>
-	                                <a href="https://twitter.com/#!/PickeringTC" target="_blank"><div id="social_twitter"></div></a>
-                                	<a href="https://www.instagram.com/pickeringtowncentre/" target="_blank"><div id="social_insta"></div></a>
-                                    <a href="http://www.snapchat.com/"  target="_blank"><div id="social_sc"></div></a>
-                                	<a href="https://www.youtube.com/user/PickeringTownCentre" target="_blank"><div id="social_yt"></div></a>
-                                	<a href="https://mallmaverick.com/api/v4/PTC/blogs/PTC-blog/feed.atom" target="_blank"><div id="social_rs"></div></a>
+	                                <a href="//www.facebook.com/Pickeringtowncentre" target="_blank"><div id="social_fb"></div></a>
+	                                <a href="//twitter.com/#!/PickeringTC" target="_blank"><div id="social_twitter"></div></a>
+                                	<a href="//www.instagram.com/pickeringtowncentre/" target="_blank"><div id="social_insta"></div></a>
+                                    <a href="//www.snapchat.com/"  target="_blank"><div id="social_sc"></div></a>
+                                	<a href="//www.youtube.com/user/PickeringTownCentre" target="_blank"><div id="social_yt"></div></a>
+                                	<a href="//mallmaverick.com/api/v4/PTC/blogs/PTC-blog/feed.atom" target="_blank"><div id="social_rs"></div></a>
                                 </div>
         						<div id="footerLogo">
-        							<a href="http://www.pickeringtowncentre.com/"><img src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/png/1488464861000/PTC-Logo-x2.png"></a>
+        							<a href="//www.pickeringtowncentre.com/"><img src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/png/1488464861000/PTC-Logo-x2.png"></a>
         						</div>
         					</div>
         					<div id="footerBottom">
