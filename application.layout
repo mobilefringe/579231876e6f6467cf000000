@@ -44,12 +44,12 @@
     <script src="../helpers.js" type="text/javascript"></script>
     
     <!--MallMaverick SDK-->
-    <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
+    <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.js"></script>
     <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
     
     <!-- Site data -->
     <script>
-        setEndPoint('//ptc.mallmaverick.com/api/v4/PTC/all.json');
+        setEndPoint('//ptc.mallmaverick.com/api/v3/PTC/all.json');
     </script>
 </head>
 <body>
