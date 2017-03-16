@@ -56,7 +56,7 @@
         <link href="//cdn.jsdelivr.net/jquery.jreject/1.0.2/css/jquery.reject.css" rel="stylesheet" type="text/css">
         
         <!--MallMaverick SDK-->
-        <script src="//mallmaverick.codecloudapp.com/mallmaverick_v4.js"></script>
+        <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.js"></script>
         <script src="//mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
 
         <script>
@@ -99,7 +99,7 @@
                 });      
             });
 
-            setEndPoint('//ptc.mallmaverick.com/api/v4/PTC/all.json');
+            setEndPoint('//ptc.mallmaverick.com/api/v3/PTC/all.json');
             sessionStorage.setItem('primary_locale', 'en-CA');
             sessionStorage.setItem('secondary_locale', 'fr-CA');
         </script>
