@@ -49,7 +49,7 @@
     
     <!-- Site data -->
     <script>
-        setEndPoint('//ptc.mallmaverick.com/api/v4/PTC/all.json');
+        setEndPoint('//ptc.mallmaverick.com/api/v3/PTC/all.json');
     </script>
 </head>
 <body>
