@@ -45,7 +45,7 @@
 		<script src="//codecloud.cdn.speedyrails.net/sites/5512e0606e6f64112d000000/a4f210f3e9502396b14baeff5101625d/jquery-1.9.1.min.js"></script>
 	    <script src="//codecloud.cdn.speedyrails.net/sites/5512e0606e6f64112d000000/d2d2e908a39300174ad9e0ac422787c2/lemmon-slider.js"></script>
 
-		<!-- Add to Head after Style sheet http://modernizr.com/docs/#installing  ================ -->
+		<!-- Add to Head after Style sheet //modernizr.com/docs/#installing  ================ -->
 		<script src="//codecloud.cdn.speedyrails.net/sites/5512e0606e6f64112d000000/b239db31c4de1536d5e3d74d7b04ab2d/modernizr.js"></script><!-- js multiple backgrounds svg background size -->
 		
 		<!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
@@ -80,7 +80,7 @@
                         },  
                         firefox: {  
                             text: 'Mozilla Firefox',  
-                            url: 'http://www.mozilla.com/firefox/'  
+                            url: '//www.mozilla.com/firefox/'  
                         },  
                         safari: {  
                             text: 'Safari',  
