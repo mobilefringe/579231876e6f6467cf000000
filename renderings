@@ -1,0 +1,212 @@
+<!-- begin #page - the container for everything but header -->
+<div id="page">	
+	<div class="sparkNow">
+		<div class="container clearfix">	
+		
+			<!-- begin equalHeights columns 3 -->
+			<h3 class="short_headline sparkNowTitle"><span>Renderings</span></h3>
+			<div class="row-fluid rendering-container">
+			    <div class="span9 rendering-left" id="rendering-main">
+			         <center><img alt="loading" style="width:100px; height:100px;" src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/gif/1488389451000/loading.gif"></center>
+			    </div>
+                <script id="rendering_main_template" type="x-tmpl-mustache">
+			        <article class="entry-post">
+                        <header class="entry-header">
+                            {{#photo_url_abs}}
+                                <img id="post_image" src="{{.}}" />
+                            {{/photo_url_abs}}
+                        </header>
+                    </article>
+                    <div class="media-detail-nav">
+                        <a href="javascript:void(0);" onclick="showPrevTile('{{slug}}')">PREVIOUS</a>
+                        <a href="javascript:void(0);" onclick="showNextTile('{{slug}}')">NEXT</a>
+                    </div>
+                    <h1>{{ name }}</h1>
+			        <span>
+                        {{ description }}
+			        </span>
+                </script>
+			    <div class="span3 rendering-right">
+			        <a class="scroll_up" href="javascript:void(0);" onclick="media_scroll_up()"><img src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/png/undefined/icon_up.png"></a>
+                    <div class="row-fluid equalHero equalHeights" id="list-content">
+                        <center><img alt="loading" style="width:100px; height:100px;" src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/gif/1488389451000/loading.gif"></center>
+                    </div>
+			        <a class="scroll_down" href="javascript:void(0);" onclick="media_scroll_down()"><img src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/png/undefined/icon_down.png"></a>
+                    <script id="blog_tile_template" type="x-tmpl-mustache">
+                        <div class="renderingPost-container">
+                            <ul class="renderingPost clearfix">
+                                {{#.}}
+                                    <li> 
+                                        <div class="renderingPost-img" id="tile-{{slug}}" onclick="tilePressed('{{slug}}')" style="background:url({{photo_url_abs}}) center center"></div>
+                                        <span class="title"><a>{{ name }}</a></span>
+                                    </li>
+                                {{/.}}
+                            </ul>
+                        </div>
+                    </script>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<style>
+    .sparkNow{
+        margin-top:3%;
+        margin-bottom:3%;
+    }
+    .rendering-container{
+        border-top: 1px solid #c2c2c2;
+    }
+    .rendering-container .rendering-left{
+        padding-top:75px;
+        padding-right: 40px;
+    }
+    {
+        padding-left: 10px;
+    }
+
+    .renderingPost-container{
+        height:760px;
+        overflow:hidden;
+    }
+    ul.renderingPost{
+        margin:0 auto;
+        height:5000px;
+    }
+    ul.renderingPost li{
+        width:100%;
+        padding:20px 0px;
+    }
+    ul.renderingPost .renderingPost-img{
+        width:100%;
+        height:125px;
+        cursor: pointer;
+        background-size: cover !important;
+    }
+    ul.renderingPost .renderingPost-img:hover,
+    ul.renderingPost .renderingPost-img.active{
+        outline: 7px solid #A0D8D0;
+        outline-offset: -7px;
+    }
+    .scroll_up, .scroll_down{
+        display:block;
+        width:54px;
+        margin: 0 auto;
+    }    
+
+    ul.renderingPost span.title a{
+        text-decoration: none;
+        font-size:13pt;
+    }
+    
+    .post-image{
+        height:426px;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+    }
+    @media only screen and (max-width: 767px) {
+        .rendering-container .rendering-left{
+            padding:0px;
+            padding-top:24px;
+            border:none;
+        }
+        .rendering-container .rendering-right{
+            padding:0px 0px 0px 0px;
+            margin-top:20px;
+            border-top:1px solid #c2c2c2;
+        }
+    }
+</style>
+<script>
+$(document).ready(function() {
+    function renderPageData(){
+        renderRepoListTemplate('#blog_tile_template', '#list-content',getRepoDetailsByName("pretty-great-renderings"));
+    }
+    
+    loadMallData(renderPageData);
+});
+
+var itemList = [];
+function showNextTile(slug){
+    $.each( itemList, function( index, value ) {
+        if(value.slug == slug){
+            if(index == itemList.length-1){
+                return tilePressed(itemList[0].slug);
+            }else{
+                return tilePressed(itemList[index+1].slug);
+            }
+        }
+    });
+}
+function showPrevTile(slug){
+    $.each( itemList, function( index, value ) {
+        if(value.slug == slug){
+            if(index == 0){
+                return tilePressed(itemList[itemList.length-1].slug);
+            }else{
+                return tilePressed(itemList[index-1].slug);
+            }
+        }
+    });
+}
+function tilePressed(slug){
+    $(".renderingPost-img").removeClass("active");
+    var tile = $("#tile-"+slug);
+    tile.toggleClass( "active" );
+    renderRepoTemplate('#rendering_main_template', '#rendering-main',slug);
+}
+function media_scroll_up(){
+    var $first_desc = $('ul.renderingPost li:first');
+    $first_desc.animate({ 'margin-top': '-190px'}, 500, function() {
+        $first_desc.remove().css({ 'margin-top': '0px'});
+        $('ul.renderingPost li:last').after($first_desc);
+    });
+}
+    
+function media_scroll_down(){
+    var $last = $('ul.renderingPost li:last');
+    $last.remove().css({ 'margin-top': '-190px' });
+    $('ul.renderingPost li:first').before($last);
+    $last.animate({ 'margin-top': '0px' }, 500);
+}
+
+function renderRepoTemplate(blog_template, blog_block, asset_slug){
+    var blog_template_html = $(blog_template).html();
+    Mustache.parse(blog_template_html);   // optional, speeds up future uses
+    
+    var asset = getAssetBySlug(asset_slug);
+    console.log(asset);
+
+    var blog_rendered = Mustache.render(blog_template_html,asset);
+    $(blog_block).html(blog_rendered);
+}
+function renderRepoListTemplate(blog_template, blog_block, repo){
+
+    var item_list = [];
+    var item_rendered = [];
+    var blog_template_html = $(blog_template).html();
+    Mustache.parse(blog_template_html);   // optional, speeds up future uses
+    repo = repo.images;
+
+    $.each( repo, function( index, value ) {
+        item_list.push(value);
+    });
+        
+    item_list.sort(function(b, a){
+        if(a.name.substring(1) > b.name.substring(1)) return -1;
+        if(a.name.substring(1) < b.name.substring(1)) return 1;
+        return 0;
+    });
+    
+    itemList = item_list;
+    var blog_rendered = Mustache.render(blog_template_html,item_list);
+    item_rendered.push(blog_rendered);
+    $(blog_block).html(item_rendered.join(''));
+    
+    tilePressed(repo[0].slug);
+}
+
+
+</script>
