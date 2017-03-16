@@ -48,6 +48,9 @@
 		<!-- Add to Head after Style sheet //modernizr.com/docs/#installing  ================ -->
 		<script src="//codecloud.cdn.speedyrails.net/sites/5512e0606e6f64112d000000/b239db31c4de1536d5e3d74d7b04ab2d/modernizr.js"></script><!-- js multiple backgrounds svg background size -->
 		
+		<script src="//s3.amazonaws.com/kodekloud/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
+        <script src="//s3.amazonaws.com/kodekloud/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
+    
 		<!--Mustache is a client side templating engine https://github.com/janl/mustache.js/ -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
        
