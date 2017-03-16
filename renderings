@@ -122,9 +122,7 @@
 <script>
 $(document).ready(function() {
     function renderPageData(){
-        var repo_details = getRepoDetailsByName("pretty-great-renderings");
-        console.log(repo_details);
-        // renderRepoListTemplate('#blog_tile_template', '#list-content', getRepoDetailsByName("pretty-great-renderings"));
+        renderRepoListTemplate('#blog_tile_template', '#list-content',getRepoDetailsByName("pretty-great-renderings"));
     }
     
     loadMallData(renderPageData);
