@@ -1,0 +1,46 @@
+<div class="events_banner generic_banner">
+    <div class="main_container">
+        <h2>Careers</h2>
+    </div>
+</div>
+<div class="main_container margin_30">
+    <div class="job_details_container" id="job_container">
+        <script id="job_template" type="x-tmpl-mustache/text">
+            <img class="pull-left" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/935/original/icon_in.jpg?1403210088">
+            <a href="/stores/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
+            <div class="job_details">
+                <h3 class="job_name">{{name}}</h3>
+                <p class="dates">{{dates}}</p>
+                <p class="dates">
+                    Telephone:<br />
+                    {{contact_phone}}
+                </p>
+                <p class="dates">{{message}}</p>
+            </div>
+            <div>{{{rich_description}}}</div>
+            <div class="text-center">
+                <a href="http://www.facebook.com/sharer.php?u=http://pickeringtowncentre.com/jobs/{{slug}}" target="_blank">
+                        <img id="fb" class="hidden-phone" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/939/original/share_fb_normal.png?1403227481">
+                </a>
+                <a href="http://twitter.com/share?text={{name}}&url=http://pickeringtowncentre.com/jobs/{{slug}}" target="_blank">
+                    <img id="twtr" class="promo_box_social hidden-phone" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/941/original/share_tweet_normal.png?1403227503">
+                </a>
+            </div>
+        </script>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderAll); 
+    });
+    
+    function renderAll(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        job_details = getJobDetailsBySlug(slug);
+        renderJobDetails('#job_container', '#job_template', job_details)
+        show_content();
+    }
+</script>
