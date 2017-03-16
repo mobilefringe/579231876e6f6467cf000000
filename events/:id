@@ -20,7 +20,7 @@
                         <img id="fb" class="hidden-phone" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/939/original/share_fb_normal.png?1403227481">
                     </a>
                     <a href="http://twitter.com/share?text={{name}}&url=http://pickeringtowncentre.com/events/{{slug}}" target="_blank">
-                        <img id="twtr" class="promo_box_social hidden-phone" src="http://cdn.mallmaverick.com/system/site_images/photos/000/002/941/original/share_tweet_normal.png?1403227503">
+                        <img id="twtr" class="promo_box_social hidden-phone" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/941/original/share_tweet_normal.png?1403227503">
                     </a>
                 </div>
             </div>
