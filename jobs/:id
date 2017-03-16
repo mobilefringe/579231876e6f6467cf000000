@@ -19,10 +19,10 @@
             </div>
             <div>{{{rich_description}}}</div>
             <div class="text-center">
-                <a href="http://www.facebook.com/sharer.php?u=http://pickeringtowncentre.com/jobs/{{slug}}" target="_blank">
+                <a href="//www.facebook.com/sharer.php?u=//pickeringtowncentre.com/jobs/{{slug}}" target="_blank">
                         <img id="fb" class="hidden-phone" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/939/original/share_fb_normal.png?1403227481">
                 </a>
-                <a href="http://twitter.com/share?text={{name}}&url=http://pickeringtowncentre.com/jobs/{{slug}}" target="_blank">
+                <a href="//twitter.com/share?text={{name}}&url=//pickeringtowncentre.com/jobs/{{slug}}" target="_blank">
                     <img id="twtr" class="promo_box_social hidden-phone" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/941/original/share_tweet_normal.png?1403227503">
                 </a>
             </div>
