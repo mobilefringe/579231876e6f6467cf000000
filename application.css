@@ -935,10 +935,13 @@ body{
     margin-top:0;
 }
 
-.store_details_phone{
-    font-size:25px;
+.store_details_phone {
+    // font-size: 25px;
+    font-size: 22px;
 }
-
+.store_details_phone a {
+    color: #333;
+}
 .store_logo {
     height: 289px !important;
     display: flex;
