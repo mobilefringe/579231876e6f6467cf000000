@@ -1,0 +1,31 @@
+<div class="pages_banner act_banner">
+    <div class="main_container">
+        <h2>ACT</h2>
+    </div>
+</div>
+<div class="main_container margin_30">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="margin_30">
+               Environmental stability and accountability is an important touchpoint for the 20VIC group of companies. Focused on how to create a better relationship with the natural world and protect it from further damage, we set out to create something that was recognizable, memorable and most importantly, a rallying cry around environmental stability. ACT, Always Consider Tomorrow does just that – any ACTion taken today will benefit all of us tomorrow.
+            </p>
+        
+          
+        </div>
+        <div class="col-md-6">
+            <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1470685101000/img_act.jpg" class="full_width" alt="act banner">
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        
+        show_content();
+    }
+</script>
