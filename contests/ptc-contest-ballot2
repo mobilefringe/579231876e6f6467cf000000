@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="fieldEmail">*Email</label>
-                    <input required id="fieldEmail" name="cm-xjutlk-xjutlke" type="email" class="contest_info" value=""/>
+                    <input required id="fieldEmail" name="cm-xjutlk-xjutlk" type="email" class="contest_info" value=""/>
                 </div>
             </div>
             
