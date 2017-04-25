@@ -64,6 +64,7 @@
                             <p class="store_list_name">
                                 <a href="/stores/{{slug}}">{{name}}</a>
                                 <span style="{{new_store}}" class="pull-right new_store">NEW</span>
+                                <span style="{{coming_soon_store}}" class="pull-right coming_soon_store">COMING SOON</span>
                                 <span style="{{promo_exist}}" class="promo_exist pull-right">PROMOTION</span>
                             </p>
                         </div>
