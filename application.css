@@ -898,7 +898,14 @@ body{
     line-height: 13px;
     margin-left: 5px;
 }
-
+.coming_soon_store{
+    color: #fff;
+    background: #f00;
+    padding: 4px 6px;
+    font-size: 13px;
+    line-height: 13px;
+    margin-left: 5px;
+}
 .promo_exist{
     color: #fff;
     background: #008000;
