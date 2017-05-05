@@ -1176,6 +1176,12 @@ body{
         -webkit-justify-content: center;
         justify-content: center;
     }
+    .ig-image{
+
+        img {
+            max-width: 50%;
+        }
+    }
     .social_icons{
         margin: 20px auto 30px auto;
         width: 210px;
