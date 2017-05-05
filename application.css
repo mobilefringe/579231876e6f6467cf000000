@@ -1177,9 +1177,9 @@ body{
         justify-content: center;
     }
     .ig-image{
-
+        width: 50%;
         img {
-            max-width: 50%;
+            max-width: 100%;
         }
     }
     .social_icons{
