@@ -441,7 +441,7 @@ body{
     padding-right: 5px;
     padding-bottom: 5px;
     float:left;
-    display:block;
+    display: inline-block;
     img {
         max-width: 230px;
     }
