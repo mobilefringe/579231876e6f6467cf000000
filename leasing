@@ -39,7 +39,7 @@
     $(document).ready(function(e){
         init(e);
         loadMallDataCached(renderPage);
-    })
+    });
     
     function renderPage(){
         var pathArray = window.location.pathname.split( '/' );
