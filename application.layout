@@ -22,7 +22,20 @@
         ga('create', 'UA-50587834-5', 'auto');
         ga('send', 'pageview');
     </script>
-   
+    <script>
+        /**
+        * Function that tracks a click on an outbound link in Analytics.
+        * This function takes a valid URL string as an argument, and uses that URL string
+        * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+        * using 'navigator.sendBeacon' in browser that support it.
+        */
+        var trackOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon'
+            });
+        }
+    </script>
+    
     <!--CSS-->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
@@ -186,6 +199,14 @@
     <section id="content" class="yield">
         {{yield}}
     </section>
+    
+    <!-- BC FIRE BANNER -->
+    <div class="trim_screen">
+        <a id="track_link" href="https://donate.redcross.ca/ea-action/action?ea.client.id=1951&ea.campaign.id=74010&_ga=2.186858216.1395117015.1499699609-1123211371.1499699609" target="_blank">
+            <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/5841df6b6e6f640488010000/image/jpeg/1499956420000/bc_fire_banner.jpg" alt=""/>
+        </a>
+    </div>
+    
     <div class="show_phone">
         <div class="social_icons">
             <a target="_blank" href="//www.facebook.com/Pickeringtowncentre" id="social_fb"></a>
@@ -262,6 +283,11 @@
             </div>
         </div>
     </section>
+    <script>
+        $("#track_link").click( function() {
+            trackOutboundLink('https://donate.redcross.ca/ea-action/action?ea.client.id=1951&ea.campaign.id=74010&_ga=2.186858216.1395117015.1499699609-1123211371.1499699609');
+        });
+    </script> 
 </body>
 
 </html>
