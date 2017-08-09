@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-md-6 contest_checkbox" style="display:table">
                     <input style="display:table-cell;margin-top: -2px;width: 24px;" type="checkbox" class="info_check" id="agree_terms" />
-                    <span style="display:table-cell">I have read and am in full compliance with the official contest <a href="/pages/ptc-contest-rules-and-regulations" style="text-decoration:underline;"  target="_blank">rules and regulations.</a></span>
+                    <span style="display:table-cell">I have read and am in full compliance with the official contest <a href="/pages/ptc-rules-regulations" style="text-decoration:underline;"  target="_blank">rules and regulations.</a></span>
                 </div>
             </div>
             <div class="row">
