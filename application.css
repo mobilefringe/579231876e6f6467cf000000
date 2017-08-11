@@ -1063,6 +1063,8 @@ body{
 /* --- */
 @media(max-width: 990px){
     .store_logo{
+        margin: 0 auto;
+        width: 50%;
         height: auto !important;
     }
 }
