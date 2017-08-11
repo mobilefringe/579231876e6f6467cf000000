@@ -1061,6 +1061,11 @@ body{
     }
 }
 /* --- */
+@media(max-width: 990px){
+    .store_logo{
+        height: auto !important;
+    }
+}
 
 @media(max-width: 768px){
     .popup_home{
