@@ -1339,7 +1339,6 @@ body{
     }
     .store_logo{
         margin-bottom: 20px;
-        height: auto !important;
     }
     .max_height_long{
     }
@@ -1363,7 +1362,10 @@ body{
         width: 100%;
     }
 }
-// @media(max-width: 425px){
+@media(max-width: 425px){
+    .store_logo {
+        width: 100%;
+    }
 //     #instafeed {
 //         display: -webkit-box;
 //         display: -ms-flexbox;
@@ -1377,7 +1379,7 @@ body{
 //         -webkit-justify-content: center;
 //         justify-content: center;
 //     }
-// }
+}
 
 
 
