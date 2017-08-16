@@ -14,9 +14,6 @@
                 <p class="dates">{{dates}}</p>
                 <div class="details_desc">{{{rich_description}}}</div>
             </div>
-            <div id="pixel_tag">
-                <img src="https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10036763"/>
-            </div>
             <div class="col-md-12">
                 <div class="text-center">
                     <a href="//www.facebook.com/sharer.php?u=https://pickeringtowncentre.com/events/{{slug}}" target="_blank">
@@ -26,6 +23,9 @@
                         <img id="twtr" class="promo_box_social hidden-phone" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/941/original/share_tweet_normal.png?1403227503">
                     </a>
                 </div>
+            </div>
+            <div id="pixel_tag">
+                <img src="https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10036763"/>
             </div>
         </script>
         
@@ -41,7 +41,9 @@
     function renderPage(){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
+        console.log(slug);
         if(slug.indexOf("ptc-meet-joey-chelsea-1-day-sale") > -1) {
+            console.log("show_pizel",$("#pixel_tag"));
             $("#pixel_tag").show();
         }
         else {
