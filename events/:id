@@ -43,7 +43,7 @@
         console.log(slug);
         if(slug.indexOf("ptc-meet-joey-chelsea-1-day-sale") > -1) {
             console.log("show_pizel");
-            $("#remarketing_tag").show();
+            $("#pixel_tag").show();
         }
         else {
             $("#remarketing_tag").hide();
