@@ -50,7 +50,7 @@
         else {
              console.log("hide_pizel",$("#pixel_tag"));
             $("#pixel_tag").hide();
-            $("#pixel_tag").css({"display": "none"});
+            $("#pixel_tag").css("display", "none");
         }
                 
         event_details = getEventDetailsBySlug(slug);
