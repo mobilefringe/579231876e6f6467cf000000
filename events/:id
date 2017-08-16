@@ -40,7 +40,6 @@
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         
-        
         if(slug.indexOf("ptc-meet-joey-chelsea-1-day-sale") > -1) {
             $("#remarketing_tag").show();
         }
