@@ -42,11 +42,11 @@
         
         
         if(slug.indexOf("ptc-meet-joey-chelsea-1-day-sale") > -1) {
-                $("#remarketing_tag").show();
+            $("#remarketing_tag").show();
         }
-            else {
-                $("#remarketing_tag").hide();
-            }
+        else {
+            $("#remarketing_tag").hide();
+        }
                 
         event_details = getEventDetailsBySlug(slug);
         renderEventDetails('#event_details_container', '#event_details_template', event_details)
