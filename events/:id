@@ -42,13 +42,13 @@
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         console.log(slug);
-        if(slug.indexOf("ptc-meet-joey-chelsea-1-day-sale") > -1) {
-            console.log("show_pizel");
+        // if(slug.indexOf("ptc-meet-joey-chelsea-1-day-sale") > -1) {
+        //     console.log("show_pizel");
             $("#pixel_tag").show();
-        }
-        else {
-            $("#pixel_tag").hide();
-        }
+        // }
+        // else {
+        //     $("#pixel_tag").hide();
+        // }
                 
         event_details = getEventDetailsBySlug(slug);
         renderEventDetails('#event_details_container', '#event_details_template', event_details)
