@@ -46,7 +46,7 @@
             $("#pixel_tag").show();
         }
         else {
-            $("#remarketing_tag").hide();
+            $("#pixel_tag").hide();
         }
                 
         event_details = getEventDetailsBySlug(slug);
