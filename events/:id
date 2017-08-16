@@ -14,7 +14,7 @@
                 <p class="dates">{{dates}}</p>
                 <div class="details_desc">{{{rich_description}}}</div>
             </div>
-            <div id="pixel_tag">
+            <div id="pixel_tag" style="display:none">
                 <img src="https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10036763"/>
             </div>
             <div class="col-md-12">
