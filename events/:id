@@ -42,7 +42,7 @@
         var slug = pathArray[pathArray.length-1];
         console.log(slug);
         if(slug.indexOf("ptc-meet-joey-chelsea-1-day-sale") > -1) {
-            console.log("show_pizel");
+            console.log("show_pizel",$("#pixel_tag"));
             $("#pixel_tag").show();
         }
         else {
