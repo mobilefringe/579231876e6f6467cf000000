@@ -14,6 +14,9 @@
                 <p class="dates">{{dates}}</p>
                 <div class="details_desc">{{{rich_description}}}</div>
             </div>
+            <div id="pixel_tag">
+                <img src="https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10036763"/>
+            </div>
             <div class="col-md-12">
                 <div class="text-center">
                     <a href="//www.facebook.com/sharer.php?u=https://pickeringtowncentre.com/events/{{slug}}" target="_blank">
