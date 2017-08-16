@@ -48,9 +48,10 @@
             $("#pixel_tag").show();
         }
         else {
-             console.log("hide_pizel",$("#pixel_tag"));
+             
             $("#pixel_tag").hide();
             $("#pixel_tag").css("display", "none");
+            console.log("hide_pizel",$("#pixel_tag"));
         }
                 
         event_details = getEventDetailsBySlug(slug);
