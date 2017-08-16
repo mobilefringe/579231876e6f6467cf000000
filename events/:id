@@ -48,6 +48,7 @@
             $("#pixel_tag").show();
         }
         else {
+             console.log("hide_pizel",$("#pixel_tag"));
             $("#pixel_tag").hide();
         }
                 
