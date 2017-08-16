@@ -39,6 +39,13 @@
     function renderPage(){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
+        
+        
+        if(slug.indexOf("ptc-meet-joey-chelsea-1-day-sale") > -1) {
+                $("#remarketing_tag").show();
+            }
+            else {
+                
         event_details = getEventDetailsBySlug(slug);
         renderEventDetails('#event_details_container', '#event_details_template', event_details)
         show_content();
