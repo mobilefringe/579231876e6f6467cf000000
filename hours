@@ -72,12 +72,12 @@
     });
     
     function renderAll(){
-        var reg_hours = getPropertyRegularHours()
+        var reg_hours = getPropertyRegularHours();
         var holiday_hours = getPropertyHolidayHours();
         
-        renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours')
-        renderHours('#holiday_hours_container','#holiday_hours_template', hours, 'holiday_hours')
-        renderHours('#closed_hours_container','#closed_hours_template', hours, 'closed_hours')
+        renderHours('#reg_hours_container','#reg_hours_template', reg_hours, 'reg_hours')
+        renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours')
+        renderHours('#closed_hours_container','#closed_hours_template', holiday_hours, 'closed_hours')
         show_content();
     }
 </script>
