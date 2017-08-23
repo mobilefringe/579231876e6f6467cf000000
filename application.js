@@ -340,9 +340,6 @@ function renderStoreList(container, template, collection, type, starter, breaker
         //     }
         // }
         
-        
-        //var categories = getStoreCategories();
-        
         if (val.categories != null){
             val.cat_list = val.categories.join(',')
         }
@@ -377,13 +374,7 @@ function renderStoreList(container, template, collection, type, starter, breaker
         } else {
             val.new_store = "display:none";
         }
-        // if (val.promotions.length > 0){
-        //     val.promotion_exist = "display:inline";
-        // }
-        // else{
-        //     val.promotion_exist = "display:none";
-        // }
-        
+
         val.map_x = val.x_coordinate - 19;
         val.map_y = val.y_coordinate - 58;
         val.block = current_initial + '-block';
@@ -397,9 +388,7 @@ function renderStoreList(container, template, collection, type, starter, breaker
         if (upper_current_initial.charCodeAt(0) <= breaker.charCodeAt(0) && upper_current_initial.charCodeAt(0) >= starter.charCodeAt(0)){
             item_rendered.push(rendered);
         }
-
     });
-    
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
