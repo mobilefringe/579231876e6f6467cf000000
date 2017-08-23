@@ -342,36 +342,34 @@ function renderStoreList(container, template, collection, type, starter, breaker
         }
         if(val.total_published_promos > 0){
             val.promo_exist = "display:inline"
-        }
-        else{
+        } else {
             val.promo_exist = "display:none"
         }
         
         //var categories = getStoreCategories();
         var current_initial = val.name[0];
-        val.cat_list = val.categories.join(',')
+        // val.cat_list = val.categories.join(',')
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
             val.data_initial = current_initial;
             store_initial = current_initial;
             val.initial = "";
             val.show = "display:none;";
-        }
-        else{
+        } else {
             val.data_initial = current_initial;
             val.initial = current_initial;
             store_initial = current_initial;
             val.show = "display:block;";
         }
+        
         if(val.is_coming_soon_store == true){
             val.coming_soon_store = "display:inline";
-        }
-        else{
+        } else {
             val.coming_soon_store = "display:none";
         }
+        
         if(val.is_new_store == true){
             val.new_store = "display:inline";
-        }
-        else{
+        } else {
             val.new_store = "display:none";
         }
         // if (val.promotions.length > 0){
@@ -385,8 +383,7 @@ function renderStoreList(container, template, collection, type, starter, breaker
         val.map_y = val.y_coordinate - 58;
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
-        
-        
+
         var upper_current_initial = current_initial.toUpperCase();
         if(starter == '#' && breaker == '#' && isInt(upper_current_initial)){
             item_rendered.push(rendered);
