@@ -1,0 +1,114 @@
+<div class="stores_banner">
+    <div class="main_container">
+        <h2>Stores</h2>
+    </div>
+</div>
+<div class="main_container mobile_padding margin_30">
+    <div class="visible_phone position_relative">
+        <a class="mobile_header" href="/map">Center Map</a>
+        <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select Category <i class="fa fa-chevron-down visible_phone pull-right"></i>
+        </a>
+        <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2"></ul>
+    </div>
+    <div class="store_nav hidden_phone">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="active_store_nav" href="/stores">DIRECTORY</a>
+            </div>
+            <div class="col-md-3">
+                <a href="/map">CENTER MAP</a>
+            </div>
+            <div class="col-md-4">
+                <span>Sort By: </span>
+                <a href="#" id="show_all_stores" class="show_all_stores active_store_nav">ALPHABETICAL</a>
+            </div>
+            <div class="col-md-2">
+                <a href="#" id="cat_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    CATEGORIES
+                    <img src="//codecloud.cdn.speedyrails.net/sites/5730acef6e6f6455e0000000/image/png/1463153622000/chevron_down.png" class="category_icon" alt="">
+                </a>
+                <ul id="category_container" class="dropdown-menu" aria-labelledby="cat_dd"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="row content_container">
+        <div class="col-md-12">
+            <h3 class="download_map">
+                <a target="_blank" href="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/016/776/original/PTC_Printable_Map_Winter.pdf?1455125094">
+                    <i class="fa fa-print"></i>Printable Store Map
+                </a>
+            </h3>
+        </div>
+        <div class="col-md-12">
+            <span class="store_initial hidden_now" id="cat_name"><span></span></span>
+        </div>
+        <div class="col-md-6" id="main_store_list">
+            <div id="numbered_store_list_container" class="numbers_exist">
+                <script id="numbered_store_list_template" type="x-tmpl-mustache/text">
+                    <div class="row cats_row open_number" data-cat="{{cat_list}}">
+                        <div class="col-md-12">
+                            <p class="store_list_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+            <div id="store_list_container">
+                <script id="store_list_template" type="x-tmpl-mustache/text">
+                    <span style="{{show}}" class="store_initial open_stores" data-initial="{{data_initial}}">
+                        <span>{{initial}}</span>
+                    </span>
+                    <div class="row cats_row open_{{data_initial}}" data-cat="{{cat_list}}">
+                        <div class="col-md-12">
+                            <p class="store_list_name">
+                                <a href="/stores/{{slug}}">{{name}}</a>
+                                <span style="{{new_store}}" class="pull-right new_store">NEW</span>
+                                <span style="{{coming_soon_store}}" class="pull-right coming_soon_store">COMING SOON</span>
+                                <span style="{{promo_exist}}" class="promo_exist pull-right">PROMOTION</span>
+                            </p>
+                        </div>
+                    </div>
+                </script>
+            </div>    
+        </div>
+        <div id="store_list_container2" class="col-md-6">
+            <script id="store_list_template2" type="x-tmpl-mustache/text">
+                <span style="{{show}}" class="store_initial open_stores" data-initial="{{data_initial}}">
+                    <span>{{initial}}</span>
+                </span>
+                <div class="row cats_row open_{{data_initial}}" data-cat="{{cat_list}}">
+                    <div class="col-md-12">
+                        <p class="store_list_name">
+                            <a href="/stores/{{slug}}">{{name}}</a>
+                            <span style="{{new_store}}" class="pull-right new_store">NEW</span>
+                            <span style="{{promo_exist}}" class="promo_exist pull-right">PROMOTION</span>
+                        </p>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+</div>
+<script id="category_template" type="x-tmpl-mustache/text">
+    <li class="show_cat_stores" data-id="{{id}}">{{name}}</li>    
+</script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        var stores = getStoresList();
+        console.log(stores);
+        renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "M");
+        renderStoreList('#store_list_container2','#store_list_template2', stores, "stores","N", "Z" );
+        renderStoreList('#numbered_store_list_container','#numbered_store_list_template', stores, "stores","#", "#" );
+        var categories = getStoreCategories();
+        renderGeneral('#category_container, #category_container2', '#category_template', categories);
+        show_content();
+        $('#category_container, #category_container2').prepend('<li href="#" class="show_all_stores">All</li>');
+        show_cat_stores();
+        
+    }
+</script>
