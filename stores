@@ -100,7 +100,6 @@
     
     function renderPage(){
         var stores = getStoresList();
-        console.log(stores);
         renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "M");
         renderStoreList('#store_list_container2','#store_list_template2', stores, "stores","N", "Z" );
         renderStoreList('#numbered_store_list_container','#numbered_store_list_template', stores, "stores","#", "#" );
