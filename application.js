@@ -332,23 +332,22 @@ function renderStoreList(container, template, collection, type, starter, breaker
     Mustache.parse(template_html);   // optional, speeds up future uses
     var store_initial="";
     $.each( collection , function( key, val ) {
-        if (type == "stores" || type == "category_stores"){
-            if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-                val.alt_store_front_url = "";
-            } else {
-                val.alt_store_front_url = getImageURL(val.store_front_url);    
-            }
-            
-        }
-        if(val.total_published_promos > 0){
-            val.promo_exist = "display:inline"
-        } else {
-            val.promo_exist = "display:none"
-        }
+        // if (type == "stores" || type == "category_stores"){
+        //     if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
+        //         val.alt_store_front_url = "";
+        //     } else {
+        //         val.alt_store_front_url = getImageURL(val.store_front_url);    
+        //     }
+        // }
+        
         
         //var categories = getStoreCategories();
+        
+        if (val.categories != null){
+            val.cat_list = val.categories.join(',')
+        }
+        
         var current_initial = val.name[0];
-        // val.cat_list = val.categories.join(',')
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
             val.data_initial = current_initial;
             store_initial = current_initial;
@@ -359,6 +358,12 @@ function renderStoreList(container, template, collection, type, starter, breaker
             val.initial = current_initial;
             store_initial = current_initial;
             val.show = "display:block;";
+        }
+        
+        if(val.total_published_promos > 0){
+            val.promo_exist = "display:inline"
+        } else {
+            val.promo_exist = "display:none"
         }
         
         if(val.is_coming_soon_store == true){
