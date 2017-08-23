@@ -413,11 +413,10 @@ function renderStoreDetails(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
-        if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png"
-            // val.show_main_image="display:none"
-        } else {
+        if (val.store_front_url != null){
             val.alt_store_front_url = getImageURL(val.store_front_url); 
+        } else {
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1469552090000/PTC-Logo-x2.png"
         }
         
         val.categories_list = getCategoriesNamesByStoreSlug(val.slug)
