@@ -177,7 +177,7 @@ body{
     background-repeat:no-repeat;
     display: block;
     height: 40px;
-    width: 120px;
+    width: 100px;
     background-size: contain;
     margin-left:auto;
     &:hover{
