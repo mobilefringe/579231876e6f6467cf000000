@@ -283,6 +283,11 @@
             </div>
         </div>
     </section>
+    <script>
+        $("#track_link").click( function() {
+            trackOutboundLink('https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/');
+        });
+    </script>
 </body>
 
 </html>
