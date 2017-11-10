@@ -247,14 +247,13 @@
         </div>
         <a href="/pages/ptc-directions-map" class="home_header show_phone">DIRECTIONS</a>
     </div>
-   
-    <section id="footer" class="site_footer">
-         <!-- Rohingya Crisis BANNER -->
+    <!-- Rohingya Crisis BANNER -->
     <div class="trim_screen">
         <a id="track_link" href="https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/" target="_blank">
             <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b936416e6f64562d010000/image/jpeg/1510263472000/Rohingya_en_728x90.jpg" alt=""/>
         </a>
     </div>
+    <section id="footer" class="site_footer">
         <div class="main_container ">
             <div class="footer_site_map hidden_phone">
                 <a href="/about-us">About Us</a>
