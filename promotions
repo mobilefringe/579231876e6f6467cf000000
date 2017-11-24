@@ -1,0 +1,48 @@
+<div class="events_banner promo_banner">
+    <div class="main_container">
+        <h2>Promotions</h2>
+    </div>
+</div>
+<div class="main_container margin_30">
+    <div id="promos_container" class="promos_container">
+        <script id="promotions_template" type="x-tmpl-mustache/text">
+            <div class="promo_container">
+                <div class="pull-right img_cont">
+                    <a href="{{promo_image_url_abs}}" data-lightbox="{{name}}" data-title="{{name}}">
+                        <img src="{{promo_image_url_abs}}" alt="Promotion" class="promo_image" />
+                    </a>
+                </div>
+                <img class="pull-left" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/935/original/icon_in.jpg?1403210088">
+                <a href="/stores/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
+                <h3 class="promo_name">{{name}}</h3>
+                <p class="dates">{{dates}}</p>
+                <a href="/promotions/{{slug}}" class="read_more"> READ MORE</a>
+            </div>
+        </script>
+    </div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderAll); 
+    });
+    
+    function renderAll(){
+        var promos = getPromotionsList().sortBy(function(o){ return o.start_date });
+            var published_promos = [];
+            $.each( promos , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz('America/Toronto') >= webDate.tz('America/Toronto')) {
+                    published_promos.push(val)
+                } 
+            });
+            if(published_promos.length > 0){
+                renderPromos("#promos_container","#promotions_template", published_promos);
+            }
+            else{
+                $('#promos_container').text("There are currently no promotions available, please check back again later.")
+            }
+        show_content();
+    }
+</script>
