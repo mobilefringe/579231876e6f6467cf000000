@@ -28,7 +28,7 @@
     });
     
     function renderAll(){
-        var promos = getPromotionsList().sortBy(function(o){ return o.start_date });
+        var promos = getPromotionsList().sortBy(function(o){ return o.end_date });
             var published_promos = [];
             $.each( promos , function( key, val ){
                 today = moment();
