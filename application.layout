@@ -274,13 +274,13 @@
                     <a href="/act" id="act_logo"></a>
                 </div>
                 <div class="col-md-6 col-sm-8 text-center hidden_phone">
-                    <p class="footer_desc">© 2016 Pickering Town Centre | Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a> | <a href="/pages/ptc-privacy-policy">Privacy Policy</a></p>
+                    <p class="footer_desc">©<span id="current_year"></span> Pickering Town Centre | Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a> | <a href="/pages/ptc-privacy-policy">Privacy Policy</a></p>
                 </div>
                 <div class="col-md-3 col-sm-2 text-right  col-xs-6">
                     <a href="http://www.cushmanwakefield.ca/en/" target="_blank" id="vic_logo"></a>
                 </div>
                 <div class="col-xs-12 show_phone text-center footer_mobile_privacy">
-                    <p class="footer_desc main_color">© 2016 Pickering Town Centre <br /> Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a> | <a href="/pages/ptc-privacy-policy">Privacy Policy</a></p>
+                    <p class="footer_desc main_color">©<span id="current_year"></span> Pickering Town Centre <br /> Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a> | <a href="/pages/ptc-privacy-policy">Privacy Policy</a></p>
                 </div>
             </div>
         </div>
