@@ -118,7 +118,6 @@ function renderPostSliderTemplate(blog_template, blog_block, post){
     Mustache.parse(blog_template_html);   // optional, speeds up future uses
 
     $.each( post , function( index, val ) {
-        console.log(post)
         if(val.tag != null){
             val.tag_first = val.tag[0];
         }
