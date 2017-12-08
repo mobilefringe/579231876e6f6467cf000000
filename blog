@@ -119,7 +119,7 @@ function renderPostSliderTemplate(blog_template, blog_block, post){
 
     $.each( post , function( index, val ) {
         console.log(post)
-        if(val.tag.length != 0){
+        if(val.tag != null){
             val.tag_first = val.tag[0];
         }
         if($.inArray('great news', val.tag) > -1){
