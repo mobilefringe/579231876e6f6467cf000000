@@ -2,7 +2,6 @@ $layout_color: #000;
 $layout_color: #000;$animation_color: #000;
 $font_color: #666;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 @font-face{
     font-family: bodoni_italic;
