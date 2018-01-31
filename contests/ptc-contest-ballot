@@ -99,7 +99,6 @@
                     current_contest.push(val);
                 } 
             });
-            console.log(current_contest)
             renderGeneral("#contest_details_container", '#contest_details_template', current_contest);
         
             show_content();
