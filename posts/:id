@@ -184,7 +184,7 @@
 
         $.each( post, function( index, value ) {
             // MAX # IS 10
-            if (index >= 10) {return false;};
+            if (index >= 6) {return false;};
 
             var publish_date = new Date(value.publish_date);
             
