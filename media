@@ -170,27 +170,29 @@ function renderRepoDetailTemplate(blog_template, blog_block, repo){
     var item_rendered = [];
     var blog_template_html = $(blog_template).html();
     Mustache.parse(blog_template_html);   // optional, speeds up future uses
-    repo = repo.images;
-    console.log(repo);
-    $.each( repo, function( index, value ) {
-        // MAX # IS 4
-        if (index >= 4) {return false;};
     
-        var updated_at = new Date(value.updated_at);
+    if(repo !== null && repo !==undefined) {
+        repo = repo.images;
+        console.log(repo);
+        $.each( repo, function( index, value ) {
+            // MAX # IS 4
+            if (index >= 4) {return false;};
         
-        var month_names_short = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-        value.publish_date_month = month_names_short[updated_at.getMonth()]
-        value.publish_date_day = updated_at.getDate()
-    
-        item_list.push(value);
-    });
+            var updated_at = new Date(value.updated_at);
+            
+            var month_names_short = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            value.publish_date_month = month_names_short[updated_at.getMonth()]
+            value.publish_date_day = updated_at.getDate()
         
+            item_list.push(value);
+        });
+    }
     item_list.sort(function(a, b){
         if(a.updated_at > b.updated_at) return -1;
         if(a.updated_at < b.updated_at) return 1;
         return 0;
     });
-
+    
     var blog_rendered = Mustache.render(blog_template_html,item_list);
     item_rendered.push(blog_rendered);
     $(blog_block).html(item_rendered.join(''));
