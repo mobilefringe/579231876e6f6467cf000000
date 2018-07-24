@@ -114,7 +114,7 @@
         $('.flexslider').flexslider({
             animation: "fade",
         });
-        get_insta("//PTC.mallmaverick.com/api/v3/PTC/social.json", 4, 'low_resolution', render_instagram)
+        get_insta("//PTC.mallmaverick.com/api/v3/PTC/social.json", 4, 'high_resolution', render_instagram)
         show_content();
         if($.cookie("popup_viewed") != "true"){
             $.cookie("popup_viewed", "true", { expires: 1 });
