@@ -194,3 +194,32 @@ function getUrlVars(){
 function render_instagram(data){
     $('#instafeed').html(data)
 }
+
+function get_instagram(url,total, size, callback){
+    // var html = '<a class="ig-image" target="_blank" href="{{{link}}}" ><img src="{{{image}}}" alt="{{caption_short}}" /></a>'
+    var html = '<a class="ig-image" target="_blank" href="{{{link}}}" ><div class="ig-image-container" style="background: url({{{image}}}) center center"></div></a>'
+    var item_rendered = [];
+    Mustache.parse(html); 
+    log('fetching instagram data from: ' + url);
+    $.getJSON(url).done(function(data){
+        var insta_feed = data.social.instagram
+        if(insta_feed != null){
+            $.each(insta_feed, function(i,v){
+                var feed_obj = {}
+                if(v.caption != null){
+                    feed_obj.caption = v.caption.text
+                    feed_obj.caption_short = v.caption.text.substring(0, 20) + "..";
+                } else {
+                    feed_obj.caption = ""
+                }
+                feed_obj.image = v.images[size].url
+                feed_obj.link = v.link
+                if (i < total){
+                    var ig_rendered =  Mustache.render(html,feed_obj);
+                    item_rendered.push(ig_rendered.trim());
+                }
+            });
+            callback(item_rendered.join(''))
+        }
+    });
+}
