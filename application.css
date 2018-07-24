@@ -452,7 +452,8 @@ body{
     .ig-image-container {
         width: 230px;
         height: 230px;
-        background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
