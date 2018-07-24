@@ -195,7 +195,7 @@ function render_instagram(data){
     $('#instafeed').html(data)
 }
 
-function get_instagram(url,total, size, callback){
+function get_insta(url,total, size, callback){
     // var html = '<a class="ig-image" target="_blank" href="{{{link}}}" ><img src="{{{image}}}" alt="{{caption_short}}" /></a>'
     var html = '<a class="ig-image" target="_blank" href="{{{link}}}" ><div class="ig-image-container" style="background: url({{{image}}}) center center"></div></a>'
     var item_rendered = [];
