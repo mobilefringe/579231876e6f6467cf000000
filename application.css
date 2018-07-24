@@ -449,6 +449,10 @@ body{
     img {
         max-width: 230px;
     }
+    .ig-image-container {
+        width: 230px;
+        height: 230px;
+    }
 }
 
 .feature_items{
