@@ -1200,6 +1200,10 @@ body{
             display: block;
             max-width: 100%;
         }
+        .ig-image-container {
+            width: 100%;
+            height: 369px;
+        }
     }
     .social_icons{
         margin: 20px auto 30px auto;
