@@ -116,8 +116,6 @@
         });
         get_insta("//ptc.mallmaverick.com/api/v4/ptc/social.json", 4, 'standard_resolution', render_instagram);
         show_content();
-        // popup_img
-        console.log("popup", getPopups())
         if(getPopups().length > 0){
             var popup = getPopups()[0];
             $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
