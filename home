@@ -119,9 +119,7 @@
         // popup_img
         console.log("popup", getPopups())
         if(getPopups().length > 0){
-            
-        }
-        if($.cookie("popup_viewed") != "true"){
+            if($.cookie("popup_viewed") != "true"){
             $.cookie("popup_viewed", "true", { expires: 1 });
             $('<div class="modal-backdrop custom_backdrop popup_backdrop hidden_phone"></div>').appendTo(document.body);
             $('.popup_home').show();
@@ -132,6 +130,8 @@
 	        $(".popup_home").remove();
 	        $('body').removeClass('no_scroll');
         })
+        }
+        
     }
 </script>
 <img src="https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10036763"/>
