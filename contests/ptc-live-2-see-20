@@ -114,10 +114,11 @@
         cursor: pointer;
     }
     .contest_page .contest_form_link{
-        margin: 10px 13%;
+        margin: 10px auto;
         color: #ffffff;
         font-size: 11pt;
         word-wrap: break-word;
+            text-align: center;
     }
     .contest_page .contest_form_link a{
         color: #fff;
