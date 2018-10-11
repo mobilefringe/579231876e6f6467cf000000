@@ -190,11 +190,11 @@
                     <span>PLEDGE FORM</span>
                 </div>
                 <div class="row-fluid">
-                    <div class="span6">
+                    <div class="col-md-6">
                         <label>*First Name</label>
                         <input required type="text" class="contest_info" id="first_name" name="contest[first_name]" value="" />
                     </div>
-                    <div class="span6">
+                    <div class="col-md-6">
                         <label>*Last Name</label>
                         <input required type="text" class="contest_info" id="last_name" name="contest[last_name]" value=""/>
                     </div>
@@ -204,21 +204,21 @@
                     <input id="fieldzdyty" name="cm-f-jjcky" type="text" class="contest_info" value=""/>
                 </div>
                 <div class="row-fluid">
-                    <div class="span6">
+                    <div class="col-md-6">
                         <label for="fieldzdyti">*Postal Code</label>
                         <input required id="fieldzdyti" name="cm-f-jjcki" type="text" class="contest_info" value=""/>
                     </div>
-                    <div class="span6">
+                    <div class="col-md-6">
                         <label for="fieldzdytd">*Telephone</label>
                         <input required id="fieldzdytd" name="cm-f-jjckd" type="text" class="contest_info" value=""/>
                     </div>
                 </div>
                 <div class="row-fluid">
-                    <div class="span6">
+                    <div class="col-md-6">
                         <label for="fieldzdytj">City</label>
                         <input  id="fieldzdytj" name="cm-f-jjckj" type="text" class="contest_info" value=""/>
                     </div>
-                    <div class="span6">
+                    <div class="col-md-6">
                         <label for="fieldzdytt">Province</label>
                         <input id="fieldzdytt" name="cm-f-jjckt" type="text" class="contest_info" value="Ontario"/>
                     </div>
