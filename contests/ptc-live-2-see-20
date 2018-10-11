@@ -1,4 +1,9 @@
 <style type="text/css">
+img {
+        max-height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
     .contest_page{
         background: url(//mallmaverick.com/system/site_images/photos/000/007/428/original/livetosee_bg.png?1426087736);
         background-repeat: no-repeat;
