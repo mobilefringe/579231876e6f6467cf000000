@@ -42,6 +42,7 @@
         border-radius: 35px;
         padding: 35px 35px 15% 35px;
         margin: 0 10%;
+        width:100%;
     }
     .contest_page #contest_form_20vic #contest-form-title{
         font-size: 23pt;
