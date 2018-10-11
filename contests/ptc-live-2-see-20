@@ -239,7 +239,9 @@
                   </div>
                 </div>
                 <div class="row-fluid clearfix" style="display:none;">
-                    <input id="fieldjlvji" name="cm-f-jlvji" type="text" />
+                    <div class="col-md-12">
+                        <input id="fieldjlvji" name="cm-f-jlvji" type="text" />
+                    </div>
                 </div>
                 <br/>
                 <input class="btn contest-btn-submit" name="commit" type="submit" value="">
