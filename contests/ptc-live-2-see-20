@@ -148,7 +148,7 @@
     $("#header_title").text("#live2see20");
     $("#mobile_header_title").text("#live2see20");
 </script>
-<div class="contest_page">
+<div class="contest_page main_container">
     <div class="popup_bg" onclick="close_popup()">
         <div class="popup_box">
             <img src="//mallmaverick.com/system/site_images/photos/000/007/433/original/Shadow-Box.png?1426096384">
