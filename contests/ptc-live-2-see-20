@@ -228,7 +228,7 @@
                 <div class="row-fluid clearfix">
                     <div class="col-md-12">
                         <label for="fieldEmail">*Email</label>
-                    <input required id="fieldEmail" name="cm-ilkttr-ilkttr" type="email" class="contest_info" value=""/>
+                        <input required id="fieldEmail" name="cm-ilkttr-ilkttr" type="email" class="contest_info" value=""/>
                     </div>
                 </div>
                 
