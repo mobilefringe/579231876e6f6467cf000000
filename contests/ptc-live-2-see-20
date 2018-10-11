@@ -158,7 +158,7 @@
             height: 175px;
         }
         .contest_page #contest_form_20vic{
-            margin: 0px 3%;
+            margin: 0px;
         }
     }
 </style>
