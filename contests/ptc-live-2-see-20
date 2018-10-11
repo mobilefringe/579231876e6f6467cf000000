@@ -178,7 +178,7 @@
         <img id="bg-img2" src="//mallmaverick.com/system/site_images/photos/000/007/425/original/livetosee_img2.png?1426087734">
         <iframe id="bg-youtube" width="375" height="210" src="https://www.youtube.com/embed/0z3sk_Axhww" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="row-fluid">      
+    <div class="row-fluid clearfix">      
         <div class="col-md-8">
             <form accept-charset="UTF-8" action="http://mobilefringe.createsend.com/t/d/s/ilkttr/" enctype="multipart/form-data" id="contest_form_20vic" method="post">
                 <!-- hidden fields to get property an contest id -->
