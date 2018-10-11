@@ -189,7 +189,7 @@
                 <div id="contest-form-title" class="row-fluid">
                     <span>PLEDGE FORM</span>
                 </div>
-                <div class="row-fluid">
+                <div class="row-fluid clearfix">
                     <div class="col-md-6">
                         <label>*First Name</label>
                         <input required type="text" class="contest_info" id="first_name" name="contest[first_name]" value="" />
