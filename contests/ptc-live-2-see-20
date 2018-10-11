@@ -297,6 +297,7 @@
                     open_popup();                
             }
         });
+        show_content();
     });
     function close_popup(){
         $(".popup_bg").fadeOut();
