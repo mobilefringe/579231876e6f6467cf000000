@@ -250,6 +250,7 @@
         +"<meta property=\"og:title\" content=\"Pickering Town Centre #live2see20\"/>"
 
          $("head").append(tags);
+         show_content();
     });
     //Campaign Monitor Sign Up
     $('#contest_form_20vic').submit(function (e) {
@@ -297,7 +298,7 @@
                     open_popup();                
             }
         });
-        show_content();
+        
     });
     function close_popup(){
         $(".popup_bg").fadeOut();
