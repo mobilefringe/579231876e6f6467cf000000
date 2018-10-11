@@ -119,6 +119,9 @@
         font-size: 11pt;
         word-wrap: break-word;
     }
+    .contest_page .contest_form_link a{
+        color: #fff;
+    }
     @media only screen 
     and (max-width : 767px) {
         .contest_page{
