@@ -152,7 +152,7 @@
         }
         .contest_page #bg-img2{
             width: 140px;
-            left: 120px;
+            left: 150px;
         }
         .contest_page #contest-banner{
             height: 175px;
