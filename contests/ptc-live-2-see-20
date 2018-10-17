@@ -126,7 +126,7 @@
     @media only screen 
     and (max-width : 767px) {
         .contest_page{
-            background: url(//mallmaverick.com/system/site_images/photos/000/007/435/original/bg.jpg?1426096441);
+            background: url(//codecloud.cdn.speedyrails.net/sites/599c9b426e6f6420f1550000/image/png/1539809518000/50151-PTC-Practice_Safe_Sips_2018-PledgePageBG1.png);
             background-repeat: repeat;
         }
         .contest_page #bg-youtube{
