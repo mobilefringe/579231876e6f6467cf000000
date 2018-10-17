@@ -255,11 +255,11 @@
                 <input class="btn contest-btn-submit" name="commit" type="submit" value="">
                 <br/>
             </form>   
-            <!--<div class="contest_form_link">-->
-            <!--    <a href="http://www.textinganddrivingsafety.com/texting-and-driving-stats/">-->
-            <!--        <span>*http://www.textinganddrivingsafety.com/texting-and-driving-stats/</span>-->
-            <!--    </a>-->
-            <!--</div>-->
+            <div class="contest_form_link">
+                <!--<a href="http://www.textinganddrivingsafety.com/texting-and-driving-stats/">-->
+                <!--    <span>*http://www.textinganddrivingsafety.com/texting-and-driving-stats/</span>-->
+                </a>
+            </div>
         </div>
         <!--<div class="col-md-4">-->
         <!--    <img id="bg-img3" src="//mallmaverick.com/system/site_images/photos/000/007/427/original/livetosee_stats.png?1426087734">-->
