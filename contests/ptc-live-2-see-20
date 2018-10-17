@@ -182,7 +182,7 @@
         </div>
     </div>   
     <div id="contest-banner" class="row-fluid clearfix">
-        <img id="bg-img1" src="//mallmaverick.com/system/site_images/photos/000/007/426/original/livetosee_img1.png?1426087734">
+        <img id="bg-img1" src="//codecloud.cdn.speedyrails.net/sites/599c9b426e6f6420f1550000/image/png/1539809881000/sip.png">
         <img id="bg-img2" src="//mallmaverick.com/system/site_images/photos/000/007/425/original/livetosee_img2.png?1426087734">
         <iframe id="bg-youtube" width="375" height="210" src="https://www.youtube.com/embed/0z3sk_Axhww" frameborder="0" allowfullscreen></iframe>
     </div>
