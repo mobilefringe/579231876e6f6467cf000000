@@ -274,8 +274,17 @@
         var tags = 
         "<meta property=\"og:image\" content=\"http://www.pickeringtowncentre.com/system/site_images/photos/000/007/425/original/livetosee_img2.png\"/>"
         +"<meta property=\"og:title\" content=\"Pickering Town Centre #live2see20\"/>"
-
+        
          $("head").append(tags);
+         
+         //check if to show popup or regular contest
+        var query = window.location.search;
+        if(query !== "") {
+                var search_part = query.split('?')[1];
+                if(search_part === "success") {
+                    open_popup();
+                }
+        }
          show_content();
     });
     //Campaign Monitor Sign Up
