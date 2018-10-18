@@ -270,7 +270,7 @@
 </div>
 
 <script>
-     $(document).ready(function() {
+     $(document).ready(function(e) {
         var tags = 
         "<meta property=\"og:image\" content=\"http://www.pickeringtowncentre.com/system/site_images/photos/000/007/425/original/livetosee_img2.png\"/>"
         +"<meta property=\"og:title\" content=\"Pickering Town Centre #live2see20\"/>"
