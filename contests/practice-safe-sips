@@ -276,7 +276,7 @@
         +"<meta property=\"og:title\" content=\"Pickering Town Centre #live2see20\"/>"
         
          $("head").append(tags);
-         
+         init(e);
          //check if to show popup or regular contest
         var query = window.location.search;
         if(query !== "") {
