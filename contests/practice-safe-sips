@@ -272,7 +272,7 @@
 <script>
      $(document).ready(function(e) {
         var tags = 
-        "<meta property=\"og:image\" content=\"http://www.pickeringtowncentre.com/system/site_images/photos/000/007/425/original/livetosee_img2.png\"/>"
+        "<meta property=\"og:image\" content=\"https://codecloud.cdn.speedyrails.net/sites/599c9b426e6f6420f1550000/image/png/1539809881000/sip.png/%E2%80%9C/%3E\"/>"
         +"<meta property=\"og:title\" content=\"Practice Safe Sips\"/>"
         
          $("head").append(tags);
