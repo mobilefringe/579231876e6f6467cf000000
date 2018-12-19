@@ -87,11 +87,11 @@ function show_cat_stores(){
         // // else{
         // //     rows.hide();
         // // }
-        // $.each($('.store_initial'), function(i, val){
-        //   if ($(val).text().trim().length > 0){
-        //       $(val).show();
-        //   } 
-        // });
+        $.each($('.store_initial'), function(i, val){
+          if ($(val).text().trim().length > 0){
+              $(val).show();
+          } 
+        });
         
         $('#cat_name').hide();
         e.preventDefault();
