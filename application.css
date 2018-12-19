@@ -1376,6 +1376,8 @@ body{
         border-bottom: none;
         .col-md-4 {
             border-left: none;
+            border-right: 1px solid #979797;
+};
         }
     }
 }
