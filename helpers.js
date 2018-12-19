@@ -98,8 +98,8 @@ function show_cat_stores(stores){
         //   } 
         // });
         
-        // $('#cat_name').hide();
-        // e.preventDefault();
+        $('#cat_name').hide();
+        e.preventDefault();
     });
     
 }
