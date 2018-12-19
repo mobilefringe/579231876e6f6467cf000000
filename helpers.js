@@ -82,7 +82,7 @@ function show_cat_stores(){
     
         // var rows = $('.cats_row');
         // // if ($(window).width() > 768){
-        // //     rows.show();
+            rows.show();
         // // }
         // // else{
         // //     rows.hide();
