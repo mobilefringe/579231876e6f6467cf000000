@@ -1075,7 +1075,7 @@ body{
     }
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .popup_home{
         display:none !important;
     }
@@ -1370,6 +1370,10 @@ body{
     }
     #contest_form_20vic {
         width: 100%;
+    }
+    
+    .store_nav {
+        border-bottom: none;
     }
 }
 @media(max-width: 425px){
