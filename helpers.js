@@ -79,12 +79,12 @@ function show_cat_stores(){
         $('.active_cat').removeClass('active_cat');
         $(this).addClass('active_cat');
         var rows = $('.cats_row');
-        if ($(window).width() > 768){
-            rows.show();
-        }
-        else{
-            rows.hide();
-        }
+        // if ($(window).width() > 768){
+        //     rows.show();
+        // }
+        // else{
+        //     rows.hide();
+        // }
         $.each($('.store_initial'), function(i, val){
            if ($(val).text().trim().length > 0){
                $(val).show();
