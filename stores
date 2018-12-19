@@ -114,7 +114,7 @@
         renderGeneral('#category_container, #category_container2', '#category_template', category_list);
         show_content();
         $('#category_container, #category_container2').prepend('<li href="#" class="show_all_stores">All</li>');
-        show_cat_stores(stores);
+        show_cat_stores();
         
     }
 </script>
