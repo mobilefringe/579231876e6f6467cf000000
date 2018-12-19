@@ -13,10 +13,10 @@
     </div>
     <div class="store_nav">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 hidden_phone">
                 <a class="active_store_nav" href="/stores">DIRECTORY</a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 hidden_phone">
                 <a href="/map">CENTER MAP</a>
             </div>
             <div class="col-md-4">
