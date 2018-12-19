@@ -78,7 +78,7 @@ function show_cat_stores(){
         $('#main_store_list, #store_list_container2').removeClass("full_width");
         $('.active_cat').removeClass('active_cat');
         $(this).addClass('active_cat');
-        $('#main_store_list, #store_list_container2').show();
+        // $('#main_store_list, #store_list_container2').show();
     
         var rows = $('.cats_row');
         // // if ($(window).width() > 768){
