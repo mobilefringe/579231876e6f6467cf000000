@@ -1374,6 +1374,9 @@ body{
     
     .store_nav {
         border-bottom: none;
+        .col-md-4 {
+            border-left: none;
+        }
     }
 }
 @media(max-width: 425px){
