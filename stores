@@ -11,7 +11,7 @@
         </a>
         <ul id="category_container2" class="dropdown-menu" aria-labelledby="cat_dd2"></ul>
     </div>
-    <div class="store_nav hidden_phone">
+    <div class="store_nav">
         <div class="row">
             <div class="col-md-3">
                 <a class="active_store_nav" href="/stores">DIRECTORY</a>
