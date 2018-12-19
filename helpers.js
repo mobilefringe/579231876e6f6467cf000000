@@ -49,8 +49,7 @@ function isInt(value) {
     return !isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10));
 }
 
-function show_cat_stores(stores){
-    
+function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
         var cat_id = $(this).attr('data-id');
         $('#show_all_stores').removeClass('active_store_nav');
@@ -74,17 +73,13 @@ function show_cat_stores(stores){
     });
     
     $('.show_all_stores').click(function(e){
-        console.log("stores", stores)
         $('#show_all_stores').addClass('active_store_nav');
         $('#cat_dd').removeClass('active_store_nav');
         $('#main_store_list, #store_list_container2').removeClass("full_width");
         $('.active_cat').removeClass('active_cat');
         $(this).addClass('active_cat');
         
-        renderStoreList('#store_list_container','#store_list_template', stores, "stores", "A", "M");
-        renderStoreList('#store_list_container2','#store_list_template2', stores, "stores","N", "Z" );
-        renderStoreList('#numbered_store_list_container','#numbered_store_list_template', stores, "stores","#", "#" );
-        
+    
         // var rows = $('.cats_row');
         // // if ($(window).width() > 768){
         // //     rows.show();
