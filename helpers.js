@@ -78,19 +78,14 @@ function show_cat_stores(){
         $('#main_store_list, #store_list_container2').removeClass("full_width");
         $('.active_cat').removeClass('active_cat');
         $(this).addClass('active_cat');
-        // $('#main_store_list, #store_list_container2').show();
     
         var rows = $('.cats_row');
-        // // if ($(window).width() > 768){
-            rows.show();
-        // // }
-        // // else{
-        // //     rows.hide();
-        // // }
+        rows.show();
+
         $.each($('.store_initial'), function(i, val){
-          if ($(val).text().trim().length > 0){
-              $(val).show();
-          } 
+            if ($(val).text().trim().length > 0){
+                $(val).show();
+            } 
         });
         
         $('#cat_name').hide();
