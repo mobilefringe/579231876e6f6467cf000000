@@ -19,11 +19,11 @@
             <div class="col-md-3 hidden_phone">
                 <a href="/map">CENTER MAP</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-6 col-md-4">
                 <span>Sort By: </span>
                 <a href="#" id="show_all_stores" class="show_all_stores active_store_nav">ALPHABETICAL</a>
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-6 col-md-2">
                 <a href="#" id="cat_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     CATEGORIES
                     <img src="//codecloud.cdn.speedyrails.net/sites/5730acef6e6f6455e0000000/image/png/1463153622000/chevron_down.png" class="category_icon" alt="">
