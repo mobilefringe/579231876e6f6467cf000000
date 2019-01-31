@@ -249,7 +249,7 @@ function submit_contest(slug) {
         success: function(data){
           $('#succes_msg').show();
           $('.contest_btn').prop('disabled', false);
-          $('#contest_form').trigger('reset');
+          $('#contest_form_20vic').trigger('reset');
         },
         error: function (data){
             alert('An error occured while processing your request. Please try again later!')
