@@ -220,3 +220,4 @@ function get_insta(url,total, size, callback){
         }
     });
 }
+validateForm
