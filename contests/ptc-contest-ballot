@@ -46,8 +46,8 @@
             </div>
             <div class="row">
                 <div class="col-md-3">
-                    <label for="fieldjyydik">*Postal Code</label>
-                    <input required id="fieldjyydik" name="cm-f-jyydik" type="text" class="contest_info" value=""/>
+                    <label for="postal_code">*Postal Code</label>
+                    <input required id="postal_code" name="cm-f-jyydik" type="text" class="contest_info" value=""/>
                 </div>
                 <div class="col-md-3">
                     <label for="fielddhyhik">*Telephone</label>
