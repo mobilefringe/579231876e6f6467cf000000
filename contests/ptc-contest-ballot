@@ -9,7 +9,7 @@
         <span class="sr-only">Success</span>
         Thank you for contacting us. A member from our team will contact you shortly.
     </div>
-    <div id="send_contact_error" class="alert alert-danger" role="alert">
+    <div id="send_contact_error" class="alert alert-danger hidden_now" role="alert">
         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
         <span class="sr-only">Error:</span>
         There was an error when trying to submit your request. Please try again later.
