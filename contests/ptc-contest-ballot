@@ -54,8 +54,8 @@
                     <input required id="phone" name="cm-f-dhyhik" type="text" class="contest_info" value=""/>
                 </div>
                 <div class="col-md-6">
-                    <label for="fieldEmail">*Email</label>
-                    <input required id="fieldEmail" name="cm-tudie-tudie" type="email" class="contest_info" value=""/>
+                    <label for="email">*Email</label>
+                    <input required id="email" name="cm-tudie-tudie" type="email" class="contest_info" value=""/>
                 </div>
             </div>
             
