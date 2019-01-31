@@ -100,7 +100,7 @@
                 } 
             });
             renderGeneral("#contest_details_container", '#contest_details_template', current_contest);
-            var slug = "ptc-contest-ballot"
+            var slug = "ptc-contest-ballot";
             $('#contest_form_20vic').submit(function(e){
                 e.preventDefault();
                 $('.btn-primary').prop('disabled', true);
