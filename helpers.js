@@ -232,7 +232,7 @@ function submit_contest(slug) {
     contest_data.postal_code = $('#postal_code').val();
     contest_data.phone = $('#phone').val();
     contest_data.email = $('#email').val();
-    contest_data.newsletter = $('#newsletter_signup').prop("checked");
+    contest_data.newsletter = $('#newsletter_agree').prop("checked");
     console.log("retail check", $('#retail_check').prop("checked"))
     contest_data.get_vendor_info = $('#retail_check').prop("checked");
     
