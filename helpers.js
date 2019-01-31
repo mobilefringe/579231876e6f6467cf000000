@@ -248,11 +248,13 @@ function submit_contest(slug) {
         data : contest_entry,
         success: function(data){
           $('#send_contact_success').show();
-          $('.contest_btn').prop('disabled', false);
+          $('.btn-primary').prop('disabled', false);
           $('#contest_form_20vic').trigger('reset');
         },
         error: function (data){
-            alert('An error occured while processing your request. Please try again later!')
+        $('#send_contact_error').show();
+          $('.btn-primary').prop('disabled', false);
+          $('#contest_form_20vic').trigger('reset');
         }
     });
 }
