@@ -241,17 +241,17 @@ function submit_contest(slug) {
     var propertyDetails = getPropertyDetails();
     var host = propertyDetails.mm_host.replace("http:", "");
     var action = host + "/contests/" + slug + "/create_js_entry"
-    $.ajax({
-        url : action,
-        type: "POST",
-        data : contest_entry,
-        success: function(data){
-           $('#succes_msg').show();
-           $('.contest_btn').prop('disabled', false);
-           $('#contest_form').trigger('reset');
-        },
-        error: function (data){
-            alert('An error occured while processing your request. Please try again later!')
-        }
-    });
+    // $.ajax({
+    //     url : action,
+    //     type: "POST",
+    //     data : contest_entry,
+    //     success: function(data){
+    //       $('#succes_msg').show();
+    //       $('.contest_btn').prop('disabled', false);
+    //       $('#contest_form').trigger('reset');
+    //     },
+    //     error: function (data){
+    //         alert('An error occured while processing your request. Please try again later!')
+    //     }
+    // });
 }
