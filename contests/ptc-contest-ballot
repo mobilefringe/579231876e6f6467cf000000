@@ -103,7 +103,7 @@
             
             $('#contest_form_20vic').submit(function(e){
                 e.preventDefault();
-                $('.contest_btn').prop('disabled', true);
+                $('.btn-primary').prop('disabled', true);
                 submit_contest(slug);
                 $('html, body').animate({scrollTop : 0},800);
             });
