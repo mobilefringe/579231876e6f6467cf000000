@@ -247,7 +247,7 @@ function submit_contest(slug) {
         type: "POST",
         data : contest_entry,
         success: function(data){
-          $('#succes_msg').show();
+          $('#send_contact_success').show();
           $('.contest_btn').prop('disabled', false);
           $('#contest_form_20vic').trigger('reset');
         },
