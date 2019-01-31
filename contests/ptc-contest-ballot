@@ -50,8 +50,8 @@
                     <input required id="postal_code" name="cm-f-jyydik" type="text" class="contest_info" value=""/>
                 </div>
                 <div class="col-md-3">
-                    <label for="fielddhyhik">*Telephone</label>
-                    <input required id="fielddhyhik" name="cm-f-dhyhik" type="text" class="contest_info" value=""/>
+                    <label for="phone">*Telephone</label>
+                    <input required id="phone" name="cm-f-dhyhik" type="text" class="contest_info" value=""/>
                 </div>
                 <div class="col-md-6">
                     <label for="fieldEmail">*Email</label>
