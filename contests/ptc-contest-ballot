@@ -36,8 +36,8 @@
                     <input id="address" name="cm-f-dhyhid" type="text" class="contest_info" value=""/>
                 </div>
                 <div class="col-md-3">
-                    <label for="fielddhyhih">City</label>
-                    <input  id="fielddhyhih" name="cm-f-dhyhih" type="text" class="contest_info" value=""/>
+                    <label for="city">City</label>
+                    <input  id="city" name="cm-f-dhyhih" type="text" class="contest_info" value=""/>
                 </div>
                 <div class="col-md-3">
                     <label for="fieldjyydiu">Province</label>
