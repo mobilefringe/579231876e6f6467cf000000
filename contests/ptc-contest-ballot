@@ -100,7 +100,14 @@
                 } 
             });
             renderGeneral("#contest_details_container", '#contest_details_template', current_contest);
-        
+            
+            $('#contest_form').submit(function(e){
+                e.preventDefault();
+                $('.contest_btn').prop('disabled', true);
+                submit_contest(slug);
+                $('html, body').animate({scrollTop : 0},800);
+            });
+            
             show_content();
         }
     });
