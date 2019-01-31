@@ -12,7 +12,7 @@
     </div>
     <hr>
     <div class="row">        
-        <form accept-charset="UTF-8" action="//mobilefringe.createsend.com/t/d/s/tudie/" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form_20vic" method="post">
+        <form accept-charset="UTF-8" onsubmit="return validateForm()" enctype="multipart/form-data" id="contest_form_20vic" method="post">
             <!-- hidden fields to get property an contest id -->
             <input id="propert_id" name="contest[property_id]" style="display:none" value="{{site.property.id}}" />
             <input id="contest_id" name="contest[contest_id]" style="display:none" value="{{contest.id}}" />
