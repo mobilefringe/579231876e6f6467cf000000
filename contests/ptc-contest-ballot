@@ -101,7 +101,7 @@
             });
             renderGeneral("#contest_details_container", '#contest_details_template', current_contest);
             
-            $('#contest_form').submit(function(e){
+            $('#contest_form_20vic').submit(function(e){
                 e.preventDefault();
                 $('.contest_btn').prop('disabled', true);
                 submit_contest(slug);
