@@ -48,7 +48,7 @@
         init(e);
         
         // function emailReplace() {
-           $("#email").val(getUrlVars()["email"].replace("%40", "@")); 
+        $("#email").val(getUrlVars()["email"].replace("%40", "@")); 
         // };
         show_content();
     });
