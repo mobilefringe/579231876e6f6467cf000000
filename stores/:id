@@ -1,0 +1,92 @@
+<div class="stores_banner">
+    <div class="main_container">
+        <h2>Stores</h2>
+    </div>
+</div>
+
+<div class="main_container margin_30">
+    <div id="store_details_container">
+        <script id="store_details_template" type="x-tmpl-mustache/text">
+            <h4 class="store_heading">{{name}}</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="store_details_phone">{{phone}} {{#website}}| <a href="//{{website}}" target="_blank">Visit Website</a>{{/website}}</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p class="store_categories">
+                        {{categories_header}} <span>{{categories_list}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="store_logo">
+                        <img src="{{alt_store_front_url}}" style="{{show_main_image}}" alt="store logo" class="full_width" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div id="mapsvg_store_detail" class="map_container"></div>
+                </div>
+                <div class="col-md-12 margin_30">
+                    <div>{{{rich_description}}}</div>
+                </div>
+            </div>
+        </script>
+    </div>
+    <p class="store_detail_sub_title" id="promotions_header">Promotions</p>
+    <div id="promos_container">
+        <script id="promos_template" type="x-tmpl-mustache/text">
+            <div class="margin_10">
+                <p class="promo_name no_margin"><strong>{{name}}</strong></p>
+                <p class="dates no_margin">{{dates}}</p>
+                <a href="/promotions/{{slug}}" class="read_more">READ MORE</a>
+            </div>
+        </script>
+    </div>
+</div>
+
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var store_details = getStoreDetailsBySlug(slug);
+        console.log(store_details)
+        renderStoreDetails('#store_details_container','#store_details_template', store_details);
+    
+        var store_promo_ids = store_details.promotions
+        var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
+        var published_promos = [];
+        $.each( store_promos , function( key, val ){
+            today = moment();
+            webDate = moment(val.show_on_web_date)
+            if (today.tz('America/Toronto') >= webDate.tz('America/Toronto')) {
+                published_promos.push(val)
+            } 
+        });
+        if( published_promos.length > 0){
+            renderPromos("#promos_container","#promos_template", published_promos);
+        } else {
+            $('#promotions_header').hide();
+        }
+        
+        show_content();
+        var stores = getStoresList();
+        var regions = {}
+        $.each( stores , function( key, val ) {
+            if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                obj = {};
+                obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>"+val.name+"</p></div>"
+                obj["attr"] = {}
+                regions[val.svgmap_region] = obj
+            }
+        });
+        load_map(regions, store_details, 1000, 1000);
+    }
+</script>
