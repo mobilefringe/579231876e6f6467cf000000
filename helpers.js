@@ -194,7 +194,7 @@ function render_instagram(data){
 
 function get_insta(url,total, size, callback){
     // var html = '<a class="ig-image" target="_blank" href="{{{link}}}" ><img src="{{{image}}}" alt="{{caption_short}}" /></a>'
-    var html = '<a class="ig-image" target="_blank" href="{{{link}}}"><div class="ig-image-container"style="background-image: url({{{image}}})"></div></a>'
+    var html = '<a class="ig-image" target="_blank" href="{{{link}}}" aria-label="Instagram Photo"><div class="ig-image-container"style="background-image: url({{{image}}})"></div></a>'
     var item_rendered = [];
     Mustache.parse(html); 
     log('fetching instagram data from: ' + url);
