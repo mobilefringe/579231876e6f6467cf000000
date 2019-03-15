@@ -12,7 +12,7 @@
                         <img src="{{promo_image_url_abs}}" alt="Promotion" class="promo_image" />
                     </a>
                 </div>
-                <img class="pull-left" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/935/original/icon_in.jpg?1403210088" alt="pull left">
+                <img class="pull-left" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/935/original/icon_in.jpg?1403210088" alt="logo">
                 <a href="/stores/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
                 <h3 class="promo_name">{{name}}</h3>
                 <p class="dates">{{dates}}</p>
