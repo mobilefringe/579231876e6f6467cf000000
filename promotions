@@ -16,7 +16,7 @@
                 <a href="/stores/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
                 <h3 class="promo_name">{{name}}</h3>
                 <p class="dates">{{dates}}</p>
-                <a href="/promotions/{{slug}}" class="read_more"> View Promotion</a>
+                <a href="/promotions/{{slug}}" class="read_more">View Promotion</a>
             </div>
         </script>
     </div>
