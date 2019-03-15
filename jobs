@@ -1,0 +1,55 @@
+<div class="events_banner generic_banner">
+    <div class="main_container">
+        <h2>Careers</h2>
+    </div>
+</div>
+<div class="main_container margin_30" >
+     <div class="promos_container" id="jobs_container">
+         <script id="jobs_template" type="x-tmpl-mustache/text">
+            <div class="promo_container job_container">
+                <img class="pull-left" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/002/935/original/icon_in.jpg?1403210088" alt="pull left">
+                <a href="/stores/{{store_detail_btn}}" class="promo_store_name">{{store_name}}</a>
+                <div class="job_details">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h3 class="job_name">{{name}}</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="no_margin read_more">{{job_type}}</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="no_margin read_more"><a href="/jobs/{{slug}}" class="no_margin read_more"> READ MORE</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </script>
+     </div>
+</div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        var jobs = getJobsList().sortBy(function(o){ return o.start_date});
+        var published_jobs = [];
+        $.each( jobs , function( key, val ){
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today.tz('America/Toronto') >= webDate.tz('America/Toronto')) {
+                published_jobs.push(val)
+            } 
+        });
+        if( published_jobs.length > 0){
+            renderJobs("#jobs_container","#jobs_template", published_jobs);
+            $('#no_jobs').hide()
+        }
+        else{
+            $('#jobs_container').html("No jobs listed at the moment. Please check back later.")
+        }
+        show_content();
+    }
+</script>
