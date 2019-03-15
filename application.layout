@@ -210,11 +210,11 @@
     <!--</div>-->
     <div class="show_phone">
         <div class="social_icons">
-            <a target="_blank" href="//www.facebook.com/Pickeringtowncentre" id="social_fb"></a>
-            <a target="_blank" href="//www.twitter.com/#!/PickeringTC" id="social_twitter"></a>
-            <a target="_blank" href="//www.instagram.com/pickeringtowncentre" id="social_insta"></a>
+            <a target="_blank" href="//www.facebook.com/Pickeringtowncentre" id="social_fb" aria-label="Facebook"></a>
+            <a target="_blank" href="//www.twitter.com/#!/PickeringTC" id="social_twitter" aria-label="Twitter"></a>
+            <a target="_blank" href="//www.instagram.com/pickeringtowncentre" id="social_insta" aria-label="Instagram"></a>
          
-            <a target="_blank" href="//www.youtube.com/user/PickeringTownCentre" id="social_yt"></a>
+            <a target="_blank" href="//www.youtube.com/user/PickeringTownCentre" id="social_yt" aria-label="Youtube"></a>
         </div>
         <a href="/stores" class="home_header">STORE DIRECTORY</a>
         <div class="home_hours layout_contact_us site_footer show_phone">
