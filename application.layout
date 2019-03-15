@@ -271,7 +271,7 @@
             
             <div class="row footer_privacy">
                 <div class="col-md-3 col-sm-2 col-xs-6">
-                    <a href="/act" id="act_logo"></a>
+                    <a href="/act" id="act_logo" aria-label="Act Logo"></a>
                 </div>
                 <div class="col-md-6 col-sm-8 text-center hidden_phone">
                     <p class="footer_desc">©<span id="current_year"></span> Pickering Town Centre | Powered by <a href="//mallmaverick.com" target="_blank">Mall Maverick</a> | <a href="/pages/ptc-privacy-policy">Privacy Policy</a></p>
