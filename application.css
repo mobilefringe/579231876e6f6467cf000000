@@ -587,6 +587,7 @@ body{
 
 .stores_banner{
     background-image: url(//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1465241735000/banner_stores.jpg);
+    background-color: #000;
     background-repeat:no-repeat;
     padding: 20px 0;
     margin-bottom: 50px;
