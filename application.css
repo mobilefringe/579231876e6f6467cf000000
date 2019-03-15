@@ -651,6 +651,7 @@ body{
 }
 .promo_banner{
     background-image: url(//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1476299855000/banner_promos.jpg);
+    background-color: #000;
 }
 
 .about_banner{
@@ -659,7 +660,8 @@ body{
 }
 
 .act_banner{
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1476299802000/banner_act.jpg)
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1476299802000/banner_act.jpg);
+    background-color: #000;
 }
 
 .hours_heading{
