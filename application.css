@@ -734,6 +734,9 @@ body{
         margin-top: 0px;
         overflow: hidden;
     }
+    a {
+        color: #2a74b4;
+    }
 }
 
 .read_more {
