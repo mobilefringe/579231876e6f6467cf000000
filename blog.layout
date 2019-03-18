@@ -149,7 +149,7 @@
 			<!-- mobile navigation trigger-->
 			<h5 class="mobile_nav">
 			    <a href="javascript:void(0)" class="mobile_nav_bar">&nbsp;<span><i class="fa fa-bars fa-2x"></i></span></a>
-			    <a href="/blog"><img class="mobile_nav_logo" src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png" alt="In Town Logo"></a>
+			    <a href="/blog"><img class="mobile_nav_logo" src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/png/1486499212000/logo_intown.png" alt="Intown Logo"></a>
 			</h5>
 			<!--end mobile navigation trigger-->
 
