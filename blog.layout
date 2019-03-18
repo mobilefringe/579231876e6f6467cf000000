@@ -256,7 +256,7 @@
         					    <div class="social_icons">
 	                                <a href="//www.facebook.com/Pickeringtowncentre" aria-label="Facebook" target="_blank"><div id="social_fb"></div></a>
 	                                <a href="//twitter.com/#!/PickeringTC" aria-label="Twitter" target="_blank"><div id="social_twitter"></div></a>
-                                	<a href="//www.instagram.com/pickeringtowncentre/" target="_blank"><div id="social_insta"></div></a>
+                                	<a href="//www.instagram.com/pickeringtowncentre/" aria-label="Instagram" target="_blank"><div id="social_insta"></div></a>
                                     
                                 	<a href="//www.youtube.com/user/PickeringTownCentre" target="_blank"><div id="social_yt"></div></a>
                                 	<a href="//mallmaverick.com/api/v4/PTC/blogs/PTC-blog/feed.atom" target="_blank"><div id="social_rs"></div></a>
