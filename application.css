@@ -306,6 +306,9 @@ a.flex-active {
         background-size:cover;
         background-image: url(//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1469560371000/social-x2.png);
         background-size:150px;
+        div {
+            display: none;
+        }
     }
     div{
         float:left;
