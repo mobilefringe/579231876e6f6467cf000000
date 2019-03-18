@@ -141,7 +141,7 @@
 	    </style>
 			<!-- begin accesibility skip to nav skip content -->
 			<ul class="visuallyhidden" id="top">
-				<li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to navigation</a></li>
+				<li><a href="#headerNav" title="Skip to navigation" accesskey="n">Skip to navigation</a></li>
 				<li><a href="#page" title="Skip to content" accesskey="c">Skip to content</a></li>
 			</ul>
 			<!-- end /.visuallyhidden accesibility--> 
