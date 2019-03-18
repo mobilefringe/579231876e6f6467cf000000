@@ -258,8 +258,8 @@
 	                                <a href="//twitter.com/#!/PickeringTC" aria-label="Twitter" target="_blank"><div id="social_twitter"></div></a>
                                 	<a href="//www.instagram.com/pickeringtowncentre/" aria-label="Instagram" target="_blank"><div id="social_insta"></div></a>
                                     
-                                	<a href="//www.youtube.com/user/PickeringTownCentre" target="_blank"><div id="social_yt"></div></a>
-                                	<a href="//mallmaverick.com/api/v4/PTC/blogs/PTC-blog/feed.atom" target="_blank"><div id="social_rs"></div></a>
+                                	<a href="//www.youtube.com/user/PickeringTownCentre" aria-label="Youtube" target="_blank"><div id="social_yt"></div></a>
+                                	<a href="//mallmaverick.com/api/v4/PTC/blogs/PTC-blog/feed.atom" aria-label="Blog" target="_blank"><div id="social_rs"></div></a>
                                 </div>
         						<div id="footerLogo">
         							<a href="//www.pickeringtowncentre.com/"><img src="//codecloud.cdn.speedyrails.net/sites/5757295d6e6f647a06080000/image/png/1488464861000/PTC-Logo-x2.png"></a>
