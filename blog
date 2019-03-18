@@ -42,7 +42,7 @@
             				    {{#tag_first}}
             				        <a href="/categories/{{.}}" class="sparkNowTileTag">{{.}}</a>
                                 {{/tag_first}}
-            					<a href="/posts/{{slug}}" class="sparkNowTileImg">
+            					<a aria-label="{{ title }}" href="/posts/{{slug}}" class="sparkNowTileImg">
             					</a>
             				</div>
             				<div class="sparkNowTileTitle">
