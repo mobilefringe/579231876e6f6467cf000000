@@ -1,0 +1,66 @@
+<div class="stores_banner">
+    <div class="main_container">
+        <h2>Centre Map</h2>
+    </div>
+</div>
+<div class="main_container margin_30">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="download_map">
+                <i class="fa fa-print"></i>
+                <a target="_blank" href="//codecloud.cdn.speedyrails.net/sites/5c8bdfaf6e6f643676060000/application/pdf/1515518887000/42440_PTC Handheld Directory Update_January 2018_4p (Store Directory).pdf">Printable Store Map</a>
+            </h3>
+            <div class="" id="mapsvg"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script type="text/javascript" src="//preview-5c8185376e6f645789070000.codecloudapp.com/map.js"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+         var stores = getStoresList();
+        renderStoreList('#stores_container','#stores_template', stores, "stores", "A", "Z");
+        show_content();
+        regions = {};
+        $.each( stores , function( key, val ) {
+            if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                obj = {};
+                if(val.store_front_url_abs.indexOf('missing.png') > -1){
+                    obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name + "</p><p class='tooltip_phone text-center'><i class='fa fa-phone' aria-hidden='true'></i> " + val.phone +"</p><p class='text-center'>Click for more details</p></div>"
+                }
+                else{
+                    obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>" + val.name + "</p><p class='tooltip_phone text-center'><i class='fa fa-phone' aria-hidden='true'></i>" + val.phone +"</p><p class='text-center'>Click for more details</p></div>"
+                }
+                obj["attr"] = {}
+                obj["attr"]["href"] = "/stores/" + val.slug
+                regions[val.svgmap_region] = obj
+            }
+        });
+        $('#store_select_container').change(function(e){
+            drop_pin($(this).val())
+        })
+        init_map(regions, 2500, 2000)
+        
+        $('.map_pin_a').click(function(e){
+            e.preventDefault();
+            var id = $(this).attr('data-value')
+            map_pin(id)
+        })
+        
+        function map_pin(value){
+            map.marksHide();
+            value = value.split('/')
+            if (value[0] != null){
+                drop_pin(value[0], map);    
+            }
+        }
+    }
+</script>
