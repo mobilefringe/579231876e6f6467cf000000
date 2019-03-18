@@ -14,7 +14,7 @@
     <script id="blog_banner_template" type="x-tmpl-mustache">
 		<li> 
 			<a href="/posts/{{slug}}"> 
-				<img src="{{ image_url }}" alt="" />
+				<img src="{{ image_url }}" alt="{{ title }}" />
 			</a> 
 			{{#great_news}}
             	<a href="/categories/great%20news" class="sparkNowTileTag">GREAT NEWS</a>
