@@ -110,6 +110,10 @@ body{
     background: #46a1da !important;
 }
 
+a.flex-active {
+    color: #00315c !important;
+}
+
 .active_store_nav {
     font-weight: bold;
 }
