@@ -202,12 +202,11 @@
         {{yield}}
     </section>
     
-     <!-- Rohingya Crisis BANNER -->
-    <!--<div class="trim_screen">-->
-    <!--    <a id="track_link" href="https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/" target="_blank">-->
-    <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b936416e6f64562d010000/image/jpeg/1510252672000/Rohingya_en.jpg" alt=""/>-->
-    <!--    </a>-->
-    <!--</div>-->
+     <div class="trim_screen">
+        <a id="track_link" href="http://bit.ly/cyclone-idai-cushman-wakefield" target="_blank">
+            <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/5af2ef146e6f6450e9160100/image/png/1554151834429/Idaix2_800x100_en.png" alt=“Humanitarian Campaign”/>
+        </a>
+    </div>
     <div class="show_phone">
         <div class="social_icons">
             <a target="_blank" href="//www.facebook.com/Pickeringtowncentre" id="social_fb"></a>
@@ -285,11 +284,11 @@
             </div>
         </div>
     </section>
-    <!--<script>-->
-    <!--    $("#track_link").click( function() {-->
-    <!--        trackOutboundLink('https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/');-->
-    <!--    });-->
-    <!--</script>-->
+    <script>
+        $("#track_link").click( function() {
+            trackOutboundLink('http://bit.ly/cyclone-idai-cushman-wakefield');
+        });
+    </script>
 </body>
 
 </html>
