@@ -1,0 +1,13 @@
+<div class="main_container">
+    <h1>Sorry, this page no longer exists!</h1>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        show_content();
+    }
+</script>
