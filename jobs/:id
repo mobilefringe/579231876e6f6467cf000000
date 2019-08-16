@@ -41,7 +41,7 @@
         var slug = pathArray[pathArray.length-1];
         var job_details = getJobDetailsBySlug(slug);
         if (job_details === undefined){
-            window.location = "/jobs";
+            window.location = "/jobnotfound";
         } else {
             renderJobDetails('#job_container', '#job_template', job_details)
             show_content();
