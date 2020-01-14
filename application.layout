@@ -202,6 +202,12 @@
         {{yield}}
     </section>
     <div class="campaign">
+        <div class="trim_screen">
+            <a id="track_link" href="https://www.wires.org.au/" target="_blank">
+                <img class="center-block bc_banner" src="THE_IMG_SRC" alt=""/>
+            </a>
+        </div>
+
     </div>
     <div class="show_phone">
         <div class="social_icons">
