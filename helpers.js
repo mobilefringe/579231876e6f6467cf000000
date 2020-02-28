@@ -64,7 +64,6 @@ function show_cat_stores(){
         $('#main_store_list, #store_list_container2').addClass("full_width");
         $.each(rows, function(i, val){
             var cat_array = val.getAttribute('data-cat').split(',');
-            console.log(cat_array)
             if ($.inArray(cat_id, cat_array) >= 0){
                 $(val).show();
             }
@@ -234,7 +233,6 @@ function submit_contest(slug) {
     contest_data.phone = $('#phone').val();
     contest_data.email = $('#email').val();
     contest_data.newsletter = $('#newsletter_agree').prop("checked");
-    console.log("retail check", $('#retail_check').prop("checked"))
     contest_data.get_vendor_info = $('#retail_check').prop("checked");
     
     contest_entry.contest = contest_data;
