@@ -45,6 +45,7 @@
 <script>
     $(document).ready(function(e){
         init(e);
+        console.log("url", getUrlVars()["email"])
         
         // function emailReplace() {
         $("#email").val(getUrlVars()["email"].replace("%40", "@")); 
