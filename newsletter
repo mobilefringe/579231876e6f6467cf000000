@@ -46,9 +46,11 @@
     $(document).ready(function(e){
         init(e);
         console.log("url", getUrlVars()["email"])
-        
+        var url = getUrlVars()["email"];
+        if (url) {
         // function emailReplace() {
-        $("#email").val(getUrlVars()["email"].replace("%40", "@")); 
+            $("#email").val(getUrlVars()["email"].replace("%40", "@")); 
+        } 
         // };
         show_content();
     });
