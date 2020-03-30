@@ -14,12 +14,12 @@ MARKETING DIRECTOR<br />
 905.831.6066 ext. 227<br />
 <a href="mailto:lorna.murphy@cushwake.com">lorna.murphy@cushwake.com</a></p>
 <br>
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="/media-centre/media-coverage" class="media_centre_link">MEDIA COVERAGE</a>
-                    <a href="/media-centre/photo-gallery" class="media_centre_link">PHOTO GALLERY</a>
-                </div>
-            </div>
+            <!--<div class="row">-->
+            <!--    <div class="col-md-6">-->
+            <!--        <a href="/media-centre/media-coverage" class="media_centre_link">MEDIA COVERAGE</a>-->
+            <!--        <a href="/media-centre/photo-gallery" class="media_centre_link">PHOTO GALLERY</a>-->
+            <!--    </div>-->
+            <!--</div>-->
         </div>
         <div class="col-md-6">
             <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1470685095000/img_mediacentre.jpg" class="full_width" alt="leasing banner">
