@@ -5,7 +5,7 @@
 </div>
 <div class="main_container mobile_padding margin_30">
     <div class="visible_phone position_relative">
-        <a class="mobile_header" href="/map">Center Map</a>
+        <a class="mobile_header" href="/map">Centre Map</a>
         <a class="mobile_header" href="#" id="cat_dd2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
             Select Category <i class="fa fa-chevron-down visible_phone pull-right"></i>
         </a>
@@ -17,7 +17,7 @@
                 <a class="active_store_nav" href="/stores">DIRECTORY</a>
             </div>
             <div class="col-md-3 hidden_phone">
-                <a href="/map">CENTER MAP</a>
+                <a href="/map">CENTRE MAP</a>
             </div>
             <div class="col-sm-6 col-md-4">
                 <span>Sort By: </span>
