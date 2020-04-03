@@ -203,7 +203,7 @@ function get_insta(url,total, size, callback){
         if(insta_feed != null){
             $.each(insta_feed, function(i,v){
                 var feed_obj = {}
-                if(v.link.contains("B-VR1lzJ6tV")) {
+                if(v.link.includes("B-VR1lzJ6tV")) {
                     console.log("Mithun : Feed size : " + item_rendered.length)
                 }
                 if(v.caption != null){
