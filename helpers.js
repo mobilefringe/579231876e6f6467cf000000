@@ -203,6 +203,9 @@ function get_insta(url,total, size, callback){
         if(insta_feed != null){
             $.each(insta_feed, function(i,v){
                 var feed_obj = {}
+                if(v.link.contains("B-VR1lzJ6tV")) {
+                    console.log("Mithun : Feed size : " + item_rendered.length)
+                }
                 if(v.caption != null){
                     feed_obj.caption = v.caption.text
                     feed_obj.caption_short = v.caption.text.substring(0, 20) + "..";
@@ -211,7 +214,7 @@ function get_insta(url,total, size, callback){
                 }
                 feed_obj.image = v.images[size].url
                 feed_obj.link = v.link
-                console.log("Mithun : Feed size : " + item_rendered.length)
+                
                 if (item_rendered.length < total){
                     var ig_rendered =  Mustache.render(html,feed_obj);
                     item_rendered.push(ig_rendered.trim());
