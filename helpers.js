@@ -212,7 +212,7 @@ function get_insta(url,total, size, callback){
                 feed_obj.image = v.images[size].url
                 feed_obj.link = v.link
                 console.log("Mithun : Feed size : " + item_rendered.length)
-                if (i < total){
+                if (item_rendered.length < total){
                     var ig_rendered =  Mustache.render(html,feed_obj);
                     item_rendered.push(ig_rendered.trim());
                 }
