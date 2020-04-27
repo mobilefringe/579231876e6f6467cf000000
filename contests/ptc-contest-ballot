@@ -16,7 +16,7 @@
     </div>
     <div id="contest_details_container">
         <script id="contest_details_template" type="x-tmpl-mustache/text">
-            <img src="//www.mallmaverick.com/{{photo_url}}" class="full_width margin_30">
+            <img src="//www.assets.mallmaverick.com/{{photo_url}}" class="full_width margin_30">
             <div>{{{rich_description}}}</div>
         </script>
     </div>
